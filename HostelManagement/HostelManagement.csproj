@@ -133,6 +133,9 @@
     <Compile Include="UpdateDeleteStudent.Designer.cs">
       <DependentUpon>UpdateDeleteStudent.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AddNewRoom.resx">
+      <DependentUpon>AddNewRoom.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AllStudentLiving.resx">
       <DependentUpon>AllStudentLiving.cs</DependentUpon>
     </EmbeddedResource>
