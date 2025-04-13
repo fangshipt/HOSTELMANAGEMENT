@@ -82,12 +82,7 @@
     <Compile Include="EmployeePayment.Designer.cs">
       <DependentUpon>EmployeePayment.cs</DependentUpon>
     </Compile>
-    <Compile Include="function.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="function.Designer.cs">
-      <DependentUpon>function.cs</DependentUpon>
-    </Compile>
+    <Compile Include="function.cs" />
     <Compile Include="LeavedEmployee.cs">
       <SubType>Form</SubType>
     </Compile>
