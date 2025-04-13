@@ -138,6 +138,9 @@
     <Compile Include="UpdateDeleteStudent.Designer.cs">
       <DependentUpon>UpdateDeleteStudent.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AllStudentLiving.resx">
+      <DependentUpon>AllStudentLiving.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
@@ -157,6 +160,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="StudentFees.resx">
+      <DependentUpon>StudentFees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateDeleteStudent.resx">
+      <DependentUpon>UpdateDeleteStudent.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -200,6 +209,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="image\clear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\delete.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
