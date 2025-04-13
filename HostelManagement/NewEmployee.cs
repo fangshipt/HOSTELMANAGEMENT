@@ -12,7 +12,7 @@ namespace HostelManagement
 {
     public partial class NewEmployee : Form
     {
-        function fn = new function();
+        //function fn = new function();
         String query;
         public NewEmployee()
         {
@@ -44,7 +44,7 @@ namespace HostelManagement
                 String designation = txtDesignation.Text;
 
                 query = "insert into newEmployee (emobile,ename,efname, emname, eemail, epaddress, eidproof, edesignation) values (" + mobile + ",'" + name + "','" + fname + "','" + mname + "','" + email + "','" + address + "','" + id + "','" + designation + "') ";
-                fn.setData(query, "Employee Registration Successful.");
+                //fn.setData(query, "Employee Registration Successful.");
                 clearAll();
 
             }

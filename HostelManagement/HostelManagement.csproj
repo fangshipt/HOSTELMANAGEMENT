@@ -148,6 +148,9 @@
     <EmbeddedResource Include="NewEmployee.resx">
       <DependentUpon>NewEmployee.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="NewStudent.resx">
+      <DependentUpon>NewStudent.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
