@@ -126,12 +126,6 @@
     <Compile Include="UpdateDeleteStudent.Designer.cs">
       <DependentUpon>UpdateDeleteStudent.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Dashboard.resx">
-      <DependentUpon>Dashboard.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="LeavedStudent.resx">
-      <DependentUpon>LeavedStudent.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
