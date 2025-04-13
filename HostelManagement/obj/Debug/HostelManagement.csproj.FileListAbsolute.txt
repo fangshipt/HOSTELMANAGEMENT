@@ -1,0 +1,12 @@
+D:\Nam 2 HK2\Winform\DOAN\HostelManagement\bin\Debug\HostelManagement.exe.config
+D:\Nam 2 HK2\Winform\DOAN\HostelManagement\bin\Debug\HostelManagement.exe
+D:\Nam 2 HK2\Winform\DOAN\HostelManagement\bin\Debug\HostelManagement.pdb
+D:\Nam 2 HK2\Winform\DOAN\HostelManagement\bin\Debug\Guna.UI2.dll
+D:\Nam 2 HK2\Winform\DOAN\HostelManagement\obj\Debug\HostelManagement.csproj.AssemblyReference.cache
+D:\Nam 2 HK2\Winform\DOAN\HostelManagement\obj\Debug\HostelManagement.Dashboard.resources
+D:\Nam 2 HK2\Winform\DOAN\HostelManagement\obj\Debug\HostelManagement.Properties.Resources.resources
+D:\Nam 2 HK2\Winform\DOAN\HostelManagement\obj\Debug\HostelManagement.csproj.GenerateResource.cache
+D:\Nam 2 HK2\Winform\DOAN\HostelManagement\obj\Debug\HostelManagement.csproj.CoreCompileInputs.cache
+D:\Nam 2 HK2\Winform\DOAN\HostelManagement\obj\Debug\HostelMa.ED919C98.Up2Date
+D:\Nam 2 HK2\Winform\DOAN\HostelManagement\obj\Debug\HostelManagement.exe
+D:\Nam 2 HK2\Winform\DOAN\HostelManagement\obj\Debug\HostelManagement.pdb

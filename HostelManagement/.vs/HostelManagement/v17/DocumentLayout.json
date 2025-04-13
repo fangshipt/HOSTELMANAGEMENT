@@ -1,7 +1,20 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\HOSTELMANAGEMENT\\HostelManagement\\",
-  "Documents": [],
+  "WorkspaceRootPath": "D:\\Nam 2 HK2\\Winform\\DOAN\\HostelManagement\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E59781A1-445C-445C-B107-04B196A9EA11}|HostelManagement.csproj|d:\\nam 2 hk2\\winform\\doan\\hostelmanagement\\leavedstudent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E59781A1-445C-445C-B107-04B196A9EA11}|HostelManagement.csproj|solutionrelative:leavedstudent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E59781A1-445C-445C-B107-04B196A9EA11}|HostelManagement.csproj|d:\\nam 2 hk2\\winform\\doan\\hostelmanagement\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E59781A1-445C-445C-B107-04B196A9EA11}|HostelManagement.csproj|solutionrelative:dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E59781A1-445C-445C-B107-04B196A9EA11}|HostelManagement.csproj|d:\\nam 2 hk2\\winform\\doan\\hostelmanagement\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E59781A1-445C-445C-B107-04B196A9EA11}|HostelManagement.csproj|solutionrelative:dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,8 +22,16 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 4,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{25f7e850-ffa1-11d0-b63f-00a0c922e851}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{fbcae063-e2c0-4ab1-a516-996ea3dafb72}"
@@ -18,6 +39,43 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LeavedStudent.cs [Design]",
+              "DocumentMoniker": "D:\\Nam 2 HK2\\Winform\\DOAN\\HostelManagement\\LeavedStudent.cs",
+              "RelativeDocumentMoniker": "LeavedStudent.cs",
+              "ToolTip": "D:\\Nam 2 HK2\\Winform\\DOAN\\HostelManagement\\LeavedStudent.cs [Design]",
+              "RelativeToolTip": "LeavedStudent.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-13T06:51:25.939Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Dashboard.cs",
+              "DocumentMoniker": "D:\\Nam 2 HK2\\Winform\\DOAN\\HostelManagement\\Dashboard.cs",
+              "RelativeDocumentMoniker": "Dashboard.cs",
+              "ToolTip": "D:\\Nam 2 HK2\\Winform\\DOAN\\HostelManagement\\Dashboard.cs",
+              "RelativeToolTip": "Dashboard.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-13T05:22:27.862Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Dashboard.cs [Design]",
+              "DocumentMoniker": "D:\\Nam 2 HK2\\Winform\\DOAN\\HostelManagement\\Dashboard.cs",
+              "RelativeDocumentMoniker": "Dashboard.cs",
+              "ToolTip": "D:\\Nam 2 HK2\\Winform\\DOAN\\HostelManagement\\Dashboard.cs [Design]",
+              "RelativeToolTip": "Dashboard.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-13T03:53:20.188Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }
