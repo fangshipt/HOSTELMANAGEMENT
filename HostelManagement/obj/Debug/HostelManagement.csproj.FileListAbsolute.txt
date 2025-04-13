@@ -1,0 +1,13 @@
+E:\HOSTELMANAGEMENT\HostelManagement\bin\Debug\HostelManagement.exe.config
+E:\HOSTELMANAGEMENT\HostelManagement\bin\Debug\HostelManagement.exe
+E:\HOSTELMANAGEMENT\HostelManagement\bin\Debug\HostelManagement.pdb
+E:\HOSTELMANAGEMENT\HostelManagement\bin\Debug\Guna.UI2.dll
+E:\HOSTELMANAGEMENT\HostelManagement\obj\Debug\HostelManagement.csproj.AssemblyReference.cache
+E:\HOSTELMANAGEMENT\HostelManagement\obj\Debug\HostelManagement.Login.resources
+E:\HOSTELMANAGEMENT\HostelManagement\obj\Debug\HostelManagement.Properties.Resources.resources
+E:\HOSTELMANAGEMENT\HostelManagement\obj\Debug\HostelManagement.csproj.GenerateResource.cache
+E:\HOSTELMANAGEMENT\HostelManagement\obj\Debug\HostelManagement.csproj.CoreCompileInputs.cache
+E:\HOSTELMANAGEMENT\HostelManagement\obj\Debug\HostelMa.ED919C98.Up2Date
+E:\HOSTELMANAGEMENT\HostelManagement\obj\Debug\HostelManagement.exe
+E:\HOSTELMANAGEMENT\HostelManagement\obj\Debug\HostelManagement.pdb
+E:\HOSTELMANAGEMENT\HostelManagement\obj\Debug\HostelManagement.AddNewRoom.resources
