@@ -82,6 +82,18 @@
     <Compile Include="EmployeePayment.Designer.cs">
       <DependentUpon>EmployeePayment.cs</DependentUpon>
     </Compile>
+    <Compile Include="function.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="function.Designer.cs">
+      <DependentUpon>function.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LeavedEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LeavedEmployee.Designer.cs">
+      <DependentUpon>LeavedEmployee.cs</DependentUpon>
+    </Compile>
     <Compile Include="LeavedStudent.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,6 +138,15 @@
     <Compile Include="UpdateDeleteStudent.Designer.cs">
       <DependentUpon>UpdateDeleteStudent.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LeavedStudent.resx">
+      <DependentUpon>LeavedStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewEmployee.resx">
+      <DependentUpon>NewEmployee.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -134,6 +155,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -148,6 +170,36 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\room.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\hostel.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\new student.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\Update &amp; Delete Student.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\Fees.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\all student living.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\Leaved students.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\Close all jframe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\clear.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
