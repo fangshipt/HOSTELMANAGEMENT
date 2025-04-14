@@ -142,6 +142,9 @@
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EmployeePayment.resx">
+      <DependentUpon>EmployeePayment.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LeavedStudent.resx">
       <DependentUpon>LeavedStudent.cs</DependentUpon>
     </EmbeddedResource>
@@ -163,6 +166,9 @@
     </Compile>
     <EmbeddedResource Include="StudentFees.resx">
       <DependentUpon>StudentFees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateDeleteEmployee.resx">
+      <DependentUpon>UpdateDeleteEmployee.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UpdateDeleteStudent.resx">
       <DependentUpon>UpdateDeleteStudent.cs</DependentUpon>
