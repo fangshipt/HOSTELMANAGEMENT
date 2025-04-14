@@ -30,8 +30,8 @@
         {
             this.btnClear = new Guna.UI2.WinForms.Guna2Button();
             this.btnSave = new Guna.UI2.WinForms.Guna2Button();
-            this.txtDesignation = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.txtUniqueId = new Guna.UI2.WinForms.Guna2TextBox();
+            this.comboRoomNo = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.txtIdProof = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtPermanent = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtEmailId = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtMother = new Guna.UI2.WinForms.Guna2TextBox();
@@ -48,6 +48,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btnExit = new Guna.UI2.WinForms.Guna2Button();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txtCollege = new Guna.UI2.WinForms.Guna2TextBox();
             this.SuspendLayout();
             // 
             // btnClear
@@ -61,12 +63,13 @@
             this.btnClear.Font = new System.Drawing.Font("Segoe UI", 10.875F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnClear.ForeColor = System.Drawing.Color.MistyRose;
             this.btnClear.Image = global::HostelManagement.Properties.Resources.clear;
-            this.btnClear.Location = new System.Drawing.Point(965, 635);
+            this.btnClear.Location = new System.Drawing.Point(981, 705);
             this.btnClear.Margin = new System.Windows.Forms.Padding(4);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(152, 48);
             this.btnClear.TabIndex = 41;
             this.btnClear.Text = "Clear";
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // btnSave
             // 
@@ -79,53 +82,54 @@
             this.btnSave.Font = new System.Drawing.Font("Segoe UI", 10.875F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnSave.ForeColor = System.Drawing.Color.MistyRose;
             this.btnSave.Image = global::HostelManagement.Properties.Resources.save;
-            this.btnSave.Location = new System.Drawing.Point(789, 635);
+            this.btnSave.Location = new System.Drawing.Point(805, 705);
             this.btnSave.Margin = new System.Windows.Forms.Padding(4);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(152, 48);
             this.btnSave.TabIndex = 40;
             this.btnSave.Text = "Save";
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
-            // txtDesignation
+            // comboRoomNo
             // 
-            this.txtDesignation.BackColor = System.Drawing.Color.Transparent;
-            this.txtDesignation.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.txtDesignation.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.txtDesignation.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtDesignation.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtDesignation.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.txtDesignation.ForeColor = System.Drawing.Color.Black;
-            this.txtDesignation.ItemHeight = 30;
-            this.txtDesignation.Items.AddRange(new object[] {
+            this.comboRoomNo.BackColor = System.Drawing.Color.Transparent;
+            this.comboRoomNo.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.comboRoomNo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboRoomNo.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.comboRoomNo.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.comboRoomNo.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.comboRoomNo.ForeColor = System.Drawing.Color.Black;
+            this.comboRoomNo.ItemHeight = 30;
+            this.comboRoomNo.Items.AddRange(new object[] {
             "Hostel Incharge",
             "Cleaning Staff",
             "Mess Staff",
             "Accounts Manager"});
-            this.txtDesignation.Location = new System.Drawing.Point(329, 558);
-            this.txtDesignation.Margin = new System.Windows.Forms.Padding(4);
-            this.txtDesignation.Name = "txtDesignation";
-            this.txtDesignation.Size = new System.Drawing.Size(736, 36);
-            this.txtDesignation.TabIndex = 39;
+            this.comboRoomNo.Location = new System.Drawing.Point(331, 627);
+            this.comboRoomNo.Margin = new System.Windows.Forms.Padding(4);
+            this.comboRoomNo.Name = "comboRoomNo";
+            this.comboRoomNo.Size = new System.Drawing.Size(736, 36);
+            this.comboRoomNo.TabIndex = 39;
             // 
-            // txtUniqueId
+            // txtIdProof
             // 
-            this.txtUniqueId.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtUniqueId.DefaultText = "";
-            this.txtUniqueId.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtUniqueId.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtUniqueId.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtUniqueId.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtUniqueId.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtUniqueId.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txtUniqueId.ForeColor = System.Drawing.Color.Black;
-            this.txtUniqueId.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtUniqueId.Location = new System.Drawing.Point(329, 489);
-            this.txtUniqueId.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
-            this.txtUniqueId.Name = "txtUniqueId";
-            this.txtUniqueId.PlaceholderText = "";
-            this.txtUniqueId.SelectedText = "";
-            this.txtUniqueId.Size = new System.Drawing.Size(737, 38);
-            this.txtUniqueId.TabIndex = 38;
+            this.txtIdProof.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtIdProof.DefaultText = "";
+            this.txtIdProof.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtIdProof.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtIdProof.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtIdProof.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtIdProof.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtIdProof.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtIdProof.ForeColor = System.Drawing.Color.Black;
+            this.txtIdProof.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtIdProof.Location = new System.Drawing.Point(331, 558);
+            this.txtIdProof.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
+            this.txtIdProof.Name = "txtIdProof";
+            this.txtIdProof.PlaceholderText = "";
+            this.txtIdProof.SelectedText = "";
+            this.txtIdProof.Size = new System.Drawing.Size(737, 38);
+            this.txtIdProof.TabIndex = 38;
             // 
             // txtPermanent
             // 
@@ -252,24 +256,24 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label9.Location = new System.Drawing.Point(26, 558);
+            this.label9.Location = new System.Drawing.Point(28, 627);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(190, 37);
+            this.label9.Size = new System.Drawing.Size(227, 37);
             this.label9.TabIndex = 31;
-            this.label9.Text = "Designation";
+            this.label9.Text = "Room Number";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label8.Location = new System.Drawing.Point(26, 489);
+            this.label8.Location = new System.Drawing.Point(28, 558);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(157, 37);
+            this.label8.Size = new System.Drawing.Size(131, 37);
             this.label8.TabIndex = 30;
-            this.label8.Text = "Unique ID";
+            this.label8.Text = "ID Proof";
             // 
             // label7
             // 
@@ -373,17 +377,51 @@
             this.btnExit.TabIndex = 42;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.label10.Location = new System.Drawing.Point(27, 489);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(228, 37);
+            this.label10.TabIndex = 43;
+            this.label10.Text = "College Name";
+            // 
+            // txtCollege
+            // 
+            this.txtCollege.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtCollege.DefaultText = "";
+            this.txtCollege.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtCollege.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtCollege.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCollege.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCollege.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCollege.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtCollege.ForeColor = System.Drawing.Color.Black;
+            this.txtCollege.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCollege.Location = new System.Drawing.Point(331, 488);
+            this.txtCollege.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
+            this.txtCollege.Name = "txtCollege";
+            this.txtCollege.PlaceholderText = "";
+            this.txtCollege.SelectedText = "";
+            this.txtCollege.Size = new System.Drawing.Size(737, 38);
+            this.txtCollege.TabIndex = 44;
+            // 
             // NewStudent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MistyRose;
-            this.ClientSize = new System.Drawing.Size(1166, 719);
+            this.ClientSize = new System.Drawing.Size(1166, 773);
+            this.Controls.Add(this.txtCollege);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnSave);
-            this.Controls.Add(this.txtDesignation);
-            this.Controls.Add(this.txtUniqueId);
+            this.Controls.Add(this.comboRoomNo);
+            this.Controls.Add(this.txtIdProof);
             this.Controls.Add(this.txtPermanent);
             this.Controls.Add(this.txtEmailId);
             this.Controls.Add(this.txtMother);
@@ -413,8 +451,8 @@
 
         private Guna.UI2.WinForms.Guna2Button btnClear;
         private Guna.UI2.WinForms.Guna2Button btnSave;
-        private Guna.UI2.WinForms.Guna2ComboBox txtDesignation;
-        private Guna.UI2.WinForms.Guna2TextBox txtUniqueId;
+        private Guna.UI2.WinForms.Guna2ComboBox comboRoomNo;
+        private Guna.UI2.WinForms.Guna2TextBox txtIdProof;
         private Guna.UI2.WinForms.Guna2TextBox txtPermanent;
         private Guna.UI2.WinForms.Guna2TextBox txtEmailId;
         private Guna.UI2.WinForms.Guna2TextBox txtMother;
@@ -431,5 +469,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2Button btnExit;
+        private System.Windows.Forms.Label label10;
+        private Guna.UI2.WinForms.Guna2TextBox txtCollege;
     }
 }

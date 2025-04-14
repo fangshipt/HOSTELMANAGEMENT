@@ -148,8 +148,14 @@
     <EmbeddedResource Include="EmployeePayment.resx">
       <DependentUpon>EmployeePayment.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="LeavedEmployee.resx">
+      <DependentUpon>LeavedEmployee.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LeavedStudent.resx">
       <DependentUpon>LeavedStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NewEmployee.resx">
       <DependentUpon>NewEmployee.cs</DependentUpon>
