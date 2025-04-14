@@ -64,6 +64,7 @@
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(68, 30);
             this.btnExit.TabIndex = 26;
+            this.btnExit.Text = "c";
             // 
             // guna2DataGridView1
             // 

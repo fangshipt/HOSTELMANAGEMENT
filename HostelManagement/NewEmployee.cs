@@ -70,5 +70,10 @@ namespace HostelManagement
             txtMobile.Clear();
             txtDesignation.SelectedIndex = -1;
         }
+
+        private void txtMobile_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

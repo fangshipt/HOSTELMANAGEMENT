@@ -136,6 +136,9 @@
     <EmbeddedResource Include="AddNewRoom.resx">
       <DependentUpon>AddNewRoom.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AllEmployeeWorking.resx">
+      <DependentUpon>AllEmployeeWorking.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AllStudentLiving.resx">
       <DependentUpon>AllStudentLiving.cs</DependentUpon>
     </EmbeddedResource>

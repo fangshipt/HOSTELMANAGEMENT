@@ -16,5 +16,20 @@ namespace HostelManagement
         {
             InitializeComponent();
         }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void AllEmployeeWorking_Load(object sender, EventArgs e)
+        {
+            this.Location = new Point(350, 170);
+        }
     }
 }
