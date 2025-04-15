@@ -34,12 +34,12 @@ namespace HostelManagement
         {
             if (labelVisible == true)
             {
-                hmsLabel.Visible = true;
+                lblNavigatorBar.Visible = true;
                 labelVisible = false;
             }
             else
             {
-                hmsLabel.Visible = false;
+                lblNavigatorBar.Visible = false;
                 labelVisible = true;
             }
 

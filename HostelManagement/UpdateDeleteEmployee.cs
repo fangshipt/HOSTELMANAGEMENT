@@ -13,7 +13,7 @@ namespace HostelManagement
 {
     public partial class UpdateDeleteEmployee : Form
     {
-        function fn = new function();
+        //function fn = new function();
         String query;
         public UpdateDeleteEmployee()
         {
@@ -27,6 +27,7 @@ namespace HostelManagement
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
+            /**
             query = "select * from newEmployee where emobile =" + txtMobile.Text + "";
             DataSet ds = fn.getData(query);
 
@@ -46,6 +47,7 @@ namespace HostelManagement
                 MessageBox.Show("No Record Exist.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 clearAll();
             }
+            */
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
@@ -59,21 +61,24 @@ namespace HostelManagement
             String id = txtUnique.Text;
             String designation = txtDesignation.Text;
             String working = txtWorking.Text;
-
+            /*
             query = "update newEmployee set ename='" + name + "', efname='" + fname + "', emname='" + mname +
                     "', eemail='" + email + "', epaddress='" + paddress + "', eidproof='" + id + "',edesignation='" + designation +
                     "', working='" + working + "' where emobile=" + mobile + "";
             fn.setData(query, "Data Updation Successful.");
+            */
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
+            /*
             if (MessageBox.Show("Are you sure?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
             {
                 query = "delete from newEmployee where emobile=" + txtMobile.Text + "";
                 fn.setData(query, "Employee Record Deleted.");
                 clearAll();
             }
+            */
         }
 
         private void btnExit_Click(object sender, EventArgs e)

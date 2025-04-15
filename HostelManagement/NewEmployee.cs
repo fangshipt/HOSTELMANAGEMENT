@@ -43,7 +43,7 @@ namespace HostelManagement
                 String id = txtUniqueId.Text;
                 String designation = txtDesignation.Text;
 
-                query = "insert into newEmployee (emobile,ename,efname, emname, eemail, epaddress, eidproof, edesignation) values (" + mobile + ",'" + name + "','" + fname + "','" + mname + "','" + email + "','" + address + "','" + id + "','" + designation + "') ";
+                //query = "insert into newEmployee (emobile,ename,efname, emname, eemail, epaddress, eidproof, edesignation) values (" + mobile + ",'" + name + "','" + fname + "','" + mname + "','" + email + "','" + address + "','" + id + "','" + designation + "') ";
                 //fn.setData(query, "Employee Registration Successful.");
                 clearAll();
 

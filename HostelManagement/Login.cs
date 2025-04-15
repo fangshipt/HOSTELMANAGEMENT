@@ -17,11 +17,6 @@ namespace HostelManagement
             InitializeComponent();
         }
 
-        private void Login_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnSignIn_Click(object sender, EventArgs e)
         {
             if (txtUsername.Text == "hello" && txtPassword.Text == "123") {

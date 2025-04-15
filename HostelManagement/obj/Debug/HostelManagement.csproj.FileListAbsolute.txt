@@ -32,3 +32,27 @@ D:\LTWinform\Đồ án\HostelManagement\obj\Debug\HostelManagement.csproj.CoreCo
 D:\LTWinform\Đồ án\HostelManagement\obj\Debug\HostelMa.ED919C98.Up2Date
 D:\LTWinform\Đồ án\HostelManagement\obj\Debug\HostelManagement.exe
 D:\LTWinform\Đồ án\HostelManagement\obj\Debug\HostelManagement.pdb
+E:\HostelManagement\HostelManagement\bin\Debug\HostelManagement.exe.config
+E:\HostelManagement\HostelManagement\bin\Debug\HostelManagement.exe
+E:\HostelManagement\HostelManagement\bin\Debug\HostelManagement.pdb
+E:\HostelManagement\HostelManagement\bin\Debug\Guna.UI2.dll
+E:\HostelManagement\HostelManagement\obj\Debug\HostelManagement.csproj.AssemblyReference.cache
+E:\HostelManagement\HostelManagement\obj\Debug\HostelManagement.AddNewRoom.resources
+E:\HostelManagement\HostelManagement\obj\Debug\HostelManagement.AllEmployeeWorking.resources
+E:\HostelManagement\HostelManagement\obj\Debug\HostelManagement.AllStudentLiving.resources
+E:\HostelManagement\HostelManagement\obj\Debug\HostelManagement.Dashboard.resources
+E:\HostelManagement\HostelManagement\obj\Debug\HostelManagement.EmployeePayment.resources
+E:\HostelManagement\HostelManagement\obj\Debug\HostelManagement.LeavedEmployee.resources
+E:\HostelManagement\HostelManagement\obj\Debug\HostelManagement.LeavedStudent.resources
+E:\HostelManagement\HostelManagement\obj\Debug\HostelManagement.Login.resources
+E:\HostelManagement\HostelManagement\obj\Debug\HostelManagement.NewEmployee.resources
+E:\HostelManagement\HostelManagement\obj\Debug\HostelManagement.NewStudent.resources
+E:\HostelManagement\HostelManagement\obj\Debug\HostelManagement.Properties.Resources.resources
+E:\HostelManagement\HostelManagement\obj\Debug\HostelManagement.StudentFees.resources
+E:\HostelManagement\HostelManagement\obj\Debug\HostelManagement.UpdateDeleteEmployee.resources
+E:\HostelManagement\HostelManagement\obj\Debug\HostelManagement.UpdateDeleteStudent.resources
+E:\HostelManagement\HostelManagement\obj\Debug\HostelManagement.csproj.GenerateResource.cache
+E:\HostelManagement\HostelManagement\obj\Debug\HostelManagement.csproj.CoreCompileInputs.cache
+E:\HostelManagement\HostelManagement\obj\Debug\HostelMa.ED919C98.Up2Date
+E:\HostelManagement\HostelManagement\obj\Debug\HostelManagement.exe
+E:\HostelManagement\HostelManagement\obj\Debug\HostelManagement.pdb

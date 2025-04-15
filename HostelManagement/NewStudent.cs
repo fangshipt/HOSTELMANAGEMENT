@@ -22,6 +22,7 @@ namespace HostelManagement
         private void NewStudent_Load(object sender, EventArgs e)
         {
             this.Location = new Point(350, 170);
+            /*
             query = "select roomNo from rooms where roomStatus = 'yes' and Booked = 'No";
             DataSet ds = fn.getData(query);
 
@@ -31,7 +32,7 @@ namespace HostelManagement
                 comboRoomNo.Items.Add(room);
             }
 
-           
+           */
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -59,6 +60,7 @@ namespace HostelManagement
 
         private void btnSave_Click(object sender, EventArgs e)
         {
+            /*
             if(txtCollege.Text!=""&&txtEmailId.Text!=""&&txtFather.Text!=""&&txtIdProof.Text!=""&&txtMobile.Text!="" && txtMother.Text != "" && txtName.Text != "")
             {
                 Int64 mobile = Int64.Parse(txtMobile.Text);
@@ -80,6 +82,7 @@ namespace HostelManagement
             {
                 MessageBox.Show("Fill all empty space.","Information!!",MessageBoxButtons.OK,MessageBoxIcon.Warning);
             }
+            */
             
         }
     }

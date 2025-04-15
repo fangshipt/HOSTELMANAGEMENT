@@ -14,7 +14,7 @@ namespace HostelManagement
 {
     public partial class StudentFees : Form
     {
-        function fn = new function();
+        //function fn = new function();
         String query;
         public StudentFees()
         {
@@ -35,6 +35,7 @@ namespace HostelManagement
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
+            /*
             if (txtMobile.Text != "")
             {
                 query = "select name, email, roomNo from newStudent where mobile =" + txtMobile.Text + "";
@@ -52,16 +53,20 @@ namespace HostelManagement
                     MessageBox.Show("No Record Exist", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
+            */
         }
         public void setDataGrid(Int64 mobile)
         {
+            /*
             query = "select * from fees where mobileNo = " + mobile + "";
             DataSet ds = fn.getData(query);
             guna2DataGridView1.DataSource = ds.Tables[0];
+            */
         }
 
         private void btnPay_Click(object sender, EventArgs e)
         {
+            /*
             if (txtMobile.Text != "" && txtAmount.Text != "")
             {
                 query = "select * from fees where mobileNo =" + Int64.Parse(txtMobile.Text) + " and fmonth='" + dataTimePicker.Text + "'";
@@ -81,6 +86,7 @@ namespace HostelManagement
 
                 }
             }
+            */
         }
         private void btnClear_Click(object sender, EventArgs e)
         {

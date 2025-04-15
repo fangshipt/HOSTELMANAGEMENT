@@ -23,9 +23,11 @@ namespace HostelManagement
         private void AllStudentLiving_Load(object sender, EventArgs e)
         {
             this.Location = new Point(350, 170);
+            /*
             query = "select * from newStudent where living='Yes'";
             DataSet ds = fn.getData(query);
             guna2DataGridView1.DataSource = ds.Tables[0];
+            */
 
         }
 

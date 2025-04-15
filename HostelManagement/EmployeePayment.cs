@@ -27,6 +27,7 @@ namespace HostelManagement
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
+            /*
             if (txtMobile.Text != "")
             {
                 query = "select ename, eemail, edesignation from newEmployee where emobile =" + txtMobile.Text + "";
@@ -49,10 +50,12 @@ namespace HostelManagement
             {
                 MessageBox.Show("Enter some data.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+            */
         }
 
         private void btnPaySalary_Click(object sender, EventArgs e)
         {
+            /*
             if (txtMobile.Text != "" && txtPaymentAmount.Text != "")
             {
                 query = "select * from employeeSalary where mobileNo =" + txtMobile.Text + " and fmonth = '" + monthDateTime.Text + "'";
@@ -73,13 +76,16 @@ namespace HostelManagement
                     MessageBox.Show("Payment of " + monthDateTime.Text + "Done.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
+            */
 
         }
         public void setDataGrid(Int64 mobile)
         {
+            /*
             query = "select * from employeeSalary where mobileNo=" + mobile + "";
             DataSet ds = fn.getData(query);
             guna2DataGridView1.DataSource = ds.Tables[0];
+            */
         }
         public void ClearAll()
         {

@@ -13,7 +13,7 @@ namespace HostelManagement
 {
     public partial class UpdateDeleteStudent : Form
     {
-        function fn = new function();
+        //function fn = new function();
         String query;
         public UpdateDeleteStudent()
         {
@@ -50,6 +50,7 @@ namespace HostelManagement
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
+            /*
             query = "select * from newStudent where mobile=" + txtMobile.Text + "";
             DataSet ds = fn.getData(query);
 
@@ -70,6 +71,7 @@ namespace HostelManagement
                 clearAll();
                 MessageBox.Show("No Record with this Mobile No Exists.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+            */
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
@@ -84,18 +86,22 @@ namespace HostelManagement
             String idproof = txtIdProof.Text;
             Int64 roomNo = Int64.Parse(txtRoomNo.Text);
             String livingStatus = comboBoxLiving.Text;
+            /*
             query = "update newStudent set name ='" + name + "',fname='" + fname + "',mname='" + mname + "',email='" + email + "',paddress='" + paddress + "',college='" + college + "',idproof='" + idproof + "',roomNo=" + roomNo + ",living='" + livingStatus + "' where mobile =" + mobile + " update rooms set Booked ='" + livingStatus + "' where roomNo=" + roomNo + "";
             fn.setData(query, "Data Updation Successful");
+            */
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
+            /*
             if (MessageBox.Show("Are You Sure?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
             {
                 query = "delete from newStudent where mobile =" + txtMobile.Text + "";
                 fn.setData(query, "Student Record Deleted.");
                 clearAll();
             }
+            */
         }
     }
 }
