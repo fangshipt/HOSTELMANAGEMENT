@@ -67,7 +67,7 @@
             this.hmsLabel.AutoSize = true;
             this.hmsLabel.Font = new System.Drawing.Font("Papyrus", 28.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.hmsLabel.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.hmsLabel.Location = new System.Drawing.Point(872, 4);
+            this.hmsLabel.Location = new System.Drawing.Point(808, 4);
             this.hmsLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.hmsLabel.Name = "hmsLabel";
             this.hmsLabel.Size = new System.Drawing.Size(1008, 118);
@@ -78,7 +78,6 @@
             // btnLeavedEmployee
             // 
             this.btnLeavedEmployee.BorderRadius = 19;
-            this.btnLeavedEmployee.BorderThickness = 1;
             this.btnLeavedEmployee.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.btnLeavedEmployee.CheckedState.FillColor = System.Drawing.Color.White;
             this.btnLeavedEmployee.CheckedState.ForeColor = System.Drawing.Color.MistyRose;
@@ -89,9 +88,11 @@
             this.btnLeavedEmployee.FillColor = System.Drawing.Color.MistyRose;
             this.btnLeavedEmployee.Font = new System.Drawing.Font("Segoe UI Semibold", 10.125F, System.Drawing.FontStyle.Bold);
             this.btnLeavedEmployee.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.btnLeavedEmployee.HoverState.FillColor = System.Drawing.Color.MidnightBlue;
+            this.btnLeavedEmployee.HoverState.ForeColor = System.Drawing.Color.MistyRose;
             this.btnLeavedEmployee.Image = global::HostelManagement.Properties.Resources.Leaved_students;
             this.btnLeavedEmployee.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnLeavedEmployee.Location = new System.Drawing.Point(13, 1075);
+            this.btnLeavedEmployee.Location = new System.Drawing.Point(13, 1107);
             this.btnLeavedEmployee.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnLeavedEmployee.Name = "btnLeavedEmployee";
             this.btnLeavedEmployee.Size = new System.Drawing.Size(430, 75);
@@ -116,7 +117,7 @@
             this.btnLogOut.ForeColor = System.Drawing.Color.MidnightBlue;
             this.btnLogOut.HoverState.FillColor = System.Drawing.Color.CornflowerBlue;
             this.btnLogOut.ImageSize = new System.Drawing.Size(35, 35);
-            this.btnLogOut.Location = new System.Drawing.Point(1796, 1187);
+            this.btnLogOut.Location = new System.Drawing.Point(1848, 1232);
             this.btnLogOut.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnLogOut.Name = "btnLogOut";
             this.btnLogOut.Size = new System.Drawing.Size(282, 62);
@@ -138,7 +139,7 @@
             this.btnExit.FillColor = System.Drawing.Color.MistyRose;
             this.btnExit.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnExit.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.btnExit.Location = new System.Drawing.Point(2174, 4);
+            this.btnExit.Location = new System.Drawing.Point(2061, 11);
             this.btnExit.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnExit.Name = "btnExit";
             this.btnExit.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
@@ -156,7 +157,6 @@
             // btnAllEmployeeWorking
             // 
             this.btnAllEmployeeWorking.BorderRadius = 19;
-            this.btnAllEmployeeWorking.BorderThickness = 1;
             this.btnAllEmployeeWorking.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.btnAllEmployeeWorking.CheckedState.FillColor = System.Drawing.Color.White;
             this.btnAllEmployeeWorking.CheckedState.ForeColor = System.Drawing.Color.MistyRose;
@@ -167,9 +167,11 @@
             this.btnAllEmployeeWorking.FillColor = System.Drawing.Color.MistyRose;
             this.btnAllEmployeeWorking.Font = new System.Drawing.Font("Segoe UI Semibold", 10.125F, System.Drawing.FontStyle.Bold);
             this.btnAllEmployeeWorking.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.btnAllEmployeeWorking.HoverState.FillColor = System.Drawing.Color.MidnightBlue;
+            this.btnAllEmployeeWorking.HoverState.ForeColor = System.Drawing.Color.MistyRose;
             this.btnAllEmployeeWorking.Image = global::HostelManagement.Properties.Resources.all_student_living1;
             this.btnAllEmployeeWorking.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnAllEmployeeWorking.Location = new System.Drawing.Point(13, 981);
+            this.btnAllEmployeeWorking.Location = new System.Drawing.Point(13, 1013);
             this.btnAllEmployeeWorking.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnAllEmployeeWorking.Name = "btnAllEmployeeWorking";
             this.btnAllEmployeeWorking.Size = new System.Drawing.Size(430, 75);
@@ -180,7 +182,6 @@
             // btnEmployeePayment
             // 
             this.btnEmployeePayment.BorderRadius = 19;
-            this.btnEmployeePayment.BorderThickness = 1;
             this.btnEmployeePayment.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.btnEmployeePayment.CheckedState.FillColor = System.Drawing.Color.White;
             this.btnEmployeePayment.CheckedState.ForeColor = System.Drawing.Color.MistyRose;
@@ -191,9 +192,11 @@
             this.btnEmployeePayment.FillColor = System.Drawing.Color.MistyRose;
             this.btnEmployeePayment.Font = new System.Drawing.Font("Segoe UI Semibold", 10.125F, System.Drawing.FontStyle.Bold);
             this.btnEmployeePayment.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.btnEmployeePayment.HoverState.FillColor = System.Drawing.Color.MidnightBlue;
+            this.btnEmployeePayment.HoverState.ForeColor = System.Drawing.Color.MistyRose;
             this.btnEmployeePayment.Image = global::HostelManagement.Properties.Resources.Fees;
             this.btnEmployeePayment.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnEmployeePayment.Location = new System.Drawing.Point(13, 885);
+            this.btnEmployeePayment.Location = new System.Drawing.Point(13, 917);
             this.btnEmployeePayment.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnEmployeePayment.Name = "btnEmployeePayment";
             this.btnEmployeePayment.Size = new System.Drawing.Size(430, 75);
@@ -204,7 +207,6 @@
             // btnUpdateDeleteEmployee
             // 
             this.btnUpdateDeleteEmployee.BorderRadius = 19;
-            this.btnUpdateDeleteEmployee.BorderThickness = 1;
             this.btnUpdateDeleteEmployee.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.btnUpdateDeleteEmployee.CheckedState.FillColor = System.Drawing.Color.White;
             this.btnUpdateDeleteEmployee.CheckedState.ForeColor = System.Drawing.Color.MistyRose;
@@ -215,10 +217,12 @@
             this.btnUpdateDeleteEmployee.FillColor = System.Drawing.Color.MistyRose;
             this.btnUpdateDeleteEmployee.Font = new System.Drawing.Font("Segoe UI Semibold", 10.125F, System.Drawing.FontStyle.Bold);
             this.btnUpdateDeleteEmployee.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.btnUpdateDeleteEmployee.HoverState.FillColor = System.Drawing.Color.MidnightBlue;
+            this.btnUpdateDeleteEmployee.HoverState.ForeColor = System.Drawing.Color.MistyRose;
             this.btnUpdateDeleteEmployee.Image = global::HostelManagement.Properties.Resources.Update___Delete_Student1;
             this.btnUpdateDeleteEmployee.ImageOffset = new System.Drawing.Point(5, 0);
             this.btnUpdateDeleteEmployee.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnUpdateDeleteEmployee.Location = new System.Drawing.Point(13, 791);
+            this.btnUpdateDeleteEmployee.Location = new System.Drawing.Point(13, 823);
             this.btnUpdateDeleteEmployee.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnUpdateDeleteEmployee.Name = "btnUpdateDeleteEmployee";
             this.btnUpdateDeleteEmployee.Size = new System.Drawing.Size(430, 75);
@@ -229,7 +233,6 @@
             // btnNewEmployee
             // 
             this.btnNewEmployee.BorderRadius = 19;
-            this.btnNewEmployee.BorderThickness = 1;
             this.btnNewEmployee.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.btnNewEmployee.CheckedState.FillColor = System.Drawing.Color.White;
             this.btnNewEmployee.CheckedState.ForeColor = System.Drawing.Color.MistyRose;
@@ -240,9 +243,11 @@
             this.btnNewEmployee.FillColor = System.Drawing.Color.MistyRose;
             this.btnNewEmployee.Font = new System.Drawing.Font("Segoe UI Semibold", 10.125F, System.Drawing.FontStyle.Bold);
             this.btnNewEmployee.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.btnNewEmployee.HoverState.FillColor = System.Drawing.Color.MidnightBlue;
+            this.btnNewEmployee.HoverState.ForeColor = System.Drawing.Color.MistyRose;
             this.btnNewEmployee.Image = global::HostelManagement.Properties.Resources.new_student1;
             this.btnNewEmployee.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnNewEmployee.Location = new System.Drawing.Point(13, 697);
+            this.btnNewEmployee.Location = new System.Drawing.Point(13, 729);
             this.btnNewEmployee.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnNewEmployee.Name = "btnNewEmployee";
             this.btnNewEmployee.Size = new System.Drawing.Size(430, 75);
@@ -253,7 +258,6 @@
             // btnLeavedStudents
             // 
             this.btnLeavedStudents.BorderRadius = 19;
-            this.btnLeavedStudents.BorderThickness = 1;
             this.btnLeavedStudents.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.btnLeavedStudents.CheckedState.FillColor = System.Drawing.Color.White;
             this.btnLeavedStudents.CheckedState.ForeColor = System.Drawing.Color.MistyRose;
@@ -264,9 +268,11 @@
             this.btnLeavedStudents.FillColor = System.Drawing.Color.MistyRose;
             this.btnLeavedStudents.Font = new System.Drawing.Font("Segoe UI Semibold", 10.125F, System.Drawing.FontStyle.Bold);
             this.btnLeavedStudents.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.btnLeavedStudents.HoverState.FillColor = System.Drawing.Color.MidnightBlue;
+            this.btnLeavedStudents.HoverState.ForeColor = System.Drawing.Color.MistyRose;
             this.btnLeavedStudents.Image = global::HostelManagement.Properties.Resources.Leaved_students;
             this.btnLeavedStudents.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnLeavedStudents.Location = new System.Drawing.Point(13, 602);
+            this.btnLeavedStudents.Location = new System.Drawing.Point(13, 634);
             this.btnLeavedStudents.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnLeavedStudents.Name = "btnLeavedStudents";
             this.btnLeavedStudents.Size = new System.Drawing.Size(430, 75);
@@ -277,7 +283,6 @@
             // btnAllStudentLiving
             // 
             this.btnAllStudentLiving.BorderRadius = 19;
-            this.btnAllStudentLiving.BorderThickness = 1;
             this.btnAllStudentLiving.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.btnAllStudentLiving.CheckedState.FillColor = System.Drawing.Color.White;
             this.btnAllStudentLiving.CheckedState.ForeColor = System.Drawing.Color.MistyRose;
@@ -288,9 +293,11 @@
             this.btnAllStudentLiving.FillColor = System.Drawing.Color.MistyRose;
             this.btnAllStudentLiving.Font = new System.Drawing.Font("Segoe UI Semibold", 10.125F, System.Drawing.FontStyle.Bold);
             this.btnAllStudentLiving.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.btnAllStudentLiving.HoverState.FillColor = System.Drawing.Color.MidnightBlue;
+            this.btnAllStudentLiving.HoverState.ForeColor = System.Drawing.Color.MistyRose;
             this.btnAllStudentLiving.Image = global::HostelManagement.Properties.Resources.all_student_living;
             this.btnAllStudentLiving.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnAllStudentLiving.Location = new System.Drawing.Point(13, 508);
+            this.btnAllStudentLiving.Location = new System.Drawing.Point(13, 540);
             this.btnAllStudentLiving.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnAllStudentLiving.Name = "btnAllStudentLiving";
             this.btnAllStudentLiving.Size = new System.Drawing.Size(430, 75);
@@ -301,7 +308,6 @@
             // btnStudentFees
             // 
             this.btnStudentFees.BorderRadius = 19;
-            this.btnStudentFees.BorderThickness = 1;
             this.btnStudentFees.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.btnStudentFees.CheckedState.FillColor = System.Drawing.Color.White;
             this.btnStudentFees.CheckedState.ForeColor = System.Drawing.Color.MistyRose;
@@ -312,9 +318,11 @@
             this.btnStudentFees.FillColor = System.Drawing.Color.MistyRose;
             this.btnStudentFees.Font = new System.Drawing.Font("Segoe UI Semibold", 10.125F, System.Drawing.FontStyle.Bold);
             this.btnStudentFees.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.btnStudentFees.HoverState.FillColor = System.Drawing.Color.MidnightBlue;
+            this.btnStudentFees.HoverState.ForeColor = System.Drawing.Color.MistyRose;
             this.btnStudentFees.Image = global::HostelManagement.Properties.Resources.Fees;
             this.btnStudentFees.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnStudentFees.Location = new System.Drawing.Point(13, 413);
+            this.btnStudentFees.Location = new System.Drawing.Point(13, 445);
             this.btnStudentFees.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnStudentFees.Name = "btnStudentFees";
             this.btnStudentFees.Size = new System.Drawing.Size(430, 75);
@@ -324,8 +332,8 @@
             // 
             // btnUpdateDeleteStudent
             // 
+            this.btnUpdateDeleteStudent.BorderColor = System.Drawing.Color.MidnightBlue;
             this.btnUpdateDeleteStudent.BorderRadius = 19;
-            this.btnUpdateDeleteStudent.BorderThickness = 1;
             this.btnUpdateDeleteStudent.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.btnUpdateDeleteStudent.CheckedState.FillColor = System.Drawing.Color.White;
             this.btnUpdateDeleteStudent.CheckedState.ForeColor = System.Drawing.Color.MistyRose;
@@ -336,10 +344,12 @@
             this.btnUpdateDeleteStudent.FillColor = System.Drawing.Color.MistyRose;
             this.btnUpdateDeleteStudent.Font = new System.Drawing.Font("Segoe UI Semibold", 10.125F, System.Drawing.FontStyle.Bold);
             this.btnUpdateDeleteStudent.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.btnUpdateDeleteStudent.HoverState.FillColor = System.Drawing.Color.MidnightBlue;
+            this.btnUpdateDeleteStudent.HoverState.ForeColor = System.Drawing.Color.MistyRose;
             this.btnUpdateDeleteStudent.Image = global::HostelManagement.Properties.Resources.Update___Delete_Student;
             this.btnUpdateDeleteStudent.ImageOffset = new System.Drawing.Point(5, 0);
             this.btnUpdateDeleteStudent.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnUpdateDeleteStudent.Location = new System.Drawing.Point(13, 321);
+            this.btnUpdateDeleteStudent.Location = new System.Drawing.Point(13, 353);
             this.btnUpdateDeleteStudent.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnUpdateDeleteStudent.Name = "btnUpdateDeleteStudent";
             this.btnUpdateDeleteStudent.Size = new System.Drawing.Size(430, 75);
@@ -349,8 +359,8 @@
             // 
             // btnNewStudent
             // 
+            this.btnNewStudent.BorderColor = System.Drawing.Color.MidnightBlue;
             this.btnNewStudent.BorderRadius = 19;
-            this.btnNewStudent.BorderThickness = 1;
             this.btnNewStudent.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.btnNewStudent.CheckedState.FillColor = System.Drawing.Color.White;
             this.btnNewStudent.CheckedState.ForeColor = System.Drawing.Color.MistyRose;
@@ -361,9 +371,11 @@
             this.btnNewStudent.FillColor = System.Drawing.Color.MistyRose;
             this.btnNewStudent.Font = new System.Drawing.Font("Segoe UI Semibold", 10.125F, System.Drawing.FontStyle.Bold);
             this.btnNewStudent.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.btnNewStudent.HoverState.FillColor = System.Drawing.Color.MidnightBlue;
+            this.btnNewStudent.HoverState.ForeColor = System.Drawing.Color.MistyRose;
             this.btnNewStudent.Image = global::HostelManagement.Properties.Resources.new_student;
             this.btnNewStudent.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnNewStudent.Location = new System.Drawing.Point(13, 231);
+            this.btnNewStudent.Location = new System.Drawing.Point(13, 261);
             this.btnNewStudent.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnNewStudent.Name = "btnNewStudent";
             this.btnNewStudent.Size = new System.Drawing.Size(430, 75);
@@ -375,7 +387,6 @@
             // 
             this.btnManageRooms.BorderColor = System.Drawing.Color.MidnightBlue;
             this.btnManageRooms.BorderRadius = 19;
-            this.btnManageRooms.BorderThickness = 1;
             this.btnManageRooms.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.btnManageRooms.CheckedState.FillColor = System.Drawing.Color.White;
             this.btnManageRooms.CheckedState.ForeColor = System.Drawing.Color.MistyRose;
@@ -390,7 +401,7 @@
             this.btnManageRooms.HoverState.ForeColor = System.Drawing.Color.MistyRose;
             this.btnManageRooms.Image = global::HostelManagement.Properties.Resources.room;
             this.btnManageRooms.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnManageRooms.Location = new System.Drawing.Point(13, 137);
+            this.btnManageRooms.Location = new System.Drawing.Point(13, 167);
             this.btnManageRooms.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnManageRooms.Name = "btnManageRooms";
             this.btnManageRooms.Size = new System.Drawing.Size(430, 75);
@@ -405,10 +416,10 @@
             this.guna2PictureBox1.Image = global::HostelManagement.Properties.Resources.hostel;
             this.guna2PictureBox1.ImageRotate = 0F;
             this.guna2PictureBox1.InitialImage = global::HostelManagement.Properties.Resources.hostel;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(506, 137);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(480, 125);
             this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(1663, 1055);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(1650, 1100);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox1.TabIndex = 0;
             this.guna2PictureBox1.TabStop = false;
@@ -418,7 +429,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MistyRose;
-            this.ClientSize = new System.Drawing.Size(2246, 1302);
+            this.ClientSize = new System.Drawing.Size(2155, 1306);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnLogOut);
             this.Controls.Add(this.btnLeavedEmployee);

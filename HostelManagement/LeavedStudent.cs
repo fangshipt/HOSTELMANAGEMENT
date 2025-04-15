@@ -19,10 +19,26 @@ namespace HostelManagement
         {
             InitializeComponent();
         }
+        private Point targetLocation;
+        private Size targetSize;
+
+        public LeavedStudent(Point location, Size size)
+        {
+            InitializeComponent();
+
+            this.targetLocation = location;
+            this.targetSize = size;
+
+            this.StartPosition = FormStartPosition.Manual;
+            this.FormBorderStyle = FormBorderStyle.None;
+
+            this.Location = targetLocation;
+            this.Size = targetSize;
+        }
 
         private void LeavedStudent_Load(object sender, EventArgs e)
         {
-            this.Location = new Point(350, 170);
+            //this.Location = new Point(350, 170);
             /*
             query = "select * from newStudent where living = 'No'";
             DataSet ds = fn.getData(query);

@@ -12,6 +12,10 @@ namespace HostelManagement
 {
     public partial class Dashboard : Form
     {
+        private Point picLocation;
+        private Size picSize;
+
+
         public Dashboard()
         {
             InitializeComponent();
@@ -48,72 +52,74 @@ namespace HostelManagement
         private void Dashboard_Load(object sender, EventArgs e)
         {
             timer1.Enabled = true;
-            timer1.Start();     
+            timer1.Start();
+            picLocation = guna2PictureBox1.PointToScreen(Point.Empty);
+            picSize = guna2PictureBox1.Size;
         }
 
         private void btnManageRooms_Click(object sender, EventArgs e)
         {
-            AddNewRoom anr = new AddNewRoom();
+            AddNewRoom anr = new AddNewRoom(picLocation, picSize);
             anr.Show();
         }
 
         private void btnNewStudent_Click(object sender, EventArgs e)
-        {
-            NewStudent ns = new NewStudent();
-            ns.Show();  
+        {            
+            NewStudent ns = new NewStudent(picLocation, picSize);
+            ns.Show();
         }
 
         private void btnUpdateDeleteStudent_Click(object sender, EventArgs e)
         {
-            UpdateDeleteStudent uds = new UpdateDeleteStudent();
+            UpdateDeleteStudent uds = new UpdateDeleteStudent(picLocation, picSize);
             uds.Show();
         }
 
         private void btnStudentFees_Click(object sender, EventArgs e)
         {
-            StudentFees sf = new StudentFees();
+            StudentFees sf = new StudentFees(picLocation, picSize);
             sf.Show();
         }
 
         private void btnAllStudentLiving_Click(object sender, EventArgs e)
         {
-            AllStudentLiving asl = new AllStudentLiving();
+            AllStudentLiving asl = new AllStudentLiving(picLocation, picSize);
             asl.Show();
         }
 
         private void btnLeavedStudents_Click(object sender, EventArgs e)
         {
-            LeavedStudent ls = new LeavedStudent();
+            LeavedStudent ls = new LeavedStudent(picLocation, picSize);
             ls.Show();
         }
 
         private void btnNewEmployee_Click(object sender, EventArgs e)
         {
-            NewEmployee ne = new NewEmployee();
+            NewEmployee ne = new NewEmployee(picLocation, picSize);
             ne.Show();
         }
 
         private void btnUpdateDeleteEmployee_Click(object sender, EventArgs e)
         {
-            UpdateDeleteEmployee ude = new UpdateDeleteEmployee();
+            UpdateDeleteEmployee ude = new UpdateDeleteEmployee(picLocation, picSize);
             ude.Show();
         }
 
         private void btnEmployeePayment_Click(object sender, EventArgs e)
         {
-            EmployeePayment ep  = new EmployeePayment();
+            EmployeePayment ep  = new EmployeePayment(picLocation, picSize);
             ep.Show();
         }
 
         private void btnAllEmployeeWorking_Click(object sender, EventArgs e)
         {
-            AllEmployeeWorking aew  = new AllEmployeeWorking();
+            AllEmployeeWorking aew  = new AllEmployeeWorking(picLocation, picSize);
             aew.Show();
         }
 
         private void btnLeavedEmployee_Click(object sender, EventArgs e)
         {
-            LeavedEmployee le = new LeavedEmployee();
+            LeavedEmployee le = new LeavedEmployee(picLocation, picSize);
             le.Show();
         }
     }

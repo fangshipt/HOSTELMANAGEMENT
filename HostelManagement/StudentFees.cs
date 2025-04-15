@@ -20,6 +20,22 @@ namespace HostelManagement
         {
             InitializeComponent();
         }
+        private Point targetLocation;
+        private Size targetSize;
+
+        public StudentFees(Point location, Size size)
+        {
+            InitializeComponent();
+
+            this.targetLocation = location;
+            this.targetSize = size;
+
+            this.StartPosition = FormStartPosition.Manual;
+            this.FormBorderStyle = FormBorderStyle.None;
+
+            this.Location = targetLocation;
+            this.Size = targetSize;
+        }
 
         private void btnExit_Click(object sender, EventArgs e)
         {
@@ -28,7 +44,7 @@ namespace HostelManagement
 
         private void StudentFees_Load(object sender, EventArgs e)
         {
-            this.Location = new Point(350, 170);
+            //this.Location = new Point(350, 170);
             dataTimePicker.Format = DateTimePickerFormat.Custom;
             dataTimePicker.CustomFormat = "MMMM yyyy";
         }
@@ -100,11 +116,6 @@ namespace HostelManagement
             txtRoomNo.Clear();
             txtEmailId.Clear();
             guna2DataGridView1.DataSource = 0;
-        }
-
-        private void btnExit_Click_1(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -34,6 +34,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
             this.btnExit = new Guna.UI2.WinForms.Guna2Button();
+            this.label8 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -45,9 +46,8 @@
             this.label1.Location = new System.Drawing.Point(18, 14);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(450, 74);
+            this.label1.Size = new System.Drawing.Size(0, 74);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Left Employee";
             // 
             // guna2DataGridView1
             // 
@@ -72,13 +72,13 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
             this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.Location = new System.Drawing.Point(18, 114);
+            this.guna2DataGridView1.Location = new System.Drawing.Point(26, 106);
             this.guna2DataGridView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2DataGridView1.Name = "guna2DataGridView1";
             this.guna2DataGridView1.RowHeadersVisible = false;
             this.guna2DataGridView1.RowHeadersWidth = 51;
             this.guna2DataGridView1.RowTemplate.Height = 24;
-            this.guna2DataGridView1.Size = new System.Drawing.Size(1276, 667);
+            this.guna2DataGridView1.Size = new System.Drawing.Size(1593, 970);
             this.guna2DataGridView1.TabIndex = 3;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -113,21 +113,33 @@
             this.btnExit.Font = new System.Drawing.Font("Segoe UI", 13.2F, System.Drawing.FontStyle.Italic);
             this.btnExit.ForeColor = System.Drawing.Color.White;
             this.btnExit.Image = global::HostelManagement.Properties.Resources.Close_all_jframe1;
-            this.btnExit.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnExit.Location = new System.Drawing.Point(1232, 14);
+            this.btnExit.ImageSize = new System.Drawing.Size(35, 35);
+            this.btnExit.Location = new System.Drawing.Point(1570, 6);
             this.btnExit.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(111, 47);
+            this.btnExit.Size = new System.Drawing.Size(75, 75);
             this.btnExit.TabIndex = 28;
-            this.btnExit.Text = "c";
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Poor Richard", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.label8.Location = new System.Drawing.Point(13, 9);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(393, 73);
+            this.label8.TabIndex = 51;
+            this.label8.Text = "Left Employee";
             // 
             // LeavedEmployee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MistyRose;
-            this.ClientSize = new System.Drawing.Size(1312, 800);
+            this.ClientSize = new System.Drawing.Size(1650, 1100);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.guna2DataGridView1);
             this.Controls.Add(this.label1);
@@ -147,5 +159,6 @@
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
         private Guna.UI2.WinForms.Guna2Button btnExit;
+        private System.Windows.Forms.Label label8;
     }
 }

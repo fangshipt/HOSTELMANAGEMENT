@@ -16,10 +16,24 @@ namespace HostelManagement
         {
             InitializeComponent();
         }
+        private Point targetLocation;
+        private Size targetSize;
 
+        public AddNewRoom(Point location, Size size)
+        {
+            InitializeComponent();
+            this.targetLocation = location;
+            this.targetSize = size;
+
+            this.StartPosition = FormStartPosition.Manual;
+            this.FormBorderStyle = FormBorderStyle.None; 
+
+            this.Location = targetLocation;
+            this.Size = targetSize;
+        }
         private void AddNewRoom_Load(object sender, EventArgs e)
         {
-            this.Location = new Point(350, 170);
+            //this.Location = new Point(350, 170);
             labelRoom.Visible = false;
             labelRoomExist.Visible = false;
 
