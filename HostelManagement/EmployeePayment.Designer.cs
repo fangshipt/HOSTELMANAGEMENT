@@ -175,7 +175,7 @@
             this.txtEmailId.Font = new System.Drawing.Font("Segoe UI", 13.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmailId.ForeColor = System.Drawing.Color.MidnightBlue;
             this.txtEmailId.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtEmailId.Location = new System.Drawing.Point(384, 299);
+            this.txtEmailId.Location = new System.Drawing.Point(384, 296);
             this.txtEmailId.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.txtEmailId.Name = "txtEmailId";
             this.txtEmailId.PlaceholderText = "";
@@ -264,7 +264,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 13.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label4.Location = new System.Drawing.Point(36, 304);
+            this.label4.Location = new System.Drawing.Point(36, 301);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(150, 42);
