@@ -405,10 +405,10 @@
             this.btnClear.Font = new System.Drawing.Font("Segoe UI", 13.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClear.ForeColor = System.Drawing.Color.MistyRose;
             this.btnClear.Image = global::HostelManagement.Properties.Resources.clear;
-            this.btnClear.Location = new System.Drawing.Point(1191, 958);
+            this.btnClear.Location = new System.Drawing.Point(1164, 950);
             this.btnClear.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(177, 47);
+            this.btnClear.Size = new System.Drawing.Size(200, 60);
             this.btnClear.TabIndex = 24;
             this.btnClear.Text = "Clear";
             // 
@@ -423,10 +423,10 @@
             this.btnDelete.Font = new System.Drawing.Font("Segoe UI", 13.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.ForeColor = System.Drawing.Color.MistyRose;
             this.btnDelete.Image = global::HostelManagement.Properties.Resources.delete;
-            this.btnDelete.Location = new System.Drawing.Point(1385, 958);
+            this.btnDelete.Location = new System.Drawing.Point(1385, 950);
             this.btnDelete.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(177, 47);
+            this.btnDelete.Size = new System.Drawing.Size(200, 60);
             this.btnDelete.TabIndex = 23;
             this.btnDelete.Text = "Delete";
             // 
@@ -441,10 +441,10 @@
             this.btnUpdate.Font = new System.Drawing.Font("Segoe UI", 13.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.ForeColor = System.Drawing.Color.MistyRose;
             this.btnUpdate.Image = global::HostelManagement.Properties.Resources.save;
-            this.btnUpdate.Location = new System.Drawing.Point(996, 958);
+            this.btnUpdate.Location = new System.Drawing.Point(942, 950);
             this.btnUpdate.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(177, 47);
+            this.btnUpdate.Size = new System.Drawing.Size(200, 60);
             this.btnUpdate.TabIndex = 22;
             this.btnUpdate.Text = "Update";
             // 
@@ -459,10 +459,10 @@
             this.btnSearch.Font = new System.Drawing.Font("Segoe UI", 13.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSearch.ForeColor = System.Drawing.Color.MistyRose;
             this.btnSearch.Image = global::HostelManagement.Properties.Resources.search;
-            this.btnSearch.Location = new System.Drawing.Point(1322, 137);
+            this.btnSearch.Location = new System.Drawing.Point(1299, 124);
             this.btnSearch.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(177, 47);
+            this.btnSearch.Size = new System.Drawing.Size(200, 60);
             this.btnSearch.TabIndex = 20;
             this.btnSearch.Text = "Search";
             // 
