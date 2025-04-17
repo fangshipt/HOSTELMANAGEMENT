@@ -102,7 +102,7 @@
             // 
             // btnLogOut
             // 
-            this.btnLogOut.BorderColor = System.Drawing.Color.White;
+            this.btnLogOut.BorderColor = System.Drawing.Color.MidnightBlue;
             this.btnLogOut.BorderRadius = 19;
             this.btnLogOut.BorderThickness = 1;
             this.btnLogOut.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
@@ -113,9 +113,9 @@
             this.btnLogOut.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnLogOut.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnLogOut.FillColor = System.Drawing.Color.MistyRose;
-            this.btnLogOut.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnLogOut.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogOut.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.btnLogOut.HoverState.FillColor = System.Drawing.Color.CornflowerBlue;
+            this.btnLogOut.HoverState.FillColor = System.Drawing.Color.MidnightBlue;
             this.btnLogOut.ImageSize = new System.Drawing.Size(35, 35);
             this.btnLogOut.Location = new System.Drawing.Point(1848, 1232);
             this.btnLogOut.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
