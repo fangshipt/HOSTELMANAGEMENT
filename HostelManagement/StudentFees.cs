@@ -14,7 +14,7 @@ namespace HostelManagement
 {
     public partial class StudentFees : Form
     {
-        //function fn = new function();
+        function fn = new function();
         String query;
         public StudentFees()
         {
@@ -47,42 +47,71 @@ namespace HostelManagement
             
             dataTimePicker.Format = DateTimePickerFormat.Custom;
             dataTimePicker.CustomFormat = "MMMM yyyy";
+
+
+            var dsTypes = fn.getData("SELECT roomType FROM RoomTypes");
+            cbRoomType.DisplayMember = "roomType";
+            cbRoomType.ValueMember = "roomType";
+            cbRoomType.DataSource = dsTypes.Tables[0];
+            cbRoomType.SelectedIndex = -1;
         }
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            /*
-            if (txtMobile.Text != "")
+            string stuID = txtStudentID.Text.Trim();
+            if (string.IsNullOrEmpty(stuID))
             {
-                query = "select name, email, roomNo from newStudent where mobile =" + txtMobile.Text + "";
-                DataSet ds = fn.getData(query);
-
-                if (ds.Tables[0].Rows.Count != 0)
-                {
-                    txtName.Text = ds.Tables[0].Rows[0][0].ToString();
-                    txtEmailId.Text = ds.Tables[0].Rows[0][1].ToString();
-                    txtRoomNo.Text = ds.Tables[0].Rows[0][2].ToString();
-                    setDataGrid(Int64.Parse(txtMobile.Text));
-                }
-                else
-                {
-                    MessageBox.Show("No Record Exist", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
+                MessageBox.Show("Vui lòng nhập Student ID.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
             }
-            */
+
+            // 3. Query lấy thông tin sinh viên + roomType
+            query =
+              "SELECT s.name, s.mobileNo, s.roomNo, r.roomType " +
+              "FROM newStudent s " +
+              "  JOIN rooms r ON s.roomNo = r.roomNo " +
+              "WHERE s.studentID = '" + stuID + "'";
+            var ds = fn.getData(query);
+
+            if (ds.Tables[0].Rows.Count == 0)
+            {
+                MessageBox.Show("Không tìm thấy Student ID này.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                clearAll();
+                return;
+            }
+
+            // 4. Điền dữ liệu lên Form
+            var row = ds.Tables[0].Rows[0];
+            txtName.Text = row["name"].ToString();
+            txtMobile.Text = row["mobileNo"].ToString();
+            txtRoomNo.Text = row["roomNo"].ToString();
+            cbRoomType.SelectedValue = row["roomType"].ToString();
+
+            // 5. Load lịch sử thanh toán
+            LoadPaymentHistory(stuID);
+        }
+        private void LoadPaymentHistory(string stuID)
+        {
+            query =
+              "SELECT transactionDate AS [Ngày GD], " +
+              "       monthYear       AS [Tháng],   " +
+              "       amount          AS [Số tiền] " +
+              "FROM fees " +
+              "WHERE studentID = '" + stuID + "' " +
+              "ORDER BY transactionDate DESC";
+            var ds = fn.getData(query);
+            guna2DataGridView1.DataSource = ds.Tables[0];
         }
         public void setDataGrid(Int64 mobile)
         {
-            /*
             query = "select * from fees where mobileNo = " + mobile + "";
             DataSet ds = fn.getData(query);
             guna2DataGridView1.DataSource = ds.Tables[0];
-            */
+            
         }
 
         private void btnPay_Click(object sender, EventArgs e)
         {
-            /*
             if (txtMobile.Text != "" && txtAmount.Text != "")
             {
                 query = "select * from fees where mobileNo =" + Int64.Parse(txtMobile.Text) + " and fmonth='" + dataTimePicker.Text + "'";
@@ -102,7 +131,6 @@ namespace HostelManagement
 
                 }
             }
-            */
         }
         private void btnClear_Click(object sender, EventArgs e)
         {
@@ -110,12 +138,13 @@ namespace HostelManagement
         }
         public void clearAll()
         {
-            txtMobile.Clear();
+            txtStudentID.Clear();
             txtName.Clear();
-            txtAmount.Clear();
+            txtMobile.Clear();
             txtRoomNo.Clear();
-            txtEmailId.Clear();
-            guna2DataGridView1.DataSource = 0;
+            cbRoomType.SelectedIndex = -1;
+            txtAmount.Clear();
+            guna2DataGridView1.DataSource = null;
         }
     }
 }
