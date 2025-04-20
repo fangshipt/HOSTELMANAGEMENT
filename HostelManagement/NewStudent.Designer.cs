@@ -101,10 +101,10 @@
             this.comboRoomNo.ForeColor = System.Drawing.Color.MidnightBlue;
             this.comboRoomNo.ItemHeight = 30;
             this.comboRoomNo.Items.AddRange(new object[] {
-            "Hostel Incharge",
-            "Cleaning Staff",
-            "Mess Staff",
-            "Accounts Manager"});
+            "101",
+            "102",
+            "103",
+            "104"});
             this.comboRoomNo.Location = new System.Drawing.Point(325, 569);
             this.comboRoomNo.Name = "comboRoomNo";
             this.comboRoomNo.Size = new System.Drawing.Size(687, 36);
@@ -420,8 +420,8 @@
             this.comboRoomType.ForeColor = System.Drawing.Color.MidnightBlue;
             this.comboRoomType.ItemHeight = 30;
             this.comboRoomType.Items.AddRange(new object[] {
-            "4-person",
-            "6-person"});
+            "4",
+            "6"});
             this.comboRoomType.Location = new System.Drawing.Point(327, 509);
             this.comboRoomType.Name = "comboRoomType";
             this.comboRoomType.Size = new System.Drawing.Size(687, 36);

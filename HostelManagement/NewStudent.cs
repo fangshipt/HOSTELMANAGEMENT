@@ -39,17 +39,18 @@ namespace HostelManagement
         private void NewStudent_Load(object sender, EventArgs e)
         {
             //this.Location = new Point(480, 125);
-            /*
-            query = "select roomNo from rooms where roomStatus = 'yes' and Booked = 'No";
+            
+            query = "select roomNo from rooms where roomStatus = 'yes' and Booked = 'No'";
             DataSet ds = fn.getData(query);
 
 
-            for (int i=0; i>ds.Tables[0].Rows.Count; ++i){
+            for (int i = 0; i < ds.Tables[0].Rows.Count; ++i)
+            {
                 Int64 room = Int64.Parse(ds.Tables[0].Rows[i][0].ToString());
                 comboRoomNo.Items.Add(room);
             }
 
-           */
+           
         }
 
         private void LoadAvailableRooms()
@@ -57,7 +58,10 @@ namespace HostelManagement
             comboRoomNo.Items.Clear();
 
             if (comboRoomType.SelectedIndex < 0)
+            {
+                MessageBox.Show("Vui lòng chọn loại phòng trước.");
                 return;
+            }
 
             string type = comboRoomType.SelectedItem.ToString();
             query = "SELECT roomNo FROM rooms " +

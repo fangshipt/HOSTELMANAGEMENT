@@ -14,7 +14,7 @@ namespace HostelManagement
         protected SqlConnection getConnection()
         {
             SqlConnection con = new SqlConnection();
-            con.ConnectionString = "Data Source=.;Initial Catalog=hostel;Persist Security Info=True;User ID=sa;Password=123456;";
+            con.ConnectionString = "Data Source=.;Initial Catalog=hostel;Integrated Security=True;";
             return con;
         }
 
