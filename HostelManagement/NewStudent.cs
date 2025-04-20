@@ -109,7 +109,7 @@ namespace HostelManagement
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            /*
+            
             if (string.IsNullOrWhiteSpace(txtName.Text)   ||
                 string.IsNullOrWhiteSpace(txtFather.Text) ||
                 string.IsNullOrWhiteSpace(txtMother.Text) ||
@@ -173,7 +173,7 @@ namespace HostelManagement
                 MessageBox.Show("Lỗi khi lưu dữ liệu: " + ex.Message, "Error",
                                 MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            */
+            
 
         }
 
