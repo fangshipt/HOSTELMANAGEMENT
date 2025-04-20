@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,8 @@ namespace HostelManagement
 {
     public partial class AllEmployeeWorking : Form
     {
+        function fn = new function();
+        String query;
         public AllEmployeeWorking()
         {
             InitializeComponent();
@@ -40,7 +43,9 @@ namespace HostelManagement
 
         private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            query = "select * from newEmployee where working = 'Yes'";
+            DataSet ds = fn.getData(query);
+            guna2DataGridView1.DataSource = ds.Tables[0];
         }
 
         private void AllEmployeeWorking_Load(object sender, EventArgs e)
