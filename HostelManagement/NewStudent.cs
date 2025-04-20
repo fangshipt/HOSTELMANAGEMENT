@@ -40,7 +40,7 @@ namespace HostelManagement
         {
             //this.Location = new Point(480, 125);
             
-            query = "select roomNo from rooms where roomStatus = 'yes' and Booked = 'No'";
+            query = "select roomNo from rooms where Booked = 'No'";
             DataSet ds = fn.getData(query);
 
 
@@ -64,7 +64,7 @@ namespace HostelManagement
 
             string type = comboRoomType.SelectedItem.ToString();
             query = "SELECT roomNo FROM rooms " +
-                    "WHERE roomStatus = 'yes' AND Booked = 'No' AND roomType = '" + type + "'";
+                    "WHERE Booked = 'No' AND roomType = '" + type + "'";
             try
             {
                 DataSet ds = fn.getData(query);
