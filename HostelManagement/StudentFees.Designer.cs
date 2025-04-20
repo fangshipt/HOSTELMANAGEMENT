@@ -49,6 +49,8 @@
             this.btnPay = new Guna.UI2.WinForms.Guna2Button();
             this.btnSearch = new Guna.UI2.WinForms.Guna2Button();
             this.label11 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.comboboxRoomtype = new Guna.UI2.WinForms.Guna2ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -90,7 +92,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 13.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label4.Location = new System.Drawing.Point(24, 243);
+            this.label4.Location = new System.Drawing.Point(24, 295);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(168, 25);
             this.label4.TabIndex = 3;
@@ -101,7 +103,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 13.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label5.Location = new System.Drawing.Point(24, 293);
+            this.label5.Location = new System.Drawing.Point(24, 358);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(83, 25);
             this.label5.TabIndex = 4;
@@ -112,7 +114,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 13.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label6.Location = new System.Drawing.Point(24, 346);
+            this.label6.Location = new System.Drawing.Point(24, 413);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(157, 25);
             this.label6.TabIndex = 5;
@@ -190,7 +192,7 @@
             this.txtRoomNo.Font = new System.Drawing.Font("Century Gothic", 13.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRoomNo.ForeColor = System.Drawing.Color.MidnightBlue;
             this.txtRoomNo.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtRoomNo.Location = new System.Drawing.Point(256, 239);
+            this.txtRoomNo.Location = new System.Drawing.Point(256, 303);
             this.txtRoomNo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtRoomNo.Name = "txtRoomNo";
             this.txtRoomNo.PlaceholderText = "";
@@ -210,7 +212,7 @@
             this.txtAmount.Font = new System.Drawing.Font("Century Gothic", 13.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAmount.ForeColor = System.Drawing.Color.MidnightBlue;
             this.txtAmount.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtAmount.Location = new System.Drawing.Point(256, 342);
+            this.txtAmount.Location = new System.Drawing.Point(256, 413);
             this.txtAmount.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtAmount.Name = "txtAmount";
             this.txtAmount.PlaceholderText = "";
@@ -241,12 +243,12 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
             this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.Location = new System.Drawing.Point(29, 409);
+            this.guna2DataGridView1.Location = new System.Drawing.Point(29, 469);
             this.guna2DataGridView1.Name = "guna2DataGridView1";
             this.guna2DataGridView1.RowHeadersVisible = false;
             this.guna2DataGridView1.RowHeadersWidth = 51;
             this.guna2DataGridView1.RowTemplate.Height = 24;
-            this.guna2DataGridView1.Size = new System.Drawing.Size(1046, 275);
+            this.guna2DataGridView1.Size = new System.Drawing.Size(1046, 215);
             this.guna2DataGridView1.TabIndex = 11;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -269,7 +271,6 @@
             this.guna2DataGridView1.ThemeStyle.RowsStyle.Height = 24;
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.guna2DataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.guna2DataGridView1_CellContentClick);
             // 
             // dataTimePicker
             // 
@@ -278,7 +279,7 @@
             this.dataTimePicker.Font = new System.Drawing.Font("Century Gothic", 13.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dataTimePicker.ForeColor = System.Drawing.Color.MidnightBlue;
             this.dataTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dataTimePicker.Location = new System.Drawing.Point(256, 290);
+            this.dataTimePicker.Location = new System.Drawing.Point(256, 358);
             this.dataTimePicker.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dataTimePicker.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dataTimePicker.Name = "dataTimePicker";
@@ -366,12 +367,40 @@
             this.label11.TabIndex = 52;
             this.label11.Text = "New Student Registration";
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Century Gothic", 13.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.label7.Location = new System.Drawing.Point(24, 244);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(134, 25);
+            this.label7.TabIndex = 53;
+            this.label7.Text = "Room Type";
+            // 
+            // comboboxRoomtype
+            // 
+            this.comboboxRoomtype.BackColor = System.Drawing.Color.Transparent;
+            this.comboboxRoomtype.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.comboboxRoomtype.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboboxRoomtype.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.comboboxRoomtype.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.comboboxRoomtype.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.comboboxRoomtype.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.comboboxRoomtype.ItemHeight = 30;
+            this.comboboxRoomtype.Location = new System.Drawing.Point(256, 244);
+            this.comboboxRoomtype.Name = "comboboxRoomtype";
+            this.comboboxRoomtype.Size = new System.Drawing.Size(617, 36);
+            this.comboboxRoomtype.TabIndex = 54;
+            // 
             // StudentFees
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MistyRose;
             this.ClientSize = new System.Drawing.Size(1100, 704);
+            this.Controls.Add(this.comboboxRoomtype);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.dataTimePicker);
@@ -421,5 +450,7 @@
         private Guna.UI2.WinForms.Guna2DateTimePicker dataTimePicker;
         private Guna.UI2.WinForms.Guna2Button btnExit;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label7;
+        private Guna.UI2.WinForms.Guna2ComboBox comboboxRoomtype;
     }
 }
