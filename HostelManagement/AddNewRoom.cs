@@ -13,7 +13,7 @@ namespace HostelManagement
 {
     public partial class AddNewRoom : Form
     {
-        private SqlConnection connection;
+        function fn = new function();
         public AddNewRoom()
         {
             InitializeComponent();
@@ -35,70 +35,53 @@ namespace HostelManagement
         }
         private void AddNewRoom_Load(object sender, EventArgs e)
         {
-            string connectionString = "Data Source=.;Initial Catalog=hostel;Persist Security Info=True;User ID=sa;Password=123456;Encrypt=True;TrustServerCertificate=True;";
-            connection = new SqlConnection(connectionString);
-
             try
             {
-                connection.Open();  // Mở kết nối
-                LoadRoomsByType("4");  // Tải phòng loại 4 khi form được load
-                LoadRoomsByType("6");  // Tải phòng loại 6 khi form được load
+                LoadRoomsByType("4");
+                LoadRoomsByType("6");
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error connecting to database: " + ex.Message);
+                MessageBox.Show("Error loading rooms: " + ex.Message);
             }
         }
 
         private void comboBox4PersonRooms_SelectedIndexChanged(object sender, EventArgs e)
         {
-            int selectedRoomNo = int.Parse(comboBox4PersonRooms.SelectedItem.ToString());
-            LoadStudentsInRoom(selectedRoomNo);
+
+            if (comboBox4PersonRooms.SelectedItem != null)
+            {
+                int selectedRoomNo = int.Parse(comboBox4PersonRooms.SelectedItem.ToString());
+                LoadStudentsInRoom(selectedRoomNo);
+            }
         }
 
         private void comboBox6PersonRooms_SelectedIndexChanged(object sender, EventArgs e)
         {
-            int selectedRoomNo = int.Parse(comboBox6PersonRooms.SelectedItem.ToString());
-            LoadStudentsInRoom(selectedRoomNo);
+            if (comboBox6PersonRooms.SelectedItem != null)
+            {
+                int selectedRoomNo = int.Parse(comboBox6PersonRooms.SelectedItem.ToString());
+                LoadStudentsInRoom(selectedRoomNo);
+            }
         }
         private void LoadStudentsInRoom(int roomNo)
         {
-            if (connection.State == ConnectionState.Closed)
+            string query = $"SELECT studentID, name, mobileNo FROM newStudent WHERE roomNo = {roomNo}";
+            DataSet ds = fn.getData(query);
+
+            dataGridViewStudents.Columns.Clear();
+            dataGridViewStudents.Columns.Add("studentID", "Student ID");
+            dataGridViewStudents.Columns.Add("name", "Name");
+            dataGridViewStudents.Columns.Add("mobileNo", "Mobile No");
+
+            dataGridViewStudents.Rows.Clear();
+
+            foreach (DataRow row in ds.Tables[0].Rows)
             {
-                connection.Open(); // Mở lại kết nối nếu chưa mở
+                dataGridViewStudents.Rows.Add(row["studentID"], row["name"], row["mobileNo"]);
             }
 
-            string query = "SELECT studentID, name, mobileNo FROM newStudent WHERE roomNo = @roomNo";  // Sửa tên cột ở đây
-            SqlCommand cmd = new SqlCommand(query, connection);
-            cmd.Parameters.AddWithValue("@roomNo", roomNo);
-
-            try
-            {
-                SqlDataAdapter da = new SqlDataAdapter(cmd);
-                DataTable dt = new DataTable();
-                da.Fill(dt);
-
-                // Xóa các cột cũ nếu có
-                dataGridViewStudents.Columns.Clear();
-
-                // Thêm các cột thủ công với tên cột
-                dataGridViewStudents.Columns.Add("studentID", "Student ID");  // Tên cột là "Student ID"
-                dataGridViewStudents.Columns.Add("name", "Name");              // Tên cột là "Name"
-                dataGridViewStudents.Columns.Add("mobileNo", "Mobile No");     // Tên cột là "Mobile No"
-
-                // Điền dữ liệu vào từng cột
-                foreach (DataRow row in dt.Rows)
-                {
-                    dataGridViewStudents.Rows.Add(row["studentID"], row["name"], row["mobileNo"]);  // Dữ liệu sẽ được thêm vào cột tương ứng
-                }
-
-                // Tùy chọn: Tự động điều chỉnh kích thước cột
-                dataGridViewStudents.AutoResizeColumns();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Lỗi khi tải dữ liệu sinh viên: " + ex.Message);
-            }
+            dataGridViewStudents.AutoResizeColumns();
         }
 
 
@@ -106,41 +89,22 @@ namespace HostelManagement
 
         private void LoadRoomsByType(string roomType)
         {
-            string query = "SELECT roomNo FROM rooms WHERE roomType = @roomType AND Booked = 0";
-            SqlCommand cmd = new SqlCommand(query, connection);
-            cmd.Parameters.AddWithValue("@roomType", roomType);
+            string query = $"SELECT roomNo FROM rooms WHERE roomType = '{roomType}' AND Booked = 0";
+            DataSet ds = fn.getData(query);
 
-            SqlDataReader reader = null;
-
-            try
+            List<string> roomNumbers = new List<string>();
+            foreach (DataRow row in ds.Tables[0].Rows)
             {
-                reader = cmd.ExecuteReader();
-                List<string> roomNumbers = new List<string>();
-
-                while (reader.Read())
-                {
-                    roomNumbers.Add(reader["roomNo"].ToString());
-                }
-
-                if (roomType == "4")
-                {
-                    comboBox4PersonRooms.DataSource = roomNumbers;
-                }
-                else if (roomType == "6")
-                {
-                    comboBox6PersonRooms.DataSource = roomNumbers;
-                }
+                roomNumbers.Add(row["roomNo"].ToString());
             }
-            catch (Exception ex)
+
+            if (roomType == "4")
             {
-                MessageBox.Show("Error: " + ex.Message);
+                comboBox4PersonRooms.DataSource = roomNumbers;
             }
-            finally
+            else if (roomType == "6")
             {
-                if (reader != null && !reader.IsClosed)
-                {
-                    reader.Close();
-                }
+                comboBox6PersonRooms.DataSource = roomNumbers;
             }
         }
     }
