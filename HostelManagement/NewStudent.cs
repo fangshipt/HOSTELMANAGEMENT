@@ -139,7 +139,7 @@ namespace HostelManagement
                 query = "UPDATE rooms SET Booked = 1 " +
                         "WHERE roomNo = " + roomNo + " AND currentOccupancy >= " +
                         "(SELECT maxOccupancy FROM RoomTypes WHERE RoomTypes.roomType = rooms.roomType)";
-                fn.setData(query, "Kiểm tra và đánh dấu phòng đầy nếu cần.");
+                fn.setData(query, "Cập nhật phòng thành công.");
 
                 clearAll();
                 LoadAvailableRooms();
