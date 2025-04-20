@@ -100,11 +100,6 @@
             this.comboRoomNo.Font = new System.Drawing.Font("Segoe UI", 13.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboRoomNo.ForeColor = System.Drawing.Color.MidnightBlue;
             this.comboRoomNo.ItemHeight = 30;
-            this.comboRoomNo.Items.AddRange(new object[] {
-            "101",
-            "102",
-            "103",
-            "104"});
             this.comboRoomNo.Location = new System.Drawing.Point(325, 569);
             this.comboRoomNo.Name = "comboRoomNo";
             this.comboRoomNo.Size = new System.Drawing.Size(687, 36);

@@ -59,7 +59,6 @@ namespace HostelManagement
 
             if (comboRoomType.SelectedIndex < 0)
             {
-                MessageBox.Show("Vui lòng chọn loại phòng trước.");
                 return;
             }
 
@@ -97,7 +96,10 @@ namespace HostelManagement
             txtCollege.Clear();
             txtIdProof.Clear();
             comboRoomNo.SelectedIndex = -1;
+
+            comboRoomType.SelectedIndexChanged -= comboRoomType_SelectedIndexChanged;
             comboRoomType.SelectedIndex = -1;
+            comboRoomType.SelectedIndexChanged += comboRoomType_SelectedIndexChanged;
         }
 
         private void btnClear_Click(object sender, EventArgs e)
