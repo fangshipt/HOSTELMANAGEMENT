@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,7 @@ namespace HostelManagement
 {
     public partial class AddNewRoom : Form
     {
+        private SqlConnection connection;
         public AddNewRoom()
         {
             InitializeComponent();
@@ -33,105 +35,113 @@ namespace HostelManagement
         }
         private void AddNewRoom_Load(object sender, EventArgs e)
         {
-            //this.Location = new Point(350, 170);
-            //labelRoom.Visible = false;
-            //labelRoomExist.Visible = false;
+            string connectionString = "Data Source=.;Initial Catalog=hostel;Persist Security Info=True;User ID=sa;Password=123456;Encrypt=True;TrustServerCertificate=True;";
+            connection = new SqlConnection(connectionString);
 
-            /*
-             query ="select * from rooms";
-            DataSet ds = fn.getdata(query);
-            dataGridView1.DataSource = ds.Table[0];
-             */
-        }
-
-        private void btnExit_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void btnAddRoom_Click(object sender, EventArgs e)
-        {
-            /*
-            query = "select * from where roomNo = "+txtRoomNo1.Text+"";
-            DataSet ds = fn.getData(query);
-            
-            if(ds.Tables[0].Rors.Count == 0){
-                String status;
-                if(checkBox1.Checked){
-                    status = "Yes";
-                }
-                else{
-                    status = "No";
-                }
-                labelRoomExist.Visible = false;
-                query = "insert into rooms (roomNo, roomStatus) values("+txtRoomNo1.Text+", '"+status+"')";
-                fn.setData(query, "Room Added.");
-                AddNewRoom_Load(this, null);
-            }
-            else{
-                labelRoomExist.Text = "Room All Ready Exist.";
-                labelRoomExist.Visible = true;
-            }
-             */
-        }
-
-        private void btnUpdate_Click(object sender, EventArgs e)
-        {
-            String status;
-            /*if (checkBox2.Checked)
+            try
             {
-                status = "Yes";
+                connection.Open();  // Mở kết nối
+                LoadRoomsByType("4");  // Tải phòng loại 4 khi form được load
+                LoadRoomsByType("6");  // Tải phòng loại 6 khi form được load
             }
-            else
+            catch (Exception ex)
             {
-                status = "No";
+                MessageBox.Show("Error connecting to database: " + ex.Message);
             }
-            /*
-            query = "update rooms set roomStatus = '" + status + "' where roomNo ="+txtRoomNo2.Text+"";
-            fn.setdata(query, "Details Updated.");
-            AddNewRoom_Load(this, null);
-             */
         }
 
-        private void btnSearch_Click(object sender, EventArgs e)
+        private void comboBox4PersonRooms_SelectedIndexChanged(object sender, EventArgs e)
         {
-            /*
-            query = "select * from rooms where roomNo = " + txtRoomNo2.tetx + "";
-            dataSet ds = fn.getdata(query);
-
-            if(ds.Tables[0].Rows.Count == 0){
-                labelRoom.text = "No Room Exist.";
-                labelRoom.Visible = true;
-                checkBox2.Checked = fasle;
-            }
-            else{
-                labelRoom.Text = "Room Found.";
-                labelRoom.Visible = true;
-                if(ds.Tables[0].Rows[0][1].ToString()=="Yes"){
-                    checkBox2.Checked = true;
-                }
-                else{
-                    checkBox2.Checked = false;
-                }
-            }
-             
-             */
+            int selectedRoomNo = int.Parse(comboBox4PersonRooms.SelectedItem.ToString());
+            LoadStudentsInRoom(selectedRoomNo);
         }
 
-        private void btnDelete_Click(object sender, EventArgs e)
+        private void comboBox6PersonRooms_SelectedIndexChanged(object sender, EventArgs e)
         {
-            /*if (labelRoom.Text == "Room Found.")
+            int selectedRoomNo = int.Parse(comboBox6PersonRooms.SelectedItem.ToString());
+            LoadStudentsInRoom(selectedRoomNo);
+        }
+        private void LoadStudentsInRoom(int roomNo)
+        {
+            if (connection.State == ConnectionState.Closed)
             {
-                /*
-                query = "delete from rooms where roomNo= " + txtRoomNo2.Text + "";
-                fn.setData(query, "room Details Deleted.");
-                AddnewRoom_Load(this,null);
-                 
+                connection.Open(); // Mở lại kết nối nếu chưa mở
             }
-            else
+
+            string query = "SELECT studentID, name, mobileNo FROM newStudent WHERE roomNo = @roomNo";  // Sửa tên cột ở đây
+            SqlCommand cmd = new SqlCommand(query, connection);
+            cmd.Parameters.AddWithValue("@roomNo", roomNo);
+
+            try
             {
-                MessageBox.Show("Trying to delete which doesn't exist.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }*/
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+
+                // Xóa các cột cũ nếu có
+                dataGridViewStudents.Columns.Clear();
+
+                // Thêm các cột thủ công với tên cột
+                dataGridViewStudents.Columns.Add("studentID", "Student ID");  // Tên cột là "Student ID"
+                dataGridViewStudents.Columns.Add("name", "Name");              // Tên cột là "Name"
+                dataGridViewStudents.Columns.Add("mobileNo", "Mobile No");     // Tên cột là "Mobile No"
+
+                // Điền dữ liệu vào từng cột
+                foreach (DataRow row in dt.Rows)
+                {
+                    dataGridViewStudents.Rows.Add(row["studentID"], row["name"], row["mobileNo"]);  // Dữ liệu sẽ được thêm vào cột tương ứng
+                }
+
+                // Tùy chọn: Tự động điều chỉnh kích thước cột
+                dataGridViewStudents.AutoResizeColumns();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi tải dữ liệu sinh viên: " + ex.Message);
+            }
+        }
+
+
+
+
+        private void LoadRoomsByType(string roomType)
+        {
+            string query = "SELECT roomNo FROM rooms WHERE roomType = @roomType AND Booked = 0";
+            SqlCommand cmd = new SqlCommand(query, connection);
+            cmd.Parameters.AddWithValue("@roomType", roomType);
+
+            SqlDataReader reader = null;
+
+            try
+            {
+                reader = cmd.ExecuteReader();
+                List<string> roomNumbers = new List<string>();
+
+                while (reader.Read())
+                {
+                    roomNumbers.Add(reader["roomNo"].ToString());
+                }
+
+                if (roomType == "4")
+                {
+                    comboBox4PersonRooms.DataSource = roomNumbers;
+                }
+                else if (roomType == "6")
+                {
+                    comboBox6PersonRooms.DataSource = roomNumbers;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
+            finally
+            {
+                if (reader != null && !reader.IsClosed)
+                {
+                    reader.Close();
+                }
+            }
         }
     }
 }
