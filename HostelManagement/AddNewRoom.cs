@@ -34,8 +34,8 @@ namespace HostelManagement
         private void AddNewRoom_Load(object sender, EventArgs e)
         {
             //this.Location = new Point(350, 170);
-            labelRoom.Visible = false;
-            labelRoomExist.Visible = false;
+            //labelRoom.Visible = false;
+            //labelRoomExist.Visible = false;
 
             /*
              query ="select * from rooms";
@@ -78,7 +78,7 @@ namespace HostelManagement
         private void btnUpdate_Click(object sender, EventArgs e)
         {
             String status;
-            if (checkBox2.Checked)
+            /*if (checkBox2.Checked)
             {
                 status = "Yes";
             }
@@ -120,18 +120,18 @@ namespace HostelManagement
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            if (labelRoom.Text == "Room Found.")
+            /*if (labelRoom.Text == "Room Found.")
             {
                 /*
                 query = "delete from rooms where roomNo= " + txtRoomNo2.Text + "";
                 fn.setData(query, "room Details Deleted.");
                 AddnewRoom_Load(this,null);
-                 */
+                 
             }
             else
             {
                 MessageBox.Show("Trying to delete which doesn't exist.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            }*/
         }
     }
 }
