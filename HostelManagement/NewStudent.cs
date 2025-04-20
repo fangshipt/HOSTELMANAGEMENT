@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Data.SqlClient;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace HostelManagement
@@ -14,13 +8,15 @@ namespace HostelManagement
     public partial class NewStudent : Form
     {
         function fn = new function();
-        String query;
+        string query;
+
+        private Point targetLocation;
+        private Size targetSize;
+
         public NewStudent()
         {
             InitializeComponent();
         }
-        private Point targetLocation;
-        private Size targetSize;
 
         public NewStudent(Point location, Size size)
         {
@@ -30,7 +26,7 @@ namespace HostelManagement
             this.targetSize = size;
 
             this.StartPosition = FormStartPosition.Manual;
-            this.FormBorderStyle = FormBorderStyle.None; 
+            this.FormBorderStyle = FormBorderStyle.None;
 
             this.Location = targetLocation;
             this.Size = targetSize;
@@ -38,19 +34,13 @@ namespace HostelManagement
 
         private void NewStudent_Load(object sender, EventArgs e)
         {
-            //this.Location = new Point(480, 125);
-            
-            query = "select roomNo from rooms where Booked = 'No'";
+            query = "SELECT roomNo FROM rooms WHERE Booked = 0";
             DataSet ds = fn.getData(query);
-
-
             for (int i = 0; i < ds.Tables[0].Rows.Count; ++i)
             {
                 Int64 room = Int64.Parse(ds.Tables[0].Rows[i][0].ToString());
                 comboRoomNo.Items.Add(room);
             }
-
-           
         }
 
         private void LoadAvailableRooms()
@@ -63,8 +53,7 @@ namespace HostelManagement
             }
 
             string type = comboRoomType.SelectedItem.ToString();
-            query = "SELECT roomNo FROM rooms " +
-                    "WHERE Booked = 'No' AND roomType = '" + type + "'";
+            query = "SELECT roomNo FROM rooms WHERE Booked = 0 AND roomType = '" + type + "'";
             try
             {
                 DataSet ds = fn.getData(query);
@@ -78,13 +67,10 @@ namespace HostelManagement
             }
         }
 
-
-
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-
 
         private void clearAll()
         {
@@ -110,48 +96,38 @@ namespace HostelManagement
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            
-            if (string.IsNullOrWhiteSpace(txtName.Text)   ||
+            if (string.IsNullOrWhiteSpace(txtName.Text) ||
                 string.IsNullOrWhiteSpace(txtFather.Text) ||
                 string.IsNullOrWhiteSpace(txtStudentID.Text) ||
                 string.IsNullOrWhiteSpace(txtMother.Text) ||
-                string.IsNullOrWhiteSpace(txtPermanent.Text)||
-                string.IsNullOrWhiteSpace(txtCollege.Text)||
+                string.IsNullOrWhiteSpace(txtPermanent.Text) ||
+                string.IsNullOrWhiteSpace(txtCollege.Text) ||
                 string.IsNullOrWhiteSpace(txtIdProof.Text) ||
-                string.IsNullOrWhiteSpace(txtMobileNumber.Text)  ||
+                string.IsNullOrWhiteSpace(txtMobileNumber.Text) ||
                 comboRoomType.SelectedIndex < 0 ||
-                comboRoomNo.SelectedIndex  < 0)
+                comboRoomNo.SelectedIndex < 0)
             {
                 MessageBox.Show("Vui lòng nhập hết thông tin và chọn phòng.", "Warning",
                                 MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-            // 2. Lấy dữ liệu
-            long   mobile = long.Parse(txtMobileNumber.Text);
+            long mobile = long.Parse(txtMobileNumber.Text);
             string studentID = txtStudentID.Text.Trim();
-            string name   = txtName.Text.Trim();
-            string fname  = txtFather.Text.Trim();
-            string mname  = txtMother.Text.Trim();
-            string paddr  = txtPermanent.Text.Trim();
-            string college= txtCollege.Text.Trim();
-            string idp    = txtIdProof.Text.Trim();
-            int    roomNo = int.Parse(comboRoomNo.SelectedItem.ToString());
+            string name = txtName.Text.Trim();
+            string fname = txtFather.Text.Trim();
+            string mname = txtMother.Text.Trim();
+            string paddr = txtPermanent.Text.Trim();
+            string college = txtCollege.Text.Trim();
+            string idp = txtIdProof.Text.Trim();
+            int roomNo = int.Parse(comboRoomNo.SelectedItem.ToString());
 
             try
             {
-                // a) Insert new student
-                query = "INSERT INTO newStudent (mobile,name,fname,mname,email,paddress,college,idproof,roomNo) " +
-                        "VALUES(" +
-                        studentID + ",'" +
-                        name   + "','" +
-                        fname  + "','" +
-                        mname  + "','" +
-                        mobile  + "','" +
-                        paddr  + "','" +
-                        college+ "','" +
-                        idp    + "'," +
-                        roomNo + ")";
+                // a) Thêm sinh viên
+                query = "INSERT INTO newStudent (studentID, name, fname, mname, mobileNo, paddress, college, idproof, roomNo) " +
+                        "VALUES('" + studentID + "','" + name + "','" + fname + "','" + mname + "'," +
+                        mobile + ",'" + paddr + "','" + college + "','" + idp + "'," + roomNo + ")";
                 fn.setData(query, "Đăng ký sinh viên thành công.");
 
                 // b) Tăng currentOccupancy
@@ -159,13 +135,12 @@ namespace HostelManagement
                         "WHERE roomNo = " + roomNo;
                 fn.setData(query, "Cập nhật số người trong phòng.");
 
-                // c) Nếu đạt ngưỡng maxOccupancy → đánh dấu phòng đầy
-                query = "UPDATE rooms SET Booked = 'Yes' " +
-                        "WHERE roomNo = " + roomNo +
-                        " AND currentOccupancy >= maxOccupancy";
-                fn.setData(query, "Kiểm tra và đánh dấu trạng thái phòng.");
+                // c) Nếu đủ người thì đánh dấu phòng đã được đặt (Booked = 1)
+                query = "UPDATE rooms SET Booked = 1 " +
+                        "WHERE roomNo = " + roomNo + " AND currentOccupancy >= " +
+                        "(SELECT maxOccupancy FROM RoomTypes WHERE RoomTypes.roomType = rooms.roomType)";
+                fn.setData(query, "Kiểm tra và đánh dấu phòng đầy nếu cần.");
 
-                // 3. Làm sạch form + load lại phòng trống
                 clearAll();
                 LoadAvailableRooms();
             }
@@ -174,14 +149,11 @@ namespace HostelManagement
                 MessageBox.Show("Lỗi khi lưu dữ liệu: " + ex.Message, "Error",
                                 MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            
-
         }
 
         private void comboRoomType_SelectedIndexChanged(object sender, EventArgs e)
         {
             LoadAvailableRooms();
         }
-      
     }
 }
