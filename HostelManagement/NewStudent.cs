@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -77,7 +78,7 @@ namespace HostelManagement
         private void btnSave_Click(object sender, EventArgs e)
         {
             /*
-            if(txtCollege.Text!=""&&txtEmailId.Text!=""&&txtFather.Text!=""&&txtIdProof.Text!=""&&txtMobile.Text!="" && txtMother.Text != "" && txtName.Text != "")
+            if(txtCollege.Text!="" && txtEmailId.Text!="" && txtFather.Text!="" && txtIdProof.Text!="" && txtMobile.Text!="" && txtMother.Text != "" && txtName.Text != "" && comboRoomType.Text != "" && comboRoomNo.Text != "")
             {
                 Int64 mobile = Int64.Parse(txtMobile.Text);
                 String name = txtName.Text;
@@ -85,22 +86,46 @@ namespace HostelManagement
                 String mname = txtMother.Text;
                 String email = txtEmailId.Text;
                 String paddress = txtPermanent.Text;
-                String colleage = txtCollege.Text;
+                String college = txtCollege.Text;
                 String idproof = txtIdProof.Text;
                 Int64 roomNo = Int64.Parse(comboRoomNo.Text);
-                query = "insert into newStudent (mobile, name, fname, mname, email, paddress, college, idproof, roomNo) " +
-                    "values(" + mobile + ",'" + fname + "','" + mname + "','" + email + "','" + paddress + "','" + colleage + "','" + idproof + "','" + roomNo + "') " +
-                    "update rooms set Booked = 'Yes' where roomNo = " + roomNo + "";
+
+                // Thêm sinh viên mới
+                query = "INSERT INTO newStudent (mobile, name, fname, mname, email, paddress, college, idproof, roomNo) " +
+                        "VALUES (" + mobile + ", '" + name + "', '" + fname + "', '" + mname + "', '" + email + "', '" + paddress + "', '" + college + "', '" + idproof + "', " + roomNo + ")";
+                fn.setData(query, "Student Registered.");
+
+                // Cập nhật số người trong phòng
+                query = "UPDATE rooms SET currentOccupancy = currentOccupancy + 1 WHERE roomNo = " + roomNo;
+                fn.setData(query, "Room occupancy updated.");
+
+                // Nếu đã đủ người thì cập nhật Booked = 'Yes'
+                query = "UPDATE rooms SET Booked = 'Yes' WHERE roomNo = " + roomNo + " AND currentOccupancy >= maxOccupancy";
+                fn.setData(query, "Room status checked.");
+
                 clearAll();
 
+                // Load lại danh sách phòng sau khi lưu
+                comboRoomType_SelectedIndexChanged(null, null);
             }
             else
             {
-                MessageBox.Show("Fill all empty space.","Information!!",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                MessageBox.Show("Please fill all fields.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             */
-            
+
         }
 
+        private void comboRoomType_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            comboRoomNo.Items.Clear();
+            query = "SELECT roomNo FROM rooms WHERE roomStatus = 'yes' AND Booked = 'No' AND roomType = '" + comboRoomType.Text + "'";
+            DataSet ds = fn.getData(query);
+
+            for (int i = 0; i < ds.Tables[0].Rows.Count; i++)
+            {
+                comboRoomNo.Items.Add(ds.Tables[0].Rows[i][0].ToString());
+            }
+        }
     }
 }
