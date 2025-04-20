@@ -52,6 +52,31 @@ namespace HostelManagement
            */
         }
 
+        private void LoadAvailableRooms()
+        {
+            comboRoomNo.Items.Clear();
+
+            if (comboRoomType.SelectedIndex < 0)
+                return;
+
+            string type = comboRoomType.SelectedItem.ToString();
+            query = "SELECT roomNo FROM rooms " +
+                    "WHERE roomStatus = 'yes' AND Booked = 'No' AND roomType = '" + type + "'";
+            try
+            {
+                DataSet ds = fn.getData(query);
+                foreach (DataRow row in ds.Tables[0].Rows)
+                    comboRoomNo.Items.Add(row[0].ToString());
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi load phòng: " + ex.Message, "Error",
+                                MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+
+
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -68,6 +93,7 @@ namespace HostelManagement
             txtCollege.Clear();
             txtIdProof.Clear();
             comboRoomNo.SelectedIndex = -1;
+            comboRoomType.SelectedIndex = -1;
         }
 
         private void btnClear_Click(object sender, EventArgs e)
@@ -78,39 +104,68 @@ namespace HostelManagement
         private void btnSave_Click(object sender, EventArgs e)
         {
             /*
-            if(txtCollege.Text!="" && txtEmailId.Text!="" && txtFather.Text!="" && txtIdProof.Text!="" && txtMobile.Text!="" && txtMother.Text != "" && txtName.Text != "" && comboRoomType.Text != "" && comboRoomNo.Text != "")
+            if (string.IsNullOrWhiteSpace(txtName.Text)   ||
+                string.IsNullOrWhiteSpace(txtFather.Text) ||
+                string.IsNullOrWhiteSpace(txtMother.Text) ||
+                string.IsNullOrWhiteSpace(txtEmailId.Text)||
+                string.IsNullOrWhiteSpace(txtPermanent.Text)||
+                string.IsNullOrWhiteSpace(txtCollege.Text)||
+                string.IsNullOrWhiteSpace(txtIdProof.Text) ||
+                string.IsNullOrWhiteSpace(txtMobile.Text)  ||
+                comboRoomType.SelectedIndex < 0 ||
+                comboRoomNo.SelectedIndex  < 0)
             {
-                Int64 mobile = Int64.Parse(txtMobile.Text);
-                String name = txtName.Text;
-                String fname = txtFather.Text;
-                String mname = txtMother.Text;
-                String email = txtEmailId.Text;
-                String paddress = txtPermanent.Text;
-                String college = txtCollege.Text;
-                String idproof = txtIdProof.Text;
-                Int64 roomNo = Int64.Parse(comboRoomNo.Text);
-
-                // Thêm sinh viên mới
-                query = "INSERT INTO newStudent (mobile, name, fname, mname, email, paddress, college, idproof, roomNo) " +
-                        "VALUES (" + mobile + ", '" + name + "', '" + fname + "', '" + mname + "', '" + email + "', '" + paddress + "', '" + college + "', '" + idproof + "', " + roomNo + ")";
-                fn.setData(query, "Student Registered.");
-
-                // Cập nhật số người trong phòng
-                query = "UPDATE rooms SET currentOccupancy = currentOccupancy + 1 WHERE roomNo = " + roomNo;
-                fn.setData(query, "Room occupancy updated.");
-
-                // Nếu đã đủ người thì cập nhật Booked = 'Yes'
-                query = "UPDATE rooms SET Booked = 'Yes' WHERE roomNo = " + roomNo + " AND currentOccupancy >= maxOccupancy";
-                fn.setData(query, "Room status checked.");
-
-                clearAll();
-
-                // Load lại danh sách phòng sau khi lưu
-                comboRoomType_SelectedIndexChanged(null, null);
+                MessageBox.Show("Vui lòng nhập hết thông tin và chọn phòng.", "Warning",
+                                MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
             }
-            else
+
+            // 2. Lấy dữ liệu
+            long   mobile = long.Parse(txtMobile.Text);
+            string name   = txtName.Text.Trim();
+            string fname  = txtFather.Text.Trim();
+            string mname  = txtMother.Text.Trim();
+            string email  = txtEmailId.Text.Trim();
+            string paddr  = txtPermanent.Text.Trim();
+            string college= txtCollege.Text.Trim();
+            string idp    = txtIdProof.Text.Trim();
+            int    roomNo = int.Parse(comboRoomNo.SelectedItem.ToString());
+
+            try
             {
-                MessageBox.Show("Please fill all fields.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                // a) Insert new student
+                query = "INSERT INTO newStudent (mobile,name,fname,mname,email,paddress,college,idproof,roomNo) " +
+                        "VALUES(" +
+                        mobile + ",'" +
+                        name   + "','" +
+                        fname  + "','" +
+                        mname  + "','" +
+                        email  + "','" +
+                        paddr  + "','" +
+                        college+ "','" +
+                        idp    + "'," +
+                        roomNo + ")";
+                fn.setData(query, "Đăng ký sinh viên thành công.");
+
+                // b) Tăng currentOccupancy
+                query = "UPDATE rooms SET currentOccupancy = currentOccupancy + 1 " +
+                        "WHERE roomNo = " + roomNo;
+                fn.setData(query, "Cập nhật số người trong phòng.");
+
+                // c) Nếu đạt ngưỡng maxOccupancy → đánh dấu phòng đầy
+                query = "UPDATE rooms SET Booked = 'Yes' " +
+                        "WHERE roomNo = " + roomNo +
+                        " AND currentOccupancy >= maxOccupancy";
+                fn.setData(query, "Kiểm tra và đánh dấu trạng thái phòng.");
+
+                // 3. Làm sạch form + load lại phòng trống
+                clearAll();
+                LoadAvailableRooms();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi lưu dữ liệu: " + ex.Message, "Error",
+                                MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             */
 
@@ -118,14 +173,8 @@ namespace HostelManagement
 
         private void comboRoomType_SelectedIndexChanged(object sender, EventArgs e)
         {
-            comboRoomNo.Items.Clear();
-            query = "SELECT roomNo FROM rooms WHERE roomStatus = 'yes' AND Booked = 'No' AND roomType = '" + comboRoomType.Text + "'";
-            DataSet ds = fn.getData(query);
-
-            for (int i = 0; i < ds.Tables[0].Rows.Count; i++)
-            {
-                comboRoomNo.Items.Add(ds.Tables[0].Rows[i][0].ToString());
-            }
+            LoadAvailableRooms();
         }
+      
     }
 }
