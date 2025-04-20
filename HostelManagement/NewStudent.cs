@@ -88,10 +88,11 @@ namespace HostelManagement
 
         private void clearAll()
         {
+            txtStudentID.Clear();
             txtName.Clear();
             txtFather.Clear();
             txtMother.Clear();
-            txtEmailId.Clear();
+            txtMobileNumber.Clear();
             txtPermanent.Clear();
             txtCollege.Clear();
             txtIdProof.Clear();
@@ -112,8 +113,8 @@ namespace HostelManagement
             /*
             if (string.IsNullOrWhiteSpace(txtName.Text)   ||
                 string.IsNullOrWhiteSpace(txtFather.Text) ||
+                string.IsNullOrWhiteSpace(txtStudentID.Text) ||
                 string.IsNullOrWhiteSpace(txtMother.Text) ||
-                string.IsNullOrWhiteSpace(txtEmailId.Text)||
                 string.IsNullOrWhiteSpace(txtPermanent.Text)||
                 string.IsNullOrWhiteSpace(txtCollege.Text)||
                 string.IsNullOrWhiteSpace(txtIdProof.Text) ||
@@ -128,10 +129,10 @@ namespace HostelManagement
 
             // 2. Lấy dữ liệu
             long   mobile = long.Parse(txtMobile.Text);
+            string studentID = txtStudentID.Text.Trim();
             string name   = txtName.Text.Trim();
             string fname  = txtFather.Text.Trim();
             string mname  = txtMother.Text.Trim();
-            string email  = txtEmailId.Text.Trim();
             string paddr  = txtPermanent.Text.Trim();
             string college= txtCollege.Text.Trim();
             string idp    = txtIdProof.Text.Trim();
@@ -142,11 +143,11 @@ namespace HostelManagement
                 // a) Insert new student
                 query = "INSERT INTO newStudent (mobile,name,fname,mname,email,paddress,college,idproof,roomNo) " +
                         "VALUES(" +
-                        mobile + ",'" +
+                        studentID + ",'" +
                         name   + "','" +
                         fname  + "','" +
                         mname  + "','" +
-                        email  + "','" +
+                        mobile  + "','" +
                         paddr  + "','" +
                         college+ "','" +
                         idp    + "'," +

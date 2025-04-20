@@ -44,7 +44,7 @@ namespace HostelManagement
 
         private void StudentFees_Load(object sender, EventArgs e)
         {
-            //this.Location = new Point(350, 170);
+            
             dataTimePicker.Format = DateTimePickerFormat.Custom;
             dataTimePicker.CustomFormat = "MMMM yyyy";
         }
