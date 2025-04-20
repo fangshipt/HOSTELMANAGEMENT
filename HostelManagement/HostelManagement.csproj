@@ -58,12 +58,6 @@
     <Compile Include="AddNewRoom.Designer.cs">
       <DependentUpon>AddNewRoom.cs</DependentUpon>
     </Compile>
-    <Compile Include="AllEmployeeWorking.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AllEmployeeWorking.Designer.cs">
-      <DependentUpon>AllEmployeeWorking.cs</DependentUpon>
-    </Compile>
     <Compile Include="AllStudentLiving.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,19 +70,7 @@
     <Compile Include="Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="EmployeePayment.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="EmployeePayment.Designer.cs">
-      <DependentUpon>EmployeePayment.cs</DependentUpon>
-    </Compile>
     <Compile Include="function.cs" />
-    <Compile Include="LeavedEmployee.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="LeavedEmployee.Designer.cs">
-      <DependentUpon>LeavedEmployee.cs</DependentUpon>
-    </Compile>
     <Compile Include="LeavedStudent.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,12 +82,6 @@
     </Compile>
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
-    </Compile>
-    <Compile Include="NewEmployee.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="NewEmployee.Designer.cs">
-      <DependentUpon>NewEmployee.cs</DependentUpon>
     </Compile>
     <Compile Include="NewStudent.cs">
       <SubType>Form</SubType>
@@ -121,12 +97,6 @@
     <Compile Include="StudentFees.Designer.cs">
       <DependentUpon>StudentFees.cs</DependentUpon>
     </Compile>
-    <Compile Include="UpdateDeleteEmployee.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UpdateDeleteEmployee.Designer.cs">
-      <DependentUpon>UpdateDeleteEmployee.cs</DependentUpon>
-    </Compile>
     <Compile Include="UpdateDeleteStudent.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -136,29 +106,17 @@
     <EmbeddedResource Include="AddNewRoom.resx">
       <DependentUpon>AddNewRoom.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AllEmployeeWorking.resx">
-      <DependentUpon>AllEmployeeWorking.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="AllStudentLiving.resx">
       <DependentUpon>AllStudentLiving.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EmployeePayment.resx">
-      <DependentUpon>EmployeePayment.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="LeavedEmployee.resx">
-      <DependentUpon>LeavedEmployee.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="LeavedStudent.resx">
       <DependentUpon>LeavedStudent.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="NewEmployee.resx">
-      <DependentUpon>NewEmployee.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NewStudent.resx">
       <DependentUpon>NewStudent.cs</DependentUpon>
@@ -175,9 +133,6 @@
     </Compile>
     <EmbeddedResource Include="StudentFees.resx">
       <DependentUpon>StudentFees.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UpdateDeleteEmployee.resx">
-      <DependentUpon>UpdateDeleteEmployee.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UpdateDeleteStudent.resx">
       <DependentUpon>UpdateDeleteStudent.cs</DependentUpon>

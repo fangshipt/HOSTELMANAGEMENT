@@ -33,26 +33,11 @@ namespace HostelManagement
             Application.Exit();
         }
 
-        Boolean labelVisible = true;
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            if (labelVisible == true)
-            {
-                lblNavigatorBar.Visible = true;
-                labelVisible = false;
-            }
-            else
-            {
-                lblNavigatorBar.Visible = false;
-                labelVisible = true;
-            }
-
-        }
+        
 
         private void Dashboard_Load(object sender, EventArgs e)
         {
-            timer1.Enabled = true;
-            timer1.Start();
+            
             picLocation = guna2PictureBox1.PointToScreen(Point.Empty);
             picSize = guna2PictureBox1.Size;
         }
@@ -91,36 +76,6 @@ namespace HostelManagement
         {
             LeavedStudent ls = new LeavedStudent(picLocation, picSize);
             ls.Show();
-        }
-
-        private void btnNewEmployee_Click(object sender, EventArgs e)
-        {
-            NewEmployee ne = new NewEmployee(picLocation, picSize);
-            ne.Show();
-        }
-
-        private void btnUpdateDeleteEmployee_Click(object sender, EventArgs e)
-        {
-            UpdateDeleteEmployee ude = new UpdateDeleteEmployee(picLocation, picSize);
-            ude.Show();
-        }
-
-        private void btnEmployeePayment_Click(object sender, EventArgs e)
-        {
-            EmployeePayment ep  = new EmployeePayment(picLocation, picSize);
-            ep.Show();
-        }
-
-        private void btnAllEmployeeWorking_Click(object sender, EventArgs e)
-        {
-            AllEmployeeWorking aew  = new AllEmployeeWorking(picLocation, picSize);
-            aew.Show();
-        }
-
-        private void btnLeavedEmployee_Click(object sender, EventArgs e)
-        {
-            LeavedEmployee le = new LeavedEmployee(picLocation, picSize);
-            le.Show();
         }
     }
 }

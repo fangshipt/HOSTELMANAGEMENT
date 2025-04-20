@@ -56,6 +56,7 @@ E:\HostelManagement\HostelManagement\obj\Debug\HostelManagement.csproj.CoreCompi
 E:\HostelManagement\HostelManagement\obj\Debug\HostelMa.ED919C98.Up2Date
 E:\HostelManagement\HostelManagement\obj\Debug\HostelManagement.exe
 E:\HostelManagement\HostelManagement\obj\Debug\HostelManagement.pdb
+<<<<<<< HEAD
 D:\LTWinform\Đồ ánn\HostelManagement\bin\Debug\HostelManagement.exe.config
 D:\LTWinform\Đồ ánn\HostelManagement\bin\Debug\HostelManagement.exe
 D:\LTWinform\Đồ ánn\HostelManagement\bin\Debug\HostelManagement.pdb
@@ -80,3 +81,12 @@ D:\LTWinform\Đồ ánn\HostelManagement\obj\Debug\HostelManagement.csproj.CoreC
 D:\LTWinform\Đồ ánn\HostelManagement\obj\Debug\HostelMa.ED919C98.Up2Date
 D:\LTWinform\Đồ ánn\HostelManagement\obj\Debug\HostelManagement.exe
 D:\LTWinform\Đồ ánn\HostelManagement\obj\Debug\HostelManagement.pdb
+=======
+D:\Nam 2 HK2\Winform\DOAN\HostelManagement\obj\Debug\HostelManagement.AddNewRoom.resources
+D:\Nam 2 HK2\Winform\DOAN\HostelManagement\obj\Debug\HostelManagement.AllStudentLiving.resources
+D:\Nam 2 HK2\Winform\DOAN\HostelManagement\obj\Debug\HostelManagement.LeavedStudent.resources
+D:\Nam 2 HK2\Winform\DOAN\HostelManagement\obj\Debug\HostelManagement.Login.resources
+D:\Nam 2 HK2\Winform\DOAN\HostelManagement\obj\Debug\HostelManagement.NewStudent.resources
+D:\Nam 2 HK2\Winform\DOAN\HostelManagement\obj\Debug\HostelManagement.StudentFees.resources
+D:\Nam 2 HK2\Winform\DOAN\HostelManagement\obj\Debug\HostelManagement.UpdateDeleteStudent.resources
+>>>>>>> 8fff26aeb84d3c5e7ac20bf29678ea9a54a34678
