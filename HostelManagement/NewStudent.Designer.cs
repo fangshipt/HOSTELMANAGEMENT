@@ -123,7 +123,7 @@
             this.txtIdProof.ForeColor = System.Drawing.Color.MidnightBlue;
             this.txtIdProof.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtIdProof.Location = new System.Drawing.Point(327, 464);
-            this.txtIdProof.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtIdProof.Margin = new System.Windows.Forms.Padding(5);
             this.txtIdProof.Name = "txtIdProof";
             this.txtIdProof.PlaceholderText = "";
             this.txtIdProof.SelectedText = "";
@@ -143,7 +143,7 @@
             this.txtPermanent.ForeColor = System.Drawing.Color.MidnightBlue;
             this.txtPermanent.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPermanent.Location = new System.Drawing.Point(327, 351);
-            this.txtPermanent.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtPermanent.Margin = new System.Windows.Forms.Padding(5);
             this.txtPermanent.Name = "txtPermanent";
             this.txtPermanent.PlaceholderText = "";
             this.txtPermanent.SelectedText = "";
@@ -163,7 +163,7 @@
             this.txtEmailId.ForeColor = System.Drawing.Color.MidnightBlue;
             this.txtEmailId.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtEmailId.Location = new System.Drawing.Point(327, 296);
-            this.txtEmailId.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtEmailId.Margin = new System.Windows.Forms.Padding(5);
             this.txtEmailId.Name = "txtEmailId";
             this.txtEmailId.PlaceholderText = "";
             this.txtEmailId.SelectedText = "";
@@ -183,7 +183,7 @@
             this.txtMother.ForeColor = System.Drawing.Color.MidnightBlue;
             this.txtMother.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtMother.Location = new System.Drawing.Point(327, 241);
-            this.txtMother.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtMother.Margin = new System.Windows.Forms.Padding(5);
             this.txtMother.Name = "txtMother";
             this.txtMother.PlaceholderText = "";
             this.txtMother.SelectedText = "";
@@ -203,7 +203,7 @@
             this.txtFather.ForeColor = System.Drawing.Color.MidnightBlue;
             this.txtFather.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtFather.Location = new System.Drawing.Point(327, 186);
-            this.txtFather.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtFather.Margin = new System.Windows.Forms.Padding(5);
             this.txtFather.Name = "txtFather";
             this.txtFather.PlaceholderText = "";
             this.txtFather.SelectedText = "";
@@ -223,7 +223,7 @@
             this.txtName.ForeColor = System.Drawing.Color.MidnightBlue;
             this.txtName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtName.Location = new System.Drawing.Point(327, 131);
-            this.txtName.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtName.Margin = new System.Windows.Forms.Padding(5);
             this.txtName.Name = "txtName";
             this.txtName.PlaceholderText = "";
             this.txtName.SelectedText = "";
@@ -243,7 +243,7 @@
             this.txtMobile.ForeColor = System.Drawing.Color.MidnightBlue;
             this.txtMobile.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtMobile.Location = new System.Drawing.Point(327, 77);
-            this.txtMobile.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtMobile.Margin = new System.Windows.Forms.Padding(5);
             this.txtMobile.Name = "txtMobile";
             this.txtMobile.PlaceholderText = "";
             this.txtMobile.SelectedText = "";
@@ -362,7 +362,7 @@
             this.txtCollege.ForeColor = System.Drawing.Color.MidnightBlue;
             this.txtCollege.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtCollege.Location = new System.Drawing.Point(327, 406);
-            this.txtCollege.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtCollege.Margin = new System.Windows.Forms.Padding(5);
             this.txtCollege.Name = "txtCollege";
             this.txtCollege.PlaceholderText = "";
             this.txtCollege.SelectedText = "";
@@ -458,7 +458,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "NewStudent";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "NewStudent";
