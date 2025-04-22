@@ -13,6 +13,7 @@ namespace HostelManagement
     public partial class CheckRoom : Form
     {
         function fn = new function();
+        // function fn = new function();
         public CheckRoom()
         {
             InitializeComponent();

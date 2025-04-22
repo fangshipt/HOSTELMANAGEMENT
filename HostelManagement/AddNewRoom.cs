@@ -13,7 +13,7 @@ namespace HostelManagement
 {
     public partial class AddNewRoom : Form
     {
-        function fn = new function();
+        function fn = new function(); //funtion
         public AddNewRoom()
         {
             InitializeComponent();
