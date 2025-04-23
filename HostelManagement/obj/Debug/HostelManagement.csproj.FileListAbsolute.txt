@@ -104,3 +104,4 @@ D:\Nam 2 HK2\Winform\DOANCK\HostelManagement\obj\Debug\HostelManagement.csproj.C
 D:\Nam 2 HK2\Winform\DOANCK\HostelManagement\obj\Debug\HostelMa.ED919C98.Up2Date
 D:\Nam 2 HK2\Winform\DOANCK\HostelManagement\obj\Debug\HostelManagement.exe
 D:\Nam 2 HK2\Winform\DOANCK\HostelManagement\obj\Debug\HostelManagement.pdb
+D:\LTWinform\Đồ ánn\HostelManagement\obj\Debug\HostelManagement.CheckRoom.resources
