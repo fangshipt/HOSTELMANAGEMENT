@@ -107,5 +107,10 @@ namespace HostelManagement
                 comboBox6PersonRooms.DataSource = roomNumbers;
             }
         }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

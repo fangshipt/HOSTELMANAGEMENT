@@ -36,19 +36,17 @@ namespace HostelManagement
         }
         private void LeavedStudent_Load(object sender, EventArgs e)
         {
-            this.Location = new Point(350, 170);
-
             string query = @"
-    SELECT 
-        ns.studentID    AS [Mã SV],
-        ns.name         AS [Họ Tên],
-        ns.roomNo       AS [Số Phòng],
-        r.roomType      AS [Loại Phòng],
-        ns.mobileNo     AS [SĐT]
-    FROM newStudent ns
-    INNER JOIN rooms  r  ON ns.roomNo = r.roomNo
-    WHERE ns.living = N'No'
-";
+                SELECT 
+                    ns.studentID    AS [Mã SV],
+                    ns.name         AS [Họ Tên],
+                    ns.roomNo       AS [Số Phòng],
+                    r.roomType      AS [Loại Phòng],
+                    ns.mobileNo     AS [SĐT]
+                FROM newStudent ns
+                INNER JOIN rooms  r  ON ns.roomNo = r.roomNo
+                WHERE ns.living = N'No'
+            ";
 
             DataSet ds = fn.getData(query);
             guna2DataGridView1.DataSource = ds.Tables[0];
