@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace HostelManagement
 {
-    public partial class LeavedStudent: Form
+    public partial class LeavedStudent : Form
     {
         function fn = new function();
         String query;
@@ -18,7 +18,6 @@ namespace HostelManagement
         {
             InitializeComponent();
         }
-
         private Point targetLocation;
         private Size targetSize;
 
@@ -35,13 +34,6 @@ namespace HostelManagement
             this.Location = targetLocation;
             this.Size = targetSize;
         }
-
-
-        private void btnExit_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
         private void LeavedStudent_Load(object sender, EventArgs e)
         {
             this.Location = new Point(350, 170);
@@ -61,7 +53,7 @@ namespace HostelManagement
             DataSet ds = fn.getData(query);
             guna2DataGridView1.DataSource = ds.Tables[0];
 
-      
+
             guna2DataGridView1.Columns["Mã SV"].HeaderText = "Mã SV";
             guna2DataGridView1.Columns["Họ Tên"].HeaderText = "Họ Tên";
             guna2DataGridView1.Columns["Số Phòng"].HeaderText = "Số Phòng";
@@ -69,6 +61,11 @@ namespace HostelManagement
             guna2DataGridView1.Columns["SĐT"].HeaderText = "SĐT";
 
 
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
 
         private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
