@@ -104,3 +104,23 @@ D:\Nam 2 HK2\Winform\DOANCK\HostelManagement\obj\Debug\HostelManagement.csproj.C
 D:\Nam 2 HK2\Winform\DOANCK\HostelManagement\obj\Debug\HostelMa.ED919C98.Up2Date
 D:\Nam 2 HK2\Winform\DOANCK\HostelManagement\obj\Debug\HostelManagement.exe
 D:\Nam 2 HK2\Winform\DOANCK\HostelManagement\obj\Debug\HostelManagement.pdb
+D:\LTWinform\final\HostelManagement\bin\Debug\HostelManagement.exe.config
+D:\LTWinform\final\HostelManagement\bin\Debug\HostelManagement.exe
+D:\LTWinform\final\HostelManagement\bin\Debug\HostelManagement.pdb
+D:\LTWinform\final\HostelManagement\bin\Debug\Guna.UI2.dll
+D:\LTWinform\final\HostelManagement\obj\Debug\HostelManagement.csproj.AssemblyReference.cache
+D:\LTWinform\final\HostelManagement\obj\Debug\HostelManagement.AddNewRoom.resources
+D:\LTWinform\final\HostelManagement\obj\Debug\HostelManagement.AllStudentLiving.resources
+D:\LTWinform\final\HostelManagement\obj\Debug\HostelManagement.CheckRoom.resources
+D:\LTWinform\final\HostelManagement\obj\Debug\HostelManagement.Dashboard.resources
+D:\LTWinform\final\HostelManagement\obj\Debug\HostelManagement.LeavedStudent.resources
+D:\LTWinform\final\HostelManagement\obj\Debug\HostelManagement.Login.resources
+D:\LTWinform\final\HostelManagement\obj\Debug\HostelManagement.NewStudent.resources
+D:\LTWinform\final\HostelManagement\obj\Debug\HostelManagement.Properties.Resources.resources
+D:\LTWinform\final\HostelManagement\obj\Debug\HostelManagement.StudentFees.resources
+D:\LTWinform\final\HostelManagement\obj\Debug\HostelManagement.UpdateDeleteStudent.resources
+D:\LTWinform\final\HostelManagement\obj\Debug\HostelManagement.csproj.GenerateResource.cache
+D:\LTWinform\final\HostelManagement\obj\Debug\HostelManagement.csproj.CoreCompileInputs.cache
+D:\LTWinform\final\HostelManagement\obj\Debug\HostelMa.ED919C98.Up2Date
+D:\LTWinform\final\HostelManagement\obj\Debug\HostelManagement.exe
+D:\LTWinform\final\HostelManagement\obj\Debug\HostelManagement.pdb
