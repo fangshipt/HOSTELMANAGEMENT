@@ -128,3 +128,23 @@ D:\LTWinform\Đồ ánn\HostelManagement\obj\Debug\HostelManagement.CheckRoom.re
 E:\HostelManagement\HostelManagement\obj\Debug\HostelManagement.CheckRoom.resources
 >>>>>>> 69031f2e122b77e345fcf44b3c645d00f558f1cb
 D:\Nam 2 HK2\Winform\DOANCK\HostelManagement\obj\Debug\HostelManagement.CheckRoom.resources
+C:\Users\HGITC\source\repos\HOSTELMANAGEMENT\HostelManagement\obj\Debug\HostelManagement.csproj.AssemblyReference.cache
+C:\Users\HGITC\source\repos\HOSTELMANAGEMENT\HostelManagement\obj\Debug\HostelManagement.AddNewRoom.resources
+C:\Users\HGITC\source\repos\HOSTELMANAGEMENT\HostelManagement\obj\Debug\HostelManagement.AllStudentLiving.resources
+C:\Users\HGITC\source\repos\HOSTELMANAGEMENT\HostelManagement\obj\Debug\HostelManagement.CheckRoom.resources
+C:\Users\HGITC\source\repos\HOSTELMANAGEMENT\HostelManagement\obj\Debug\HostelManagement.Dashboard.resources
+C:\Users\HGITC\source\repos\HOSTELMANAGEMENT\HostelManagement\obj\Debug\HostelManagement.LeavedStudent.resources
+C:\Users\HGITC\source\repos\HOSTELMANAGEMENT\HostelManagement\obj\Debug\HostelManagement.Login.resources
+C:\Users\HGITC\source\repos\HOSTELMANAGEMENT\HostelManagement\obj\Debug\HostelManagement.NewStudent.resources
+C:\Users\HGITC\source\repos\HOSTELMANAGEMENT\HostelManagement\obj\Debug\HostelManagement.Properties.Resources.resources
+C:\Users\HGITC\source\repos\HOSTELMANAGEMENT\HostelManagement\obj\Debug\HostelManagement.StudentFees.resources
+C:\Users\HGITC\source\repos\HOSTELMANAGEMENT\HostelManagement\obj\Debug\HostelManagement.UpdateDeleteStudent.resources
+C:\Users\HGITC\source\repos\HOSTELMANAGEMENT\HostelManagement\obj\Debug\HostelManagement.csproj.GenerateResource.cache
+C:\Users\HGITC\source\repos\HOSTELMANAGEMENT\HostelManagement\obj\Debug\HostelManagement.csproj.CoreCompileInputs.cache
+C:\Users\HGITC\source\repos\HOSTELMANAGEMENT\HostelManagement\obj\Debug\HostelManagement.exe
+C:\Users\HGITC\source\repos\HOSTELMANAGEMENT\HostelManagement\obj\Debug\HostelManagement.pdb
+C:\Users\HGITC\source\repos\HOSTELMANAGEMENT\HostelManagement\bin\Debug\HostelManagement.exe.config
+C:\Users\HGITC\source\repos\HOSTELMANAGEMENT\HostelManagement\bin\Debug\HostelManagement.exe
+C:\Users\HGITC\source\repos\HOSTELMANAGEMENT\HostelManagement\bin\Debug\HostelManagement.pdb
+C:\Users\HGITC\source\repos\HOSTELMANAGEMENT\HostelManagement\bin\Debug\Guna.UI2.dll
+C:\Users\HGITC\source\repos\HOSTELMANAGEMENT\HostelManagement\obj\Debug\HostelMa.ED919C98.Up2Date
