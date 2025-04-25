@@ -104,7 +104,6 @@ D:\Nam 2 HK2\Winform\DOANCK\HostelManagement\obj\Debug\HostelManagement.csproj.C
 D:\Nam 2 HK2\Winform\DOANCK\HostelManagement\obj\Debug\HostelMa.ED919C98.Up2Date
 D:\Nam 2 HK2\Winform\DOANCK\HostelManagement\obj\Debug\HostelManagement.exe
 D:\Nam 2 HK2\Winform\DOANCK\HostelManagement\obj\Debug\HostelManagement.pdb
-<<<<<<< HEAD
 D:\LTWinform\final\HostelManagement\bin\Debug\HostelManagement.exe.config
 D:\LTWinform\final\HostelManagement\bin\Debug\HostelManagement.exe
 D:\LTWinform\final\HostelManagement\bin\Debug\HostelManagement.pdb
@@ -125,7 +124,7 @@ D:\LTWinform\final\HostelManagement\obj\Debug\HostelManagement.csproj.CoreCompil
 D:\LTWinform\final\HostelManagement\obj\Debug\HostelMa.ED919C98.Up2Date
 D:\LTWinform\final\HostelManagement\obj\Debug\HostelManagement.exe
 D:\LTWinform\final\HostelManagement\obj\Debug\HostelManagement.pdb
-=======
 D:\LTWinform\Đồ ánn\HostelManagement\obj\Debug\HostelManagement.CheckRoom.resources
 E:\HostelManagement\HostelManagement\obj\Debug\HostelManagement.CheckRoom.resources
 >>>>>>> 69031f2e122b77e345fcf44b3c645d00f558f1cb
+D:\Nam 2 HK2\Winform\DOANCK\HostelManagement\obj\Debug\HostelManagement.CheckRoom.resources

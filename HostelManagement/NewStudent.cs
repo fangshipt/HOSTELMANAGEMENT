@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Data;
 using System.Drawing;
+using System.Runtime.InteropServices.ComTypes;
 using System.Windows.Forms;
 
 namespace HostelManagement
@@ -34,6 +35,7 @@ namespace HostelManagement
 
         private void NewStudent_Load(object sender, EventArgs e)
         {
+            dtpStartDate.Value = DateTime.Now;
             query = "SELECT roomNo FROM rooms WHERE Booked = 0";
             DataSet ds = fn.getData(query);
             for (int i = 0; i < ds.Tables[0].Rows.Count; ++i)
@@ -81,7 +83,6 @@ namespace HostelManagement
             txtMobileNumber.Clear();
             txtPermanent.Clear();
             txtCollege.Clear();
-            txtIdProof.Clear();
             comboRoomNo.SelectedIndex = -1;
 
             comboRoomType.SelectedIndexChanged -= comboRoomType_SelectedIndexChanged;
@@ -102,7 +103,6 @@ namespace HostelManagement
                 string.IsNullOrWhiteSpace(txtMother.Text) ||
                 string.IsNullOrWhiteSpace(txtPermanent.Text) ||
                 string.IsNullOrWhiteSpace(txtCollege.Text) ||
-                string.IsNullOrWhiteSpace(txtIdProof.Text) ||
                 string.IsNullOrWhiteSpace(txtMobileNumber.Text) ||
                 comboRoomType.SelectedIndex < 0 ||
                 comboRoomNo.SelectedIndex < 0)
@@ -119,15 +119,25 @@ namespace HostelManagement
             string mname = txtMother.Text.Trim();
             string paddr = txtPermanent.Text.Trim();
             string college = txtCollege.Text.Trim();
-            string idp = txtIdProof.Text.Trim();
             int roomNo = int.Parse(comboRoomNo.SelectedItem.ToString());
-
+            DateTime startdate = dtpStartDate.Value;
             try
             {
+                // ✅ Kiểm tra studentID đã tồn tại chưa
+                query = "SELECT COUNT(*) FROM newStudent WHERE studentID = '" + studentID + "'";
+                DataSet ds = fn.getData(query);
+                int count = Convert.ToInt32(ds.Tables[0].Rows[0][0]);
+                if (count > 0)
+                {
+                    MessageBox.Show("Mã sinh viên đã tồn tại. Vui lòng nhập mã khác.", "Thông báo",
+                                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+                }
+
                 // a) Thêm sinh viên
-                query = "INSERT INTO newStudent (studentID, name, fname, mname, mobileNo, paddress, college, idproof, roomNo) " +
-                        "VALUES('" + studentID + "','" + name + "','" + fname + "','" + mname + "'," +
-                        mobile + ",'" + paddr + "','" + college + "','" + idp + "'," + roomNo + ")";
+                query = "INSERT INTO newStudent (studentID, name, fname, mname, mobileNo, paddress, college, startdate, roomNo, living) " +
+                "VALUES('" + studentID + "','" + name + "','" + fname + "','" + mname + "'," +
+                mobile + ",'" + paddr + "','" + college + "','" + startdate.ToString("yyyy-MM-dd") + "'," + roomNo + ", 1)";
                 fn.setData(query, "Đăng ký sinh viên thành công.");
 
                 // b) Tăng currentOccupancy
