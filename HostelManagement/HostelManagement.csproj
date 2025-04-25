@@ -52,12 +52,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddNewRoom.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AddNewRoom.Designer.cs">
-      <DependentUpon>AddNewRoom.cs</DependentUpon>
-    </Compile>
     <Compile Include="AllStudentLiving.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,9 +103,6 @@
     <Compile Include="UpdateDeleteStudent.Designer.cs">
       <DependentUpon>UpdateDeleteStudent.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AddNewRoom.resx">
-      <DependentUpon>AddNewRoom.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="AllStudentLiving.resx">
       <DependentUpon>AllStudentLiving.cs</DependentUpon>
     </EmbeddedResource>

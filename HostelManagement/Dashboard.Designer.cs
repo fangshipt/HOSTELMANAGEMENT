@@ -44,11 +44,11 @@
             // hmsLabel
             // 
             this.hmsLabel.AutoSize = true;
-            this.hmsLabel.Font = new System.Drawing.Font("Papyrus", 28.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hmsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.hmsLabel.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.hmsLabel.Location = new System.Drawing.Point(606, 3);
+            this.hmsLabel.Location = new System.Drawing.Point(539, 2);
             this.hmsLabel.Name = "hmsLabel";
-            this.hmsLabel.Size = new System.Drawing.Size(769, 90);
+            this.hmsLabel.Size = new System.Drawing.Size(634, 54);
             this.hmsLabel.TabIndex = 2;
             this.hmsLabel.Tag = "";
             this.hmsLabel.Text = "Hostel Management System";
@@ -70,10 +70,10 @@
             this.btnLogOut.ForeColor = System.Drawing.Color.MidnightBlue;
             this.btnLogOut.HoverState.FillColor = System.Drawing.Color.MidnightBlue;
             this.btnLogOut.ImageSize = new System.Drawing.Size(35, 35);
-            this.btnLogOut.Location = new System.Drawing.Point(1386, 986);
+            this.btnLogOut.Location = new System.Drawing.Point(1232, 789);
             this.btnLogOut.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLogOut.Name = "btnLogOut";
-            this.btnLogOut.Size = new System.Drawing.Size(212, 50);
+            this.btnLogOut.Size = new System.Drawing.Size(188, 40);
             this.btnLogOut.TabIndex = 14;
             this.btnLogOut.Text = "Log Out";
             this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
@@ -92,11 +92,11 @@
             this.btnExit.FillColor = System.Drawing.Color.MistyRose;
             this.btnExit.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnExit.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.btnExit.Location = new System.Drawing.Point(1546, 9);
+            this.btnExit.Location = new System.Drawing.Point(1374, 7);
             this.btnExit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnExit.Name = "btnExit";
             this.btnExit.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btnExit.Size = new System.Drawing.Size(52, 50);
+            this.btnExit.Size = new System.Drawing.Size(46, 40);
             this.btnExit.TabIndex = 15;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
@@ -117,10 +117,10 @@
             this.btnLeavedStudents.HoverState.ForeColor = System.Drawing.Color.MistyRose;
             this.btnLeavedStudents.Image = global::HostelManagement.Properties.Resources.Leaved_students;
             this.btnLeavedStudents.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnLeavedStudents.Location = new System.Drawing.Point(10, 507);
+            this.btnLeavedStudents.Location = new System.Drawing.Point(9, 406);
             this.btnLeavedStudents.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLeavedStudents.Name = "btnLeavedStudents";
-            this.btnLeavedStudents.Size = new System.Drawing.Size(322, 60);
+            this.btnLeavedStudents.Size = new System.Drawing.Size(286, 48);
             this.btnLeavedStudents.TabIndex = 8;
             this.btnLeavedStudents.Text = "Leaved Students";
             this.btnLeavedStudents.Click += new System.EventHandler(this.btnLeavedStudents_Click);
@@ -142,10 +142,10 @@
             this.btnAllStudentLiving.HoverState.ForeColor = System.Drawing.Color.MistyRose;
             this.btnAllStudentLiving.Image = global::HostelManagement.Properties.Resources.all_student_living;
             this.btnAllStudentLiving.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnAllStudentLiving.Location = new System.Drawing.Point(10, 432);
+            this.btnAllStudentLiving.Location = new System.Drawing.Point(9, 346);
             this.btnAllStudentLiving.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAllStudentLiving.Name = "btnAllStudentLiving";
-            this.btnAllStudentLiving.Size = new System.Drawing.Size(322, 60);
+            this.btnAllStudentLiving.Size = new System.Drawing.Size(286, 48);
             this.btnAllStudentLiving.TabIndex = 7;
             this.btnAllStudentLiving.Text = "All Student Living";
             this.btnAllStudentLiving.Click += new System.EventHandler(this.btnAllStudentLiving_Click);
@@ -167,10 +167,10 @@
             this.btnStudentFees.HoverState.ForeColor = System.Drawing.Color.MistyRose;
             this.btnStudentFees.Image = global::HostelManagement.Properties.Resources.Fees;
             this.btnStudentFees.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnStudentFees.Location = new System.Drawing.Point(10, 356);
+            this.btnStudentFees.Location = new System.Drawing.Point(9, 285);
             this.btnStudentFees.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnStudentFees.Name = "btnStudentFees";
-            this.btnStudentFees.Size = new System.Drawing.Size(322, 60);
+            this.btnStudentFees.Size = new System.Drawing.Size(286, 48);
             this.btnStudentFees.TabIndex = 6;
             this.btnStudentFees.Text = "Student Fees";
             this.btnStudentFees.Click += new System.EventHandler(this.btnStudentFees_Click);
@@ -194,10 +194,10 @@
             this.btnUpdateDeleteStudent.Image = global::HostelManagement.Properties.Resources.Update___Delete_Student;
             this.btnUpdateDeleteStudent.ImageOffset = new System.Drawing.Point(5, 0);
             this.btnUpdateDeleteStudent.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnUpdateDeleteStudent.Location = new System.Drawing.Point(10, 282);
+            this.btnUpdateDeleteStudent.Location = new System.Drawing.Point(9, 226);
             this.btnUpdateDeleteStudent.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnUpdateDeleteStudent.Name = "btnUpdateDeleteStudent";
-            this.btnUpdateDeleteStudent.Size = new System.Drawing.Size(322, 60);
+            this.btnUpdateDeleteStudent.Size = new System.Drawing.Size(286, 48);
             this.btnUpdateDeleteStudent.TabIndex = 5;
             this.btnUpdateDeleteStudent.Text = "Update && Delete Students";
             this.btnUpdateDeleteStudent.Click += new System.EventHandler(this.btnUpdateDeleteStudent_Click);
@@ -220,10 +220,10 @@
             this.btnNewStudent.HoverState.ForeColor = System.Drawing.Color.MistyRose;
             this.btnNewStudent.Image = global::HostelManagement.Properties.Resources.new_student;
             this.btnNewStudent.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnNewStudent.Location = new System.Drawing.Point(10, 209);
+            this.btnNewStudent.Location = new System.Drawing.Point(9, 167);
             this.btnNewStudent.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnNewStudent.Name = "btnNewStudent";
-            this.btnNewStudent.Size = new System.Drawing.Size(322, 60);
+            this.btnNewStudent.Size = new System.Drawing.Size(286, 48);
             this.btnNewStudent.TabIndex = 4;
             this.btnNewStudent.Text = "New Student";
             this.btnNewStudent.Click += new System.EventHandler(this.btnNewStudent_Click);
@@ -246,10 +246,10 @@
             this.btnManageRooms.HoverState.ForeColor = System.Drawing.Color.MistyRose;
             this.btnManageRooms.Image = global::HostelManagement.Properties.Resources.room;
             this.btnManageRooms.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnManageRooms.Location = new System.Drawing.Point(10, 134);
+            this.btnManageRooms.Location = new System.Drawing.Point(9, 107);
             this.btnManageRooms.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnManageRooms.Name = "btnManageRooms";
-            this.btnManageRooms.Size = new System.Drawing.Size(322, 60);
+            this.btnManageRooms.Size = new System.Drawing.Size(286, 48);
             this.btnManageRooms.TabIndex = 3;
             this.btnManageRooms.Text = "Manage Rooms";
             this.btnManageRooms.Click += new System.EventHandler(this.btnManageRooms_Click);
@@ -261,20 +261,20 @@
             this.guna2PictureBox1.Image = global::HostelManagement.Properties.Resources.hostel;
             this.guna2PictureBox1.ImageRotate = 0F;
             this.guna2PictureBox1.InitialImage = global::HostelManagement.Properties.Resources.hostel;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(360, 100);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(320, 80);
             this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(1238, 880);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(1100, 704);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox1.TabIndex = 0;
             this.guna2PictureBox1.TabStop = false;
             // 
             // Dashboard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MistyRose;
-            this.ClientSize = new System.Drawing.Size(1460, 981);
+            this.ClientSize = new System.Drawing.Size(1298, 785);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnLogOut);
             this.Controls.Add(this.btnLeavedStudents);

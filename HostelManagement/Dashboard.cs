@@ -44,7 +44,7 @@ namespace HostelManagement
 
         private void btnManageRooms_Click(object sender, EventArgs e)
         {
-            AddNewRoom anr = new AddNewRoom(picLocation, picSize);
+            CheckRoom anr = new CheckRoom(picLocation, picSize);
             anr.Show();
         }
 
@@ -52,12 +52,6 @@ namespace HostelManagement
         {            
             NewStudent ns = new NewStudent(picLocation, picSize);
             ns.Show();
-        }
-
-        private void btnUpdateDeleteStudent_Click(object sender, EventArgs e)
-        {
-            UpdateDeleteStudent uds = new UpdateDeleteStudent(picLocation, picSize);
-            uds.Show();
         }
 
         private void btnStudentFees_Click(object sender, EventArgs e)
@@ -76,6 +70,12 @@ namespace HostelManagement
         {
             LeavedStudent ls = new LeavedStudent(picLocation, picSize);
             ls.Show();
+        }
+
+        private void btnUpdateDeleteStudent_Click(object sender, EventArgs e)
+        {
+            UpdateDeleteStudent uds = new UpdateDeleteStudent(picLocation, picSize);
+            uds.Show();
         }
     }
 }

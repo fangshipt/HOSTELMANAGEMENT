@@ -104,7 +104,6 @@ D:\Nam 2 HK2\Winform\DOANCK\HostelManagement\obj\Debug\HostelManagement.csproj.C
 D:\Nam 2 HK2\Winform\DOANCK\HostelManagement\obj\Debug\HostelMa.ED919C98.Up2Date
 D:\Nam 2 HK2\Winform\DOANCK\HostelManagement\obj\Debug\HostelManagement.exe
 D:\Nam 2 HK2\Winform\DOANCK\HostelManagement\obj\Debug\HostelManagement.pdb
-<<<<<<< HEAD
 D:\LTWinform\final\HostelManagement\bin\Debug\HostelManagement.exe.config
 D:\LTWinform\final\HostelManagement\bin\Debug\HostelManagement.exe
 D:\LTWinform\final\HostelManagement\bin\Debug\HostelManagement.pdb
@@ -125,7 +124,21 @@ D:\LTWinform\final\HostelManagement\obj\Debug\HostelManagement.csproj.CoreCompil
 D:\LTWinform\final\HostelManagement\obj\Debug\HostelMa.ED919C98.Up2Date
 D:\LTWinform\final\HostelManagement\obj\Debug\HostelManagement.exe
 D:\LTWinform\final\HostelManagement\obj\Debug\HostelManagement.pdb
-=======
 D:\LTWinform\Đồ ánn\HostelManagement\obj\Debug\HostelManagement.CheckRoom.resources
 E:\HostelManagement\HostelManagement\obj\Debug\HostelManagement.CheckRoom.resources
 >>>>>>> 69031f2e122b77e345fcf44b3c645d00f558f1cb
+D:\hostel4\HostelManagement\obj\Debug\HostelManagement.csproj.AssemblyReference.cache
+D:\hostel4\HostelManagement\obj\Debug\HostelManagement.AddNewRoom.resources
+D:\hostel4\HostelManagement\obj\Debug\HostelManagement.AllStudentLiving.resources
+D:\hostel4\HostelManagement\obj\Debug\HostelManagement.CheckRoom.resources
+D:\hostel4\HostelManagement\obj\Debug\HostelManagement.Dashboard.resources
+D:\hostel4\HostelManagement\obj\Debug\HostelManagement.LeavedStudent.resources
+D:\hostel4\HostelManagement\obj\Debug\HostelManagement.Login.resources
+D:\hostel4\HostelManagement\obj\Debug\HostelManagement.NewStudent.resources
+D:\hostel4\HostelManagement\obj\Debug\HostelManagement.Properties.Resources.resources
+D:\hostel4\HostelManagement\obj\Debug\HostelManagement.StudentFees.resources
+D:\hostel4\HostelManagement\obj\Debug\HostelManagement.UpdateDeleteStudent.resources
+D:\hostel4\HostelManagement\obj\Debug\HostelManagement.csproj.GenerateResource.cache
+D:\hostel4\HostelManagement\obj\Debug\HostelManagement.csproj.CoreCompileInputs.cache
+D:\hostel4\HostelManagement\obj\Debug\HostelManagement.exe
+D:\hostel4\HostelManagement\obj\Debug\HostelManagement.pdb

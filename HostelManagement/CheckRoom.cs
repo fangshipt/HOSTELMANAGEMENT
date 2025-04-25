@@ -34,10 +34,6 @@ namespace HostelManagement
             this.Location = targetLocation;
             this.Size = targetSize;
         }
-        private void label7_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void CheckRoom_Load(object sender, EventArgs e)
         {
@@ -60,12 +56,6 @@ namespace HostelManagement
                 int selectedRoomNo = int.Parse(comboBox4PersonRooms.SelectedItem.ToString());
                 LoadStudentsInRoom(selectedRoomNo);
             }
-        }
-
-        private void comboBox6PersonRooms_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            int selectedRoomNo = int.Parse(comboBox6PersonRooms.SelectedItem.ToString());
-            LoadStudentsInRoom(selectedRoomNo);
         }
 
         private void LoadStudentsInRoom(int roomNo)
@@ -109,5 +99,19 @@ namespace HostelManagement
             }
         }
 
+        private void comboBox6PersonRooms_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            if (comboBox6PersonRooms.SelectedItem != null)
+            {
+                int selectedRoomNo = int.Parse(comboBox6PersonRooms.SelectedItem.ToString());
+                LoadStudentsInRoom(selectedRoomNo);
+            }
+        }
+
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

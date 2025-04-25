@@ -41,6 +41,7 @@
             this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.mobileNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label3 = new System.Windows.Forms.Label();
+            this.btnExit = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewStudents)).BeginInit();
             this.SuspendLayout();
             // 
@@ -110,6 +111,7 @@
             this.comboBox6PersonRooms.Name = "comboBox6PersonRooms";
             this.comboBox6PersonRooms.Size = new System.Drawing.Size(166, 36);
             this.comboBox6PersonRooms.TabIndex = 62;
+            this.comboBox6PersonRooms.SelectedIndexChanged += new System.EventHandler(this.comboBox6PersonRooms_SelectedIndexChanged_1);
             // 
             // label7
             // 
@@ -122,7 +124,6 @@
             this.label7.Size = new System.Drawing.Size(204, 29);
             this.label7.TabIndex = 63;
             this.label7.Text = "ALL STUDENTS";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // dataGridViewStudents
             // 
@@ -181,6 +182,7 @@
             this.dataGridViewStudents.ThemeStyle.RowsStyle.Height = 33;
             this.dataGridViewStudents.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dataGridViewStudents.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+
             // 
             // studentID
             // 
@@ -203,13 +205,31 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Poor Richard", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.MidnightBlue;
             this.label3.Location = new System.Drawing.Point(420, 9);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(223, 47);
+            this.label3.Size = new System.Drawing.Size(263, 46);
             this.label3.TabIndex = 65;
             this.label3.Text = "Check Room";
+            // 
+            // btnExit
+            // 
+            this.btnExit.BorderRadius = 25;
+            this.btnExit.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnExit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnExit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnExit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnExit.FillColor = System.Drawing.Color.MistyRose;
+            this.btnExit.Font = new System.Drawing.Font("Segoe UI", 13.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.ForeColor = System.Drawing.Color.White;
+            this.btnExit.Image = global::HostelManagement.Properties.Resources.Close_all_jframe1;
+            this.btnExit.ImageSize = new System.Drawing.Size(35, 35);
+            this.btnExit.Location = new System.Drawing.Point(1049, -4);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(50, 48);
+            this.btnExit.TabIndex = 66;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // CheckRoom
             // 
@@ -217,6 +237,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MistyRose;
             this.ClientSize = new System.Drawing.Size(1100, 704);
+            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.dataGridViewStudents);
             this.Controls.Add(this.label7);
@@ -245,5 +266,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn name;
         private System.Windows.Forms.DataGridViewTextBoxColumn mobileNo;
         private System.Windows.Forms.Label label3;
+        private Guna.UI2.WinForms.Guna2Button btnExit;
     }
 }
