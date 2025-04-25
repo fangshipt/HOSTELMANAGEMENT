@@ -23,9 +23,7 @@ namespace HostelManagement
 
         private void btnLogOut_Click(object sender, EventArgs e)
         {
-            Login fm = new Login();
-            fm.Show();
-            this.Hide();
+            Application.Exit();
         }
 
         private void btnExit_Click(object sender, EventArgs e)
