@@ -6,7 +6,6 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Web.Hosting;
 using System.Windows.Forms;
 
 namespace HostelManagement
@@ -35,15 +34,32 @@ namespace HostelManagement
             this.Location = targetLocation;
             this.Size = targetSize;
         }
-
         private void AllStudentLiving_Load(object sender, EventArgs e)
         {
-            //this.Location = new Point(350, 170);
-            /*
-            query = "select * from newStudent where living='Yes'";
+            this.Location = new Point(350, 170);
+
+            string query = @"
+    SELECT 
+        ns.studentID    AS [Mã SV],
+        ns.name         AS [Họ Tên],
+        ns.roomNo       AS [Số Phòng],
+        r.roomType      AS [Loại Phòng],
+        ns.mobileNo     AS [SĐT]
+    FROM newStudent ns
+    INNER JOIN rooms  r  ON ns.roomNo = r.roomNo
+    WHERE ns.living = 1
+";
+
             DataSet ds = fn.getData(query);
             guna2DataGridView1.DataSource = ds.Tables[0];
-            */
+
+
+            guna2DataGridView1.Columns["Mã SV"].HeaderText = "Mã SV";
+            guna2DataGridView1.Columns["Họ Tên"].HeaderText = "Họ Tên";
+            guna2DataGridView1.Columns["Số Phòng"].HeaderText = "Số Phòng";
+            guna2DataGridView1.Columns["Loại Phòng"].HeaderText = "Loại Phòng";
+            guna2DataGridView1.Columns["SĐT"].HeaderText = "SĐT";
+
 
         }
 

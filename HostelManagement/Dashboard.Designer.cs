@@ -48,7 +48,7 @@
             this.hmsLabel.ForeColor = System.Drawing.Color.MidnightBlue;
             this.hmsLabel.Location = new System.Drawing.Point(539, 2);
             this.hmsLabel.Name = "hmsLabel";
-            this.hmsLabel.Size = new System.Drawing.Size(634, 54);
+            this.hmsLabel.Size = new System.Drawing.Size(643, 74);
             this.hmsLabel.TabIndex = 2;
             this.hmsLabel.Tag = "";
             this.hmsLabel.Text = "Hostel Management System";
@@ -274,7 +274,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MistyRose;
-            this.ClientSize = new System.Drawing.Size(1298, 785);
+            this.ClientSize = new System.Drawing.Size(1339, 841);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnLogOut);
             this.Controls.Add(this.btnLeavedStudents);
@@ -295,7 +295,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
         #endregion

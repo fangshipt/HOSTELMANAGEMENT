@@ -60,10 +60,9 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 13.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label1.Location = new System.Drawing.Point(36, 142);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(24, 91);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(192, 42);
+            this.label1.Size = new System.Drawing.Size(122, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Student ID";
             // 
@@ -72,10 +71,9 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 13.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label2.Location = new System.Drawing.Point(36, 223);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(24, 143);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(123, 42);
+            this.label2.Size = new System.Drawing.Size(79, 25);
             this.label2.TabIndex = 1;
             this.label2.Text = "Name";
             // 
@@ -84,10 +82,9 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 13.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label3.Location = new System.Drawing.Point(36, 300);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(24, 192);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(279, 42);
+            this.label3.Size = new System.Drawing.Size(181, 25);
             this.label3.TabIndex = 2;
             this.label3.Text = "Mobile Number";
             // 
@@ -96,10 +93,9 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 13.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label4.Location = new System.Drawing.Point(36, 461);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(24, 295);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(264, 42);
+            this.label4.Size = new System.Drawing.Size(168, 25);
             this.label4.TabIndex = 3;
             this.label4.Text = "Room Number";
             // 
@@ -108,10 +104,9 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 13.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label5.Location = new System.Drawing.Point(36, 559);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(24, 358);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(126, 42);
+            this.label5.Size = new System.Drawing.Size(83, 25);
             this.label5.TabIndex = 4;
             this.label5.Text = "Month";
             // 
@@ -120,10 +115,9 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 13.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label6.Location = new System.Drawing.Point(36, 645);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(24, 413);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(246, 42);
+            this.label6.Size = new System.Drawing.Size(157, 25);
             this.label6.TabIndex = 5;
             this.label6.Text = "Dues Amount";
             // 
@@ -139,12 +133,12 @@
             this.txtStudentID.Font = new System.Drawing.Font("Century Gothic", 13.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtStudentID.ForeColor = System.Drawing.Color.MidnightBlue;
             this.txtStudentID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtStudentID.Location = new System.Drawing.Point(384, 138);
-            this.txtStudentID.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.txtStudentID.Location = new System.Drawing.Point(256, 88);
+            this.txtStudentID.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtStudentID.Name = "txtStudentID";
             this.txtStudentID.PlaceholderText = "";
             this.txtStudentID.SelectedText = "";
-            this.txtStudentID.Size = new System.Drawing.Size(926, 47);
+            this.txtStudentID.Size = new System.Drawing.Size(617, 30);
             this.txtStudentID.TabIndex = 6;
             // 
             // txtName
@@ -159,12 +153,12 @@
             this.txtName.Font = new System.Drawing.Font("Century Gothic", 13.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtName.ForeColor = System.Drawing.Color.MidnightBlue;
             this.txtName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtName.Location = new System.Drawing.Point(384, 219);
-            this.txtName.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.txtName.Location = new System.Drawing.Point(256, 140);
+            this.txtName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtName.Name = "txtName";
             this.txtName.PlaceholderText = "";
             this.txtName.SelectedText = "";
-            this.txtName.Size = new System.Drawing.Size(926, 47);
+            this.txtName.Size = new System.Drawing.Size(617, 30);
             this.txtName.TabIndex = 7;
             // 
             // txtMobile
@@ -179,12 +173,12 @@
             this.txtMobile.Font = new System.Drawing.Font("Century Gothic", 13.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMobile.ForeColor = System.Drawing.Color.MidnightBlue;
             this.txtMobile.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMobile.Location = new System.Drawing.Point(384, 295);
-            this.txtMobile.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.txtMobile.Location = new System.Drawing.Point(256, 189);
+            this.txtMobile.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtMobile.Name = "txtMobile";
             this.txtMobile.PlaceholderText = "";
             this.txtMobile.SelectedText = "";
-            this.txtMobile.Size = new System.Drawing.Size(926, 47);
+            this.txtMobile.Size = new System.Drawing.Size(617, 30);
             this.txtMobile.TabIndex = 8;
             // 
             // txtRoomNo
@@ -199,12 +193,12 @@
             this.txtRoomNo.Font = new System.Drawing.Font("Century Gothic", 13.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRoomNo.ForeColor = System.Drawing.Color.MidnightBlue;
             this.txtRoomNo.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtRoomNo.Location = new System.Drawing.Point(384, 473);
-            this.txtRoomNo.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.txtRoomNo.Location = new System.Drawing.Point(256, 303);
+            this.txtRoomNo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtRoomNo.Name = "txtRoomNo";
             this.txtRoomNo.PlaceholderText = "";
             this.txtRoomNo.SelectedText = "";
-            this.txtRoomNo.Size = new System.Drawing.Size(926, 47);
+            this.txtRoomNo.Size = new System.Drawing.Size(617, 30);
             this.txtRoomNo.TabIndex = 9;
             // 
             // txtAmount
@@ -219,12 +213,12 @@
             this.txtAmount.Font = new System.Drawing.Font("Century Gothic", 13.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAmount.ForeColor = System.Drawing.Color.MidnightBlue;
             this.txtAmount.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtAmount.Location = new System.Drawing.Point(384, 645);
-            this.txtAmount.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.txtAmount.Location = new System.Drawing.Point(256, 413);
+            this.txtAmount.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtAmount.Name = "txtAmount";
             this.txtAmount.PlaceholderText = "";
             this.txtAmount.SelectedText = "";
-            this.txtAmount.Size = new System.Drawing.Size(926, 47);
+            this.txtAmount.Size = new System.Drawing.Size(617, 30);
             this.txtAmount.TabIndex = 10;
             // 
             // guna2DataGridView1
@@ -250,13 +244,12 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
             this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.Location = new System.Drawing.Point(44, 733);
-            this.guna2DataGridView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.guna2DataGridView1.Location = new System.Drawing.Point(29, 469);
             this.guna2DataGridView1.Name = "guna2DataGridView1";
             this.guna2DataGridView1.RowHeadersVisible = false;
             this.guna2DataGridView1.RowHeadersWidth = 51;
             this.guna2DataGridView1.RowTemplate.Height = 24;
-            this.guna2DataGridView1.Size = new System.Drawing.Size(1569, 336);
+            this.guna2DataGridView1.Size = new System.Drawing.Size(1046, 215);
             this.guna2DataGridView1.TabIndex = 11;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -287,12 +280,11 @@
             this.dataTimePicker.Font = new System.Drawing.Font("Century Gothic", 13.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dataTimePicker.ForeColor = System.Drawing.Color.MidnightBlue;
             this.dataTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dataTimePicker.Location = new System.Drawing.Point(384, 559);
-            this.dataTimePicker.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dataTimePicker.Location = new System.Drawing.Point(256, 358);
             this.dataTimePicker.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dataTimePicker.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dataTimePicker.Name = "dataTimePicker";
-            this.dataTimePicker.Size = new System.Drawing.Size(926, 47);
+            this.dataTimePicker.Size = new System.Drawing.Size(617, 30);
             this.dataTimePicker.TabIndex = 16;
             this.dataTimePicker.Value = new System.DateTime(2025, 4, 13, 21, 58, 59, 618);
             // 
@@ -308,10 +300,9 @@
             this.btnExit.ForeColor = System.Drawing.Color.White;
             this.btnExit.Image = global::HostelManagement.Properties.Resources.Close_all_jframe1;
             this.btnExit.ImageSize = new System.Drawing.Size(35, 35);
-            this.btnExit.Location = new System.Drawing.Point(1570, 6);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnExit.Location = new System.Drawing.Point(1047, 4);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(75, 75);
+            this.btnExit.Size = new System.Drawing.Size(50, 48);
             this.btnExit.TabIndex = 26;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
@@ -326,10 +317,9 @@
             this.btnClear.Font = new System.Drawing.Font("Segoe UI", 13.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClear.ForeColor = System.Drawing.Color.MistyRose;
             this.btnClear.Image = global::HostelManagement.Properties.Resources.clear;
-            this.btnClear.Location = new System.Drawing.Point(1377, 219);
-            this.btnClear.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnClear.Location = new System.Drawing.Point(918, 140);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(200, 59);
+            this.btnClear.Size = new System.Drawing.Size(133, 38);
             this.btnClear.TabIndex = 15;
             this.btnClear.Text = "Clear";
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
@@ -345,10 +335,9 @@
             this.btnPay.Font = new System.Drawing.Font("Segoe UI", 13.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPay.ForeColor = System.Drawing.Color.MistyRose;
             this.btnPay.Image = global::HostelManagement.Properties.Resources.Fees;
-            this.btnPay.Location = new System.Drawing.Point(1377, 298);
-            this.btnPay.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnPay.Location = new System.Drawing.Point(918, 191);
             this.btnPay.Name = "btnPay";
-            this.btnPay.Size = new System.Drawing.Size(200, 59);
+            this.btnPay.Size = new System.Drawing.Size(133, 38);
             this.btnPay.TabIndex = 14;
             this.btnPay.Text = "Pay";
             this.btnPay.Click += new System.EventHandler(this.btnPay_Click);
@@ -364,10 +353,9 @@
             this.btnSearch.Font = new System.Drawing.Font("Segoe UI", 13.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSearch.ForeColor = System.Drawing.Color.MistyRose;
             this.btnSearch.Image = global::HostelManagement.Properties.Resources.search;
-            this.btnSearch.Location = new System.Drawing.Point(1377, 138);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnSearch.Location = new System.Drawing.Point(918, 88);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(200, 59);
+            this.btnSearch.Size = new System.Drawing.Size(133, 38);
             this.btnSearch.TabIndex = 13;
             this.btnSearch.Text = "Search";
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
@@ -377,10 +365,9 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Poor Richard", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label11.Location = new System.Drawing.Point(14, 9);
-            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label11.Location = new System.Drawing.Point(9, 6);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(668, 73);
+            this.label11.Size = new System.Drawing.Size(426, 47);
             this.label11.TabIndex = 52;
             this.label11.Text = "New Student Registration";
             // 
@@ -389,10 +376,9 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 13.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label7.Location = new System.Drawing.Point(36, 381);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Location = new System.Drawing.Point(24, 244);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(208, 42);
+            this.label7.Size = new System.Drawing.Size(134, 25);
             this.label7.TabIndex = 53;
             this.label7.Text = "Room Type";
             // 
@@ -406,10 +392,9 @@
             this.cbRoomType.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cbRoomType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cbRoomType.ItemHeight = 30;
-            this.cbRoomType.Location = new System.Drawing.Point(384, 381);
-            this.cbRoomType.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cbRoomType.Location = new System.Drawing.Point(256, 244);
             this.cbRoomType.Name = "cbRoomType";
-            this.cbRoomType.Size = new System.Drawing.Size(924, 36);
+            this.cbRoomType.Size = new System.Drawing.Size(617, 36);
             this.cbRoomType.TabIndex = 54;
             // 
             // btnPrint
@@ -423,19 +408,18 @@
             this.btnPrint.Font = new System.Drawing.Font("Segoe UI", 13.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPrint.ForeColor = System.Drawing.Color.MistyRose;
             this.btnPrint.Image = global::HostelManagement.Properties.Resources.save1;
-            this.btnPrint.Location = new System.Drawing.Point(1377, 381);
-            this.btnPrint.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnPrint.Location = new System.Drawing.Point(918, 244);
             this.btnPrint.Name = "btnPrint";
-            this.btnPrint.Size = new System.Drawing.Size(200, 59);
+            this.btnPrint.Size = new System.Drawing.Size(133, 38);
             this.btnPrint.TabIndex = 55;
             this.btnPrint.Text = "Print";
             // 
             // StudentFees
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MistyRose;
-            this.ClientSize = new System.Drawing.Size(1650, 1100);
+            this.ClientSize = new System.Drawing.Size(1093, 703);
             this.Controls.Add(this.btnPrint);
             this.Controls.Add(this.cbRoomType);
             this.Controls.Add(this.label7);
@@ -459,7 +443,6 @@
             this.Controls.Add(this.label1);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "StudentFees";
             this.Text = "StudentFees";
             this.Load += new System.EventHandler(this.StudentFees_Load);
