@@ -39,8 +39,6 @@
             this.txtIdProof = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtCollege = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtPermanent = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtEmail = new Guna.UI2.WinForms.Guna2TextBox(); // Thêm từ remote
-            this.txtMobile = new Guna.UI2.WinForms.Guna2TextBox(); // Thêm từ remote
             this.txtMobileNumber = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtMother = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtFather = new Guna.UI2.WinForms.Guna2TextBox();
@@ -154,7 +152,7 @@
             this.comboBoxLiving.Items.AddRange(new object[] {
             "Yes",
             "No"});
-            this.comboBoxLiving.Location = new System.Drawing.Point(329, 580);
+            this.comboBoxLiving.Location = new System.Drawing.Point(329, 569);
             this.comboBoxLiving.Name = "comboBoxLiving";
             this.comboBoxLiving.Size = new System.Drawing.Size(659, 36);
             this.comboBoxLiving.TabIndex = 75;
@@ -170,7 +168,7 @@
             this.btnSearch.Font = new System.Drawing.Font("Segoe UI", 13.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSearch.ForeColor = System.Drawing.Color.MistyRose;
             this.btnSearch.Image = global::HostelManagement.Properties.Resources.search;
-            this.btnSearch.Location = new System.Drawing.Point(854, 82);
+            this.btnSearch.Location = new System.Drawing.Point(855, 66);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(133, 38);
             this.btnSearch.TabIndex = 74;
@@ -257,46 +255,6 @@
             this.txtPermanent.Size = new System.Drawing.Size(658, 30);
             this.txtPermanent.TabIndex = 70;
             // 
-            // txtEmail
-            // 
-            this.txtEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtEmail.DefaultText = "";
-            this.txtEmail.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtEmail.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtEmail.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtEmail.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtEmail.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtEmail.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmail.ForeColor = System.Drawing.Color.Empty;
-            this.txtEmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtEmail.Location = new System.Drawing.Point(329, 294);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.PlaceholderText = "";
-            this.txtEmail.SelectedText = "";
-            this.txtEmail.Size = new System.Drawing.Size(658, 30);
-            this.txtEmail.TabIndex = 69;
-            // 
-            // txtMobile
-            // 
-            this.txtMobile.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtMobile.DefaultText = "";
-            this.txtMobile.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtMobile.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtMobile.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtMobile.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtMobile.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMobile.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMobile.ForeColor = System.Drawing.Color.Empty;
-            this.txtMobile.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMobile.Location = new System.Drawing.Point(329, 240);
-            this.txtMobile.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtMobile.Name = "txtMobile";
-            this.txtMobile.PlaceholderText = "";
-            this.txtMobile.SelectedText = "";
-            this.txtMobile.Size = new System.Drawing.Size(658, 30);
-            this.txtMobile.TabIndex = 68;
-            // 
             // txtMobileNumber
             // 
             this.txtMobileNumber.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -309,7 +267,7 @@
             this.txtMobileNumber.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMobileNumber.ForeColor = System.Drawing.Color.Empty;
             this.txtMobileNumber.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMobileNumber.Location = new System.Drawing.Point(329, 320);
+            this.txtMobileNumber.Location = new System.Drawing.Point(330, 294);
             this.txtMobileNumber.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtMobileNumber.Name = "txtMobileNumber";
             this.txtMobileNumber.PlaceholderText = "";
@@ -329,7 +287,7 @@
             this.txtMother.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMother.ForeColor = System.Drawing.Color.Empty;
             this.txtMother.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMother.Location = new System.Drawing.Point(329, 186);
+            this.txtMother.Location = new System.Drawing.Point(330, 236);
             this.txtMother.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtMother.Name = "txtMother";
             this.txtMother.PlaceholderText = "";
@@ -349,7 +307,7 @@
             this.txtFather.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFather.ForeColor = System.Drawing.Color.Empty;
             this.txtFather.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtFather.Location = new System.Drawing.Point(329, 132);
+            this.txtFather.Location = new System.Drawing.Point(330, 182);
             this.txtFather.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtFather.Name = "txtFather";
             this.txtFather.PlaceholderText = "";
@@ -369,7 +327,7 @@
             this.txtName.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtName.ForeColor = System.Drawing.Color.Empty;
             this.txtName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtName.Location = new System.Drawing.Point(329, 78);
+            this.txtName.Location = new System.Drawing.Point(329, 130);
             this.txtName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtName.Name = "txtName";
             this.txtName.PlaceholderText = "";
@@ -389,7 +347,7 @@
             this.txtStudentID.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtStudentID.ForeColor = System.Drawing.Color.Black;
             this.txtStudentID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtStudentID.Location = new System.Drawing.Point(329, 24);
+            this.txtStudentID.Location = new System.Drawing.Point(330, 74);
             this.txtStudentID.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtStudentID.Name = "txtStudentID";
             this.txtStudentID.PlaceholderText = "";
@@ -402,7 +360,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label10.Location = new System.Drawing.Point(12, 576);
+            this.label10.Location = new System.Drawing.Point(12, 579);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(137, 26);
             this.label10.TabIndex = 62;
@@ -413,7 +371,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label9.Location = new System.Drawing.Point(12, 513);
+            this.label9.Location = new System.Drawing.Point(8, 514);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(155, 26);
             this.label9.TabIndex = 61;
@@ -424,7 +382,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label8.Location = new System.Drawing.Point(12, 459);
+            this.label8.Location = new System.Drawing.Point(12, 460);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(88, 26);
             this.label8.TabIndex = 60;
@@ -435,7 +393,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label7.Location = new System.Drawing.Point(12, 405);
+            this.label7.Location = new System.Drawing.Point(12, 406);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(151, 26);
             this.label7.TabIndex = 59;
@@ -446,7 +404,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label6.Location = new System.Drawing.Point(12, 351);
+            this.label6.Location = new System.Drawing.Point(12, 352);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(205, 26);
             this.label6.TabIndex = 58;
@@ -457,20 +415,20 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label5.Location = new System.Drawing.Point(12, 297);
+            this.label5.Location = new System.Drawing.Point(12, 78);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(71, 26);
+            this.label5.Size = new System.Drawing.Size(115, 26);
             this.label5.TabIndex = 57;
-            this.label5.Text = "Email";
+            this.label5.Text = "Student ID";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label4.Location = new System.Drawing.Point(12, 243);
+            this.label4.Location = new System.Drawing.Point(12, 298);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(160, 26);
+            this.label4.Size = new System.Drawing.Size(76, 26);
             this.label4.TabIndex = 56;
             this.label4.Text = "Mobile";
             // 
@@ -479,7 +437,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label3.Location = new System.Drawing.Point(12, 189);
+            this.label3.Location = new System.Drawing.Point(12, 240);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(144, 26);
             this.label3.TabIndex = 55;
@@ -490,7 +448,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label2.Location = new System.Drawing.Point(12, 135);
+            this.label2.Location = new System.Drawing.Point(10, 186);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(139, 26);
             this.label2.TabIndex = 54;
@@ -501,22 +459,11 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label1.Location = new System.Drawing.Point(12, 81);
+            this.label1.Location = new System.Drawing.Point(12, 134);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(71, 26);
             this.label1.TabIndex = 53;
             this.label1.Text = "Name";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label12.Location = new System.Drawing.Point(12, 27);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(115, 26);
-            this.label12.TabIndex = 52;
-            this.label12.Text = "Student ID";
             // 
             // UpdateDeleteStudent
             // 
@@ -535,8 +482,6 @@
             this.Controls.Add(this.txtIdProof);
             this.Controls.Add(this.txtCollege);
             this.Controls.Add(this.txtPermanent);
-            this.Controls.Add(this.txtEmail);
-            this.Controls.Add(this.txtMobile);
             this.Controls.Add(this.txtMobileNumber);
             this.Controls.Add(this.txtMother);
             this.Controls.Add(this.txtFather);
@@ -552,13 +497,13 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.label12);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "UpdateDeleteStudent";
             this.Text = "UpdateDeleteStudent";
             this.Load += new System.EventHandler(this.UpdateDeleteStudent_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         #endregion
@@ -574,8 +519,6 @@
         private Guna.UI2.WinForms.Guna2TextBox txtIdProof;
         private Guna.UI2.WinForms.Guna2TextBox txtCollege;
         private Guna.UI2.WinForms.Guna2TextBox txtPermanent;
-        private Guna.UI2.WinForms.Guna2TextBox txtEmail; // Thêm từ remote
-        private Guna.UI2.WinForms.Guna2TextBox txtMobile; // Thêm từ remote
         private Guna.UI2.WinForms.Guna2TextBox txtMobileNumber;
         private Guna.UI2.WinForms.Guna2TextBox txtMother;
         private Guna.UI2.WinForms.Guna2TextBox txtFather;
