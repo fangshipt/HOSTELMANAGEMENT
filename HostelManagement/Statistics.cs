@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
+using System.Drawing;
 namespace HostelManagement
 {
     public partial class Statistics : Form
@@ -81,6 +82,26 @@ namespace HostelManagement
             area.AxisX.Interval = 1;
 
             chartRegistrations.DataBind();
+            foreach (DataPoint point in chartRegistrations.Series[0].Points)
+            {
+                point.Color = Color.MidnightBlue;
+            }
+            chartRegistrations.Series[0].Color = Color.MidnightBlue;
+            // Font cho trục X và Y
+            chartRegistrations.ChartAreas[0].AxisX.TitleFont = new Font("Segoe UI", 10, FontStyle.Bold);
+            chartRegistrations.ChartAreas[0].AxisY.TitleFont = new Font("Segoe UI", 10, FontStyle.Bold);
+
+            // Font cho nhãn số trên cột
+            chartRegistrations.Series[0].Font = new Font("Segoe UI", 9, FontStyle.Bold);
+
+            // Font cho chú thích (legend)
+            chartRegistrations.Legends[0].Font = new Font("Segoe UI", 9, FontStyle.Regular);
+
+            if (chartRegistrations.Titles.Count > 0)
+            {
+                chartRegistrations.Titles[0].Font = new Font("Segoe UI", 12, FontStyle.Bold);
+            }
+
         }
 
         private void btnExit_Click(object sender, EventArgs e)

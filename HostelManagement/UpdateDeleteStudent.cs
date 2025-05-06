@@ -177,7 +177,6 @@ namespace HostelManagement
 
         private void UpdateDeleteStudent_Load(object sender, EventArgs e)
         {
-            this.Location = new Point(350, 150);
             comboBoxLiving.Items.Clear();
             comboBoxLiving.Items.Add("Yes");
             comboBoxLiving.Items.Add("No");

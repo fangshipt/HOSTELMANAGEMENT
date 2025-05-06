@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.chartRegistrations = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label11 = new System.Windows.Forms.Label();
             this.btnExit = new Guna.UI2.WinForms.Guna2CircleButton();
@@ -39,17 +39,19 @@
             // 
             // chartRegistrations
             // 
-            chartArea2.Name = "ChartArea1";
-            this.chartRegistrations.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.chartRegistrations.Legends.Add(legend2);
-            this.chartRegistrations.Location = new System.Drawing.Point(279, 164);
+            chartArea1.Name = "ChartArea1";
+            this.chartRegistrations.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chartRegistrations.Legends.Add(legend1);
+            this.chartRegistrations.Location = new System.Drawing.Point(26, 103);
             this.chartRegistrations.Name = "chartRegistrations";
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.chartRegistrations.Series.Add(series2);
-            this.chartRegistrations.Size = new System.Drawing.Size(1153, 727);
+            series1.ChartArea = "ChartArea1";
+            series1.Color = System.Drawing.Color.MidnightBlue;
+            series1.Font = new System.Drawing.Font("Segoe UI", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chartRegistrations.Series.Add(series1);
+            this.chartRegistrations.Size = new System.Drawing.Size(1594, 954);
             this.chartRegistrations.TabIndex = 0;
             this.chartRegistrations.Text = "chart1";
             // 
@@ -79,7 +81,7 @@
             this.btnExit.FillColor = System.Drawing.Color.MistyRose;
             this.btnExit.Font = new System.Drawing.Font("Segoe UI", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.btnExit.Location = new System.Drawing.Point(1500, -2);
+            this.btnExit.Location = new System.Drawing.Point(1548, 1);
             this.btnExit.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnExit.Name = "btnExit";
             this.btnExit.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
@@ -93,7 +95,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MistyRose;
-            this.ClientSize = new System.Drawing.Size(1600, 995);
+            this.ClientSize = new System.Drawing.Size(1650, 1100);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.chartRegistrations);

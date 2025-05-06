@@ -365,7 +365,8 @@
             // dtpStartDate
             // 
             this.dtpStartDate.Checked = true;
-            this.dtpStartDate.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.dtpStartDate.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(255)))));
+            this.dtpStartDate.Font = new System.Drawing.Font("Segoe UI", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpStartDate.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.dtpStartDate.Location = new System.Drawing.Point(492, 712);
             this.dtpStartDate.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -428,7 +429,7 @@
             this.btnExit.FillColor = System.Drawing.Color.MistyRose;
             this.btnExit.Font = new System.Drawing.Font("Segoe UI", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.btnExit.Location = new System.Drawing.Point(1526, -3);
+            this.btnExit.Location = new System.Drawing.Point(1548, 1);
             this.btnExit.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnExit.Name = "btnExit";
             this.btnExit.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
@@ -442,7 +443,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MistyRose;
-            this.ClientSize = new System.Drawing.Size(1626, 1066);
+            this.ClientSize = new System.Drawing.Size(1650, 1100);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnClear);

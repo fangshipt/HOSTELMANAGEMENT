@@ -25,7 +25,13 @@ namespace HostelManagement
         {
             Login fm = new Login();
             fm.Show();
-            this.Hide();
+            for (int i = Application.OpenForms.Count - 1; i >= 0; i--)
+            {
+                if (Application.OpenForms[i] != fm) 
+                {
+                    Application.OpenForms[i].Hide();
+                }
+            }
         }
 
         private void btnExit_Click(object sender, EventArgs e)

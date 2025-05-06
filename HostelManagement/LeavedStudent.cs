@@ -36,8 +36,6 @@ namespace HostelManagement
         }
         private void LeavedStudent_Load(object sender, EventArgs e)
         {
-            this.Location = new Point(350, 170);
-
             string query = @"
                 SELECT 
                     ns.studentID    AS [Mã SV],
