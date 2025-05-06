@@ -21,7 +21,7 @@ namespace HostelManagement
             InitializeComponent();
             this.studentID = studentID;
             this.monthYear = monthYear;
-            this.Size = new Size(576, 672);
+            this.Size = new Size(578, 672);
             this.StartPosition = FormStartPosition.CenterScreen;
 
         }
