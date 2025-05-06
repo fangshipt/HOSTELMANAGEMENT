@@ -153,6 +153,16 @@ namespace HostelManagement.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap List_of_Paid___Dues_Students {
+            get {
+                object obj = ResourceManager.GetObject("List of Paid & Dues Students", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap new_student {
             get {
                 object obj = ResourceManager.GetObject("new student", resourceCulture);

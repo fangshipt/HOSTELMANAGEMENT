@@ -23,16 +23,15 @@ namespace HostelManagement
 
         private void btnLogOut_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            Login fm = new Login();
+            fm.Show();
+            this.Hide();
         }
 
         private void btnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
-
-        
-
         private void Dashboard_Load(object sender, EventArgs e)
         {
             
@@ -74,6 +73,13 @@ namespace HostelManagement
         {
             UpdateDeleteStudent uds = new UpdateDeleteStudent(picLocation, picSize);
             uds.Show();
+        }
+
+        private void btnStatistics_Click(object sender, EventArgs e)
+        {
+            Statistics s = new Statistics(picLocation, picSize);
+            s.Show();
+
         }
     }
 }
