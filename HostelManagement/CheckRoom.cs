@@ -60,7 +60,7 @@ namespace HostelManagement
 
         private void LoadStudentsInRoom(int roomNo)
         {
-            string query = $"SELECT studentID, name, mobileNo FROM newStudent WHERE roomNo = {roomNo}";
+            string query = $"SELECT studentID, name, mobileNo FROM newStudent WHERE roomNo = {roomNo} AND living = 1";
             DataSet ds = fn.getData(query);
 
             dataGridViewStudents.Columns.Clear();
@@ -112,6 +112,11 @@ namespace HostelManagement
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void dataGridViewStudents_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
