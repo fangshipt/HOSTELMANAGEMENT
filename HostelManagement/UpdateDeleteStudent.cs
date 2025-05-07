@@ -42,14 +42,14 @@ namespace HostelManagement
 
             if (string.IsNullOrEmpty(studentID))
             {
-                MessageBox.Show("Please enter a Student ID to search.");
+                MessageBox.Show("Vui lòng nhập Mã sinh viên để tìm kiếm.");
                 return;
             }
 
             string query = "SELECT * FROM newStudent WHERE studentID = @studentID";
             SqlParameter[] parameters = new SqlParameter[]
             {
-            new SqlParameter("@studentID", studentID)
+        new SqlParameter("@studentID", studentID)
             };
 
             DataSet ds = fn.getData(query, parameters);
@@ -66,13 +66,13 @@ namespace HostelManagement
                 txtCollege.Text = row["college"].ToString();
                 txtRoomNo.Text = row["roomNo"].ToString();
 
-                // Sửa logic kiểm tra living status
+                // Gán giá trị trạng thái đang ở
                 bool livingStatus = Convert.ToBoolean(row["living"]);
-                comboBoxLiving.SelectedItem = livingStatus ? "Yes" : "No";
+                comboBoxLiving.SelectedItem = livingStatus ? "Có" : "Không";
             }
             else
             {
-                MessageBox.Show("No student found with this Student ID.");
+                MessageBox.Show("Không tìm thấy sinh viên với Mã sinh viên này.");
             }
         }
 
@@ -136,14 +136,14 @@ namespace HostelManagement
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Are You Sure?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+            if (MessageBox.Show("Bạn có chắc chắn muốn xóa?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
             {
                 query = "DELETE FROM newStudent WHERE studentID = @studentID";
                 SqlParameter[] parameters = new SqlParameter[]
                 {
-                new SqlParameter("@studentID", txtStudentID.Text.Trim())
+            new SqlParameter("@studentID", txtStudentID.Text.Trim())
                 };
-                fn.setData(query, "Student Record Deleted.", parameters);
+                fn.setData(query, "Đã xóa thông tin sinh viên.", parameters);
                 clearAll();
             }
 

@@ -47,26 +47,24 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label2.Location = new System.Drawing.Point(99, 90);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(539, 100);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(198, 30);
+            this.label2.Size = new System.Drawing.Size(148, 50);
             this.label2.TabIndex = 58;
-            this.label2.Text = "4 - person room";
+            this.label2.Text = "4 người";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 13.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 13.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label5.Location = new System.Drawing.Point(762, 91);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(977, 102);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(178, 25);
+            this.label5.Size = new System.Drawing.Size(140, 47);
             this.label5.TabIndex = 60;
-            this.label5.Text = "6 - person room";
+            this.label5.Text = "6 người";
             // 
             // comboBox4PersonRooms
             // 
@@ -84,9 +82,10 @@
             "103",
             "104",
             "105"});
-            this.comboBox4PersonRooms.Location = new System.Drawing.Point(155, 133);
+            this.comboBox4PersonRooms.Location = new System.Drawing.Point(548, 166);
+            this.comboBox4PersonRooms.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.comboBox4PersonRooms.Name = "comboBox4PersonRooms";
-            this.comboBox4PersonRooms.Size = new System.Drawing.Size(93, 36);
+            this.comboBox4PersonRooms.Size = new System.Drawing.Size(138, 36);
             this.comboBox4PersonRooms.TabIndex = 61;
             this.comboBox4PersonRooms.SelectedIndexChanged += new System.EventHandler(this.comboBox4PersonRooms_SelectedIndexChanged);
             // 
@@ -106,9 +105,10 @@
             "103",
             "104",
             "105"});
-            this.comboBox6PersonRooms.Location = new System.Drawing.Point(823, 133);
+            this.comboBox6PersonRooms.Location = new System.Drawing.Point(985, 168);
+            this.comboBox6PersonRooms.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.comboBox6PersonRooms.Name = "comboBox6PersonRooms";
-            this.comboBox6PersonRooms.Size = new System.Drawing.Size(93, 36);
+            this.comboBox6PersonRooms.Size = new System.Drawing.Size(138, 36);
             this.comboBox6PersonRooms.TabIndex = 62;
             this.comboBox6PersonRooms.SelectedIndexChanged += new System.EventHandler(this.comboBox6PersonRooms_SelectedIndexChanged_1);
             // 
@@ -133,20 +133,19 @@
             this.mobileNo});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle3.ForeColor = System.Drawing.Color.MidnightBlue;
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.MidnightBlue;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridViewStudents.DefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridViewStudents.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.dataGridViewStudents.Location = new System.Drawing.Point(23, 198);
-            this.dataGridViewStudents.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridViewStudents.Location = new System.Drawing.Point(34, 291);
             this.dataGridViewStudents.Name = "dataGridViewStudents";
             this.dataGridViewStudents.RowHeadersVisible = false;
             this.dataGridViewStudents.RowHeadersWidth = 82;
             this.dataGridViewStudents.RowTemplate.Height = 33;
-            this.dataGridViewStudents.Size = new System.Drawing.Size(1055, 486);
+            this.dataGridViewStudents.Size = new System.Drawing.Size(1582, 759);
             this.dataGridViewStudents.TabIndex = 64;
             this.dataGridViewStudents.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dataGridViewStudents.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -169,38 +168,38 @@
             this.dataGridViewStudents.ThemeStyle.RowsStyle.Height = 33;
             this.dataGridViewStudents.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dataGridViewStudents.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.dataGridViewStudents.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewStudents_CellContentClick);
             // 
             // studentID
             // 
             this.studentID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.studentID.HeaderText = "Student ID";
+            this.studentID.HeaderText = "MSSV";
             this.studentID.MinimumWidth = 6;
             this.studentID.Name = "studentID";
-            this.studentID.Width = 138;
+            this.studentID.Width = 144;
             // 
             // name
             // 
-            this.name.HeaderText = "Name";
+            this.name.HeaderText = "Họ Tên";
             this.name.MinimumWidth = 6;
             this.name.Name = "name";
             // 
             // mobileNo
             // 
-            this.mobileNo.HeaderText = "Mobile No";
+            this.mobileNo.HeaderText = "SĐT";
             this.mobileNo.MinimumWidth = 6;
             this.mobileNo.Name = "mobileNo";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Poor Richard", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Verdana", 16.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label3.Location = new System.Drawing.Point(429, 9);
+            this.label3.Location = new System.Drawing.Point(25, 21);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(223, 47);
+            this.label3.Size = new System.Drawing.Size(438, 52);
             this.label3.TabIndex = 65;
-            this.label3.Text = "Check Room";
+            this.label3.Text = "Thông tin phòng:";
             // 
             // btnExit
             // 
@@ -216,21 +215,21 @@
             this.btnExit.FillColor = System.Drawing.Color.MistyRose;
             this.btnExit.Font = new System.Drawing.Font("Segoe UI", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.btnExit.Location = new System.Drawing.Point(1032, 1);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnExit.Location = new System.Drawing.Point(1548, 2);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnExit.Name = "btnExit";
             this.btnExit.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btnExit.Size = new System.Drawing.Size(67, 64);
+            this.btnExit.Size = new System.Drawing.Size(100, 100);
             this.btnExit.TabIndex = 66;
             this.btnExit.Text = "X";
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // CheckRoom
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MistyRose;
-            this.ClientSize = new System.Drawing.Size(1100, 704);
+            this.ClientSize = new System.Drawing.Size(1650, 1100);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.dataGridViewStudents);
@@ -239,6 +238,7 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "CheckRoom";
             this.Text = "CheckRoom";
             this.Load += new System.EventHandler(this.CheckRoom_Load);
@@ -255,9 +255,9 @@
         private Guna.UI2.WinForms.Guna2ComboBox comboBox6PersonRooms;
         private Guna.UI2.WinForms.Guna2DataGridView dataGridViewStudents;
         private System.Windows.Forms.Label label3;
+        private Guna.UI2.WinForms.Guna2CircleButton btnExit;
         private System.Windows.Forms.DataGridViewTextBoxColumn studentID;
         private System.Windows.Forms.DataGridViewTextBoxColumn name;
         private System.Windows.Forms.DataGridViewTextBoxColumn mobileNo;
-        private Guna.UI2.WinForms.Guna2CircleButton btnExit;
     }
 }

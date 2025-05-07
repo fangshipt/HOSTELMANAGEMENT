@@ -45,15 +45,15 @@
             // hmsLabel
             // 
             this.hmsLabel.AutoSize = true;
-            this.hmsLabel.Font = new System.Drawing.Font("Monotype Corsiva", 40.125F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hmsLabel.Font = new System.Drawing.Font("Verdana", 25.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.hmsLabel.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.hmsLabel.Location = new System.Drawing.Point(770, 9);
+            this.hmsLabel.Location = new System.Drawing.Point(562, 66);
             this.hmsLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.hmsLabel.Name = "hmsLabel";
-            this.hmsLabel.Size = new System.Drawing.Size(1128, 130);
+            this.hmsLabel.Size = new System.Drawing.Size(1524, 84);
             this.hmsLabel.TabIndex = 2;
             this.hmsLabel.Tag = "";
-            this.hmsLabel.Text = "Hostel Management System";
+            this.hmsLabel.Text = "Hệ Thống Quản Lý Ký Túc Xá An Home";
             // 
             // btnLogOut
             // 
@@ -78,7 +78,7 @@
             this.btnLogOut.Name = "btnLogOut";
             this.btnLogOut.Size = new System.Drawing.Size(280, 90);
             this.btnLogOut.TabIndex = 14;
-            this.btnLogOut.Text = "Log Out";
+            this.btnLogOut.Text = "Đăng Xuất";
             this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
             // 
             // btnStatistics
@@ -104,7 +104,7 @@
             this.btnStatistics.Name = "btnStatistics";
             this.btnStatistics.Size = new System.Drawing.Size(450, 120);
             this.btnStatistics.TabIndex = 16;
-            this.btnStatistics.Text = "Statistics";
+            this.btnStatistics.Text = "Thống Kê";
             this.btnStatistics.Click += new System.EventHandler(this.btnStatistics_Click);
             // 
             // btnLeavedStudents
@@ -130,7 +130,7 @@
             this.btnLeavedStudents.Name = "btnLeavedStudents";
             this.btnLeavedStudents.Size = new System.Drawing.Size(450, 120);
             this.btnLeavedStudents.TabIndex = 8;
-            this.btnLeavedStudents.Text = "Leaved Students";
+            this.btnLeavedStudents.Text = "Đã Chuyển Đi";
             this.btnLeavedStudents.Click += new System.EventHandler(this.btnLeavedStudents_Click);
             // 
             // btnAllStudentLiving
@@ -156,7 +156,7 @@
             this.btnAllStudentLiving.Name = "btnAllStudentLiving";
             this.btnAllStudentLiving.Size = new System.Drawing.Size(450, 120);
             this.btnAllStudentLiving.TabIndex = 7;
-            this.btnAllStudentLiving.Text = "All Student Living";
+            this.btnAllStudentLiving.Text = "Danh Sách Sinh Viên";
             this.btnAllStudentLiving.Click += new System.EventHandler(this.btnAllStudentLiving_Click);
             // 
             // btnStudentFees
@@ -181,7 +181,7 @@
             this.btnStudentFees.Name = "btnStudentFees";
             this.btnStudentFees.Size = new System.Drawing.Size(450, 120);
             this.btnStudentFees.TabIndex = 6;
-            this.btnStudentFees.Text = "Student Fees";
+            this.btnStudentFees.Text = "Phí KTX";
             this.btnStudentFees.Click += new System.EventHandler(this.btnStudentFees_Click);
             // 
             // btnUpdateDeleteStudent
@@ -201,14 +201,13 @@
             this.btnUpdateDeleteStudent.HoverState.FillColor = System.Drawing.Color.MidnightBlue;
             this.btnUpdateDeleteStudent.HoverState.ForeColor = System.Drawing.Color.MistyRose;
             this.btnUpdateDeleteStudent.Image = global::HostelManagement.Properties.Resources.Update___Delete_Student;
-            this.btnUpdateDeleteStudent.ImageOffset = new System.Drawing.Point(7, 0);
             this.btnUpdateDeleteStudent.ImageSize = new System.Drawing.Size(25, 25);
             this.btnUpdateDeleteStudent.Location = new System.Drawing.Point(13, 522);
             this.btnUpdateDeleteStudent.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnUpdateDeleteStudent.Name = "btnUpdateDeleteStudent";
             this.btnUpdateDeleteStudent.Size = new System.Drawing.Size(450, 120);
             this.btnUpdateDeleteStudent.TabIndex = 5;
-            this.btnUpdateDeleteStudent.Text = "Update && Delete Students";
+            this.btnUpdateDeleteStudent.Text = "Sửa && Xoá";
             this.btnUpdateDeleteStudent.Click += new System.EventHandler(this.btnUpdateDeleteStudent_Click);
             // 
             // btnNewStudent
@@ -234,7 +233,7 @@
             this.btnNewStudent.Name = "btnNewStudent";
             this.btnNewStudent.Size = new System.Drawing.Size(450, 120);
             this.btnNewStudent.TabIndex = 4;
-            this.btnNewStudent.Text = "New Student";
+            this.btnNewStudent.Text = "Đăng Ký Mới";
             this.btnNewStudent.Click += new System.EventHandler(this.btnNewStudent_Click);
             // 
             // btnManageRooms
@@ -260,7 +259,7 @@
             this.btnManageRooms.Name = "btnManageRooms";
             this.btnManageRooms.Size = new System.Drawing.Size(450, 120);
             this.btnManageRooms.TabIndex = 3;
-            this.btnManageRooms.Text = "Manage Rooms";
+            this.btnManageRooms.Text = "Tra Cứu Phòng";
             this.btnManageRooms.Click += new System.EventHandler(this.btnManageRooms_Click);
             // 
             // guna2PictureBox1

@@ -13,7 +13,6 @@ namespace HostelManagement
     public partial class CheckRoom : Form
     {
         function fn = new function();
-        // function fn = new function();
         public CheckRoom()
         {
             InitializeComponent();
@@ -44,7 +43,7 @@ namespace HostelManagement
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error loading rooms: " + ex.Message);
+                MessageBox.Show("Lỗi load phòng: " + ex.Message);
             }
         }
 
@@ -64,9 +63,9 @@ namespace HostelManagement
             DataSet ds = fn.getData(query);
 
             dataGridViewStudents.Columns.Clear();
-            dataGridViewStudents.Columns.Add("studentID", "Student ID");
-            dataGridViewStudents.Columns.Add("name", "Name");
-            dataGridViewStudents.Columns.Add("mobileNo", "Mobile No");
+            dataGridViewStudents.Columns.Add("studentID", "MSSV");
+            dataGridViewStudents.Columns.Add("name", "Họ Tên");
+            dataGridViewStudents.Columns.Add("mobileNo", "SĐT");
 
             dataGridViewStudents.Rows.Clear();
 
@@ -112,11 +111,6 @@ namespace HostelManagement
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void dataGridViewStudents_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
         }
     }
 }

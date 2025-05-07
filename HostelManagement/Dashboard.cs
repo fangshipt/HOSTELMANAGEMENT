@@ -23,7 +23,16 @@ namespace HostelManagement
 
         private void btnLogOut_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            Login fm = new Login();
+            fm.Show();
+            for (int i = Application.OpenForms.Count - 1; i >= 0; i--)
+            {
+                if (Application.OpenForms[i] != fm)
+
+                {
+                    Application.OpenForms[i].Hide();
+                }
+            }
 
         }
 

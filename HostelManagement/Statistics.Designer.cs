@@ -32,8 +32,8 @@
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.chartRegistrations = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.label11 = new System.Windows.Forms.Label();
             this.btnExit = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.label11 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.chartRegistrations)).BeginInit();
             this.SuspendLayout();
             // 
@@ -54,18 +54,6 @@
             this.chartRegistrations.Size = new System.Drawing.Size(1594, 954);
             this.chartRegistrations.TabIndex = 0;
             this.chartRegistrations.Text = "chart1";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Poor Richard", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label11.Location = new System.Drawing.Point(13, 9);
-            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(459, 73);
-            this.label11.TabIndex = 81;
-            this.label11.Text = "Student Statistics";
             // 
             // btnExit
             // 
@@ -90,14 +78,26 @@
             this.btnExit.Text = "X";
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Verdana", 16.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.label11.Location = new System.Drawing.Point(17, 19);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(246, 52);
+            this.label11.TabIndex = 83;
+            this.label11.Text = "Thống kê";
+            // 
             // Statistics
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MistyRose;
             this.ClientSize = new System.Drawing.Size(1650, 1100);
-            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.label11);
+            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.chartRegistrations);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Statistics";
@@ -113,7 +113,7 @@
         #endregion
 
         private System.Windows.Forms.DataVisualization.Charting.Chart chartRegistrations;
-        private System.Windows.Forms.Label label11;
         private Guna.UI2.WinForms.Guna2CircleButton btnExit;
+        private System.Windows.Forms.Label label11;
     }
 }

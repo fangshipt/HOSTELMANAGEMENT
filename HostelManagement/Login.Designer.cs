@@ -35,7 +35,6 @@
             this.txtPassword = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnSignIn = new Guna.UI2.WinForms.Guna2Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.btnExit = new Guna.UI2.WinForms.Guna2CircleButton();
@@ -45,21 +44,21 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Snap ITC", 40.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(205, 32);
+            this.label1.Location = new System.Drawing.Point(104, 46);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(384, 138);
+            this.label1.Size = new System.Drawing.Size(576, 138);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Login";
+            this.label1.Text = "An Home";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(243, 178);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(230, 191);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(297, 31);
+            this.label2.Size = new System.Drawing.Size(325, 29);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Welcome. Please Login";
+            this.label2.Text = "Xin chào! Vui lòng đăng nhập";
             // 
             // txtUsername
             // 
@@ -76,11 +75,11 @@
             this.txtUsername.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsername.ForeColor = System.Drawing.Color.MidnightBlue;
             this.txtUsername.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtUsername.Location = new System.Drawing.Point(109, 250);
+            this.txtUsername.Location = new System.Drawing.Point(96, 264);
             this.txtUsername.Margin = new System.Windows.Forms.Padding(7);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.PlaceholderForeColor = System.Drawing.Color.MidnightBlue;
-            this.txtUsername.PlaceholderText = "Username";
+            this.txtUsername.PlaceholderText = "Tên đăng nhập";
             this.txtUsername.SelectedText = "";
             this.txtUsername.Size = new System.Drawing.Size(575, 85);
             this.txtUsername.TabIndex = 2;
@@ -100,11 +99,11 @@
             this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword.ForeColor = System.Drawing.Color.MidnightBlue;
             this.txtPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPassword.Location = new System.Drawing.Point(109, 396);
+            this.txtPassword.Location = new System.Drawing.Point(96, 410);
             this.txtPassword.Margin = new System.Windows.Forms.Padding(7);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PlaceholderForeColor = System.Drawing.Color.MidnightBlue;
-            this.txtPassword.PlaceholderText = "Password";
+            this.txtPassword.PlaceholderText = "Mật khẩu";
             this.txtPassword.SelectedText = "";
             this.txtPassword.Size = new System.Drawing.Size(575, 85);
             this.txtPassword.TabIndex = 3;
@@ -119,52 +118,41 @@
             this.btnSignIn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnSignIn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnSignIn.FillColor = System.Drawing.Color.MidnightBlue;
-            this.btnSignIn.Font = new System.Drawing.Font("Algerian", 12F, System.Drawing.FontStyle.Bold);
+            this.btnSignIn.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSignIn.ForeColor = System.Drawing.Color.MistyRose;
             this.btnSignIn.HoverState.BorderColor = System.Drawing.Color.MidnightBlue;
             this.btnSignIn.HoverState.FillColor = System.Drawing.Color.MistyRose;
             this.btnSignIn.HoverState.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.btnSignIn.Location = new System.Drawing.Point(306, 526);
+            this.btnSignIn.Location = new System.Drawing.Point(245, 535);
             this.btnSignIn.Name = "btnSignIn";
-            this.btnSignIn.Size = new System.Drawing.Size(200, 75);
+            this.btnSignIn.Size = new System.Drawing.Size(261, 75);
             this.btnSignIn.TabIndex = 4;
-            this.btnSignIn.Text = "SIGN IN";
+            this.btnSignIn.Text = "Đăng Nhập";
             this.btnSignIn.Click += new System.EventHandler(this.btnSignIn_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label3.Font = new System.Drawing.Font("Arial Narrow", 10.125F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(75, 653);
+            this.label3.Font = new System.Drawing.Font("Arial", 10.125F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(198, 659);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(188, 31);
+            this.label3.Size = new System.Drawing.Size(214, 31);
             this.label3.TabIndex = 5;
-            this.label3.Text = "Forget password?";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label4.Font = new System.Drawing.Font("Arial Narrow", 10.125F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(283, 653);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(276, 31);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "Don\'t have an account yet?";
+            this.label3.Text = "Quên tài khoản?";
             // 
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.DisabledLinkColor = System.Drawing.Color.Crimson;
-            this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel1.LinkColor = System.Drawing.Color.MidnightBlue;
-            this.linkLabel1.Location = new System.Drawing.Point(587, 655);
+            this.linkLabel1.Location = new System.Drawing.Point(430, 658);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(95, 29);
+            this.linkLabel1.Size = new System.Drawing.Size(114, 31);
             this.linkLabel1.TabIndex = 7;
             this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Sign up";
+            this.linkLabel1.Text = "Đăng ký";
             this.linkLabel1.VisitedLinkColor = System.Drawing.Color.Crimson;
             // 
             // guna2Elipse1
@@ -203,7 +191,6 @@
             this.ClientSize = new System.Drawing.Size(800, 750);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.linkLabel1);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnSignIn);
             this.Controls.Add(this.txtPassword);
@@ -227,7 +214,6 @@
         private Guna.UI2.WinForms.Guna2TextBox txtPassword;
         private Guna.UI2.WinForms.Guna2Button btnSignIn;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Guna.UI2.WinForms.Guna2CircleButton btnExit;

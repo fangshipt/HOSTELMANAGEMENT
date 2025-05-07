@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label11 = new System.Windows.Forms.Label();
             this.comboBoxLiving = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txtRoomNo = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtCollege = new Guna.UI2.WinForms.Guna2TextBox();
@@ -52,18 +51,8 @@
             this.btnUpdate = new Guna.UI2.WinForms.Guna2Button();
             this.btnSearch = new Guna.UI2.WinForms.Guna2Button();
             this.btnExit = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.label8 = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Poor Richard", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label11.Location = new System.Drawing.Point(4, 7);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(568, 55);
-            this.label11.TabIndex = 80;
-            this.label11.Text = "Student Details Modification";
             // 
             // comboBoxLiving
             // 
@@ -78,10 +67,10 @@
             this.comboBoxLiving.Items.AddRange(new object[] {
             "Yes",
             "No"});
-            this.comboBoxLiving.Location = new System.Drawing.Point(372, 656);
-            this.comboBoxLiving.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.comboBoxLiving.Location = new System.Drawing.Point(496, 820);
+            this.comboBoxLiving.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.comboBoxLiving.Name = "comboBoxLiving";
-            this.comboBoxLiving.Size = new System.Drawing.Size(740, 36);
+            this.comboBoxLiving.Size = new System.Drawing.Size(985, 36);
             this.comboBoxLiving.TabIndex = 75;
             // 
             // txtRoomNo
@@ -96,12 +85,12 @@
             this.txtRoomNo.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRoomNo.ForeColor = System.Drawing.Color.Empty;
             this.txtRoomNo.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtRoomNo.Location = new System.Drawing.Point(370, 580);
-            this.txtRoomNo.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.txtRoomNo.Location = new System.Drawing.Point(493, 725);
+            this.txtRoomNo.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.txtRoomNo.Name = "txtRoomNo";
             this.txtRoomNo.PlaceholderText = "";
             this.txtRoomNo.SelectedText = "";
-            this.txtRoomNo.Size = new System.Drawing.Size(740, 38);
+            this.txtRoomNo.Size = new System.Drawing.Size(987, 48);
             this.txtRoomNo.TabIndex = 73;
             // 
             // txtCollege
@@ -116,12 +105,12 @@
             this.txtCollege.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCollege.ForeColor = System.Drawing.Color.Empty;
             this.txtCollege.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCollege.Location = new System.Drawing.Point(370, 502);
-            this.txtCollege.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.txtCollege.Location = new System.Drawing.Point(493, 628);
+            this.txtCollege.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.txtCollege.Name = "txtCollege";
             this.txtCollege.PlaceholderText = "";
             this.txtCollege.SelectedText = "";
-            this.txtCollege.Size = new System.Drawing.Size(740, 38);
+            this.txtCollege.Size = new System.Drawing.Size(987, 48);
             this.txtCollege.TabIndex = 71;
             // 
             // txtPermanent
@@ -136,12 +125,12 @@
             this.txtPermanent.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPermanent.ForeColor = System.Drawing.Color.Empty;
             this.txtPermanent.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPermanent.Location = new System.Drawing.Point(370, 435);
-            this.txtPermanent.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.txtPermanent.Location = new System.Drawing.Point(493, 544);
+            this.txtPermanent.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.txtPermanent.Name = "txtPermanent";
             this.txtPermanent.PlaceholderText = "";
             this.txtPermanent.SelectedText = "";
-            this.txtPermanent.Size = new System.Drawing.Size(740, 38);
+            this.txtPermanent.Size = new System.Drawing.Size(987, 48);
             this.txtPermanent.TabIndex = 70;
             // 
             // txtMobileNumber
@@ -156,12 +145,12 @@
             this.txtMobileNumber.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMobileNumber.ForeColor = System.Drawing.Color.Empty;
             this.txtMobileNumber.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMobileNumber.Location = new System.Drawing.Point(371, 367);
-            this.txtMobileNumber.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.txtMobileNumber.Location = new System.Drawing.Point(495, 459);
+            this.txtMobileNumber.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.txtMobileNumber.Name = "txtMobileNumber";
             this.txtMobileNumber.PlaceholderText = "";
             this.txtMobileNumber.SelectedText = "";
-            this.txtMobileNumber.Size = new System.Drawing.Size(740, 38);
+            this.txtMobileNumber.Size = new System.Drawing.Size(987, 48);
             this.txtMobileNumber.TabIndex = 67;
             // 
             // txtMother
@@ -176,12 +165,12 @@
             this.txtMother.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMother.ForeColor = System.Drawing.Color.Empty;
             this.txtMother.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMother.Location = new System.Drawing.Point(371, 295);
-            this.txtMother.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.txtMother.Location = new System.Drawing.Point(495, 369);
+            this.txtMother.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.txtMother.Name = "txtMother";
             this.txtMother.PlaceholderText = "";
             this.txtMother.SelectedText = "";
-            this.txtMother.Size = new System.Drawing.Size(740, 38);
+            this.txtMother.Size = new System.Drawing.Size(987, 48);
             this.txtMother.TabIndex = 66;
             // 
             // txtFather
@@ -196,12 +185,12 @@
             this.txtFather.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFather.ForeColor = System.Drawing.Color.Empty;
             this.txtFather.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtFather.Location = new System.Drawing.Point(371, 227);
-            this.txtFather.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.txtFather.Location = new System.Drawing.Point(495, 284);
+            this.txtFather.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.txtFather.Name = "txtFather";
             this.txtFather.PlaceholderText = "";
             this.txtFather.SelectedText = "";
-            this.txtFather.Size = new System.Drawing.Size(740, 38);
+            this.txtFather.Size = new System.Drawing.Size(987, 48);
             this.txtFather.TabIndex = 65;
             // 
             // txtName
@@ -216,12 +205,12 @@
             this.txtName.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtName.ForeColor = System.Drawing.Color.Empty;
             this.txtName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtName.Location = new System.Drawing.Point(370, 162);
-            this.txtName.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.txtName.Location = new System.Drawing.Point(493, 202);
+            this.txtName.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.txtName.Name = "txtName";
             this.txtName.PlaceholderText = "";
             this.txtName.SelectedText = "";
-            this.txtName.Size = new System.Drawing.Size(740, 38);
+            this.txtName.Size = new System.Drawing.Size(987, 48);
             this.txtName.TabIndex = 64;
             // 
             // txtStudentID
@@ -236,112 +225,121 @@
             this.txtStudentID.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtStudentID.ForeColor = System.Drawing.Color.Black;
             this.txtStudentID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtStudentID.Location = new System.Drawing.Point(371, 93);
-            this.txtStudentID.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.txtStudentID.Location = new System.Drawing.Point(495, 116);
+            this.txtStudentID.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.txtStudentID.Name = "txtStudentID";
             this.txtStudentID.PlaceholderText = "";
             this.txtStudentID.SelectedText = "";
-            this.txtStudentID.Size = new System.Drawing.Size(546, 38);
+            this.txtStudentID.Size = new System.Drawing.Size(728, 48);
             this.txtStudentID.TabIndex = 63;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Century Gothic", 13.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Font = new System.Drawing.Font("Segoe UI", 13.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label10.Location = new System.Drawing.Point(24, 659);
+            this.label10.Location = new System.Drawing.Point(24, 820);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(174, 33);
+            this.label10.Size = new System.Drawing.Size(281, 47);
             this.label10.TabIndex = 62;
-            this.label10.Text = "Living Status";
+            this.label10.Text = "Tình trạng cư trú";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Century Gothic", 13.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Segoe UI", 13.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label9.Location = new System.Drawing.Point(18, 580);
+            this.label9.Location = new System.Drawing.Point(24, 725);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(206, 33);
+            this.label9.Size = new System.Drawing.Size(173, 47);
             this.label9.TabIndex = 61;
-            this.label9.Text = "Room Number";
+            this.label9.Text = "Số phòng";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Century Gothic", 13.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 13.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label7.Location = new System.Drawing.Point(14, 507);
+            this.label7.Location = new System.Drawing.Point(19, 634);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(210, 33);
+            this.label7.Size = new System.Drawing.Size(190, 47);
             this.label7.TabIndex = 59;
-            this.label7.Text = "College Name";
+            this.label7.Text = "Tên trường";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 13.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 13.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label6.Location = new System.Drawing.Point(14, 440);
+            this.label6.Location = new System.Drawing.Point(19, 550);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(271, 33);
+            this.label6.Size = new System.Drawing.Size(304, 47);
             this.label6.TabIndex = 58;
-            this.label6.Text = "Permanent Address";
+            this.label6.Text = "Địa chỉ thường trú";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 13.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 13.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label5.Location = new System.Drawing.Point(14, 98);
+            this.label5.Location = new System.Drawing.Point(19, 122);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(150, 33);
+            this.label5.Size = new System.Drawing.Size(111, 47);
             this.label5.TabIndex = 57;
-            this.label5.Text = "Student ID";
+            this.label5.Text = "MSSV";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 13.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 13.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label4.Location = new System.Drawing.Point(14, 373);
+            this.label4.Location = new System.Drawing.Point(19, 466);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(106, 33);
+            this.label4.Size = new System.Drawing.Size(82, 47);
             this.label4.TabIndex = 56;
-            this.label4.Text = "Mobile";
+            this.label4.Text = "SĐT";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 13.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 13.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label3.Location = new System.Drawing.Point(14, 300);
+            this.label3.Location = new System.Drawing.Point(19, 375);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(199, 33);
+            this.label3.Size = new System.Drawing.Size(184, 47);
             this.label3.TabIndex = 55;
-            this.label3.Text = "Mother Name";
+            this.label3.Text = "Họ tên mẹ";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 13.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 13.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label2.Location = new System.Drawing.Point(11, 233);
+            this.label2.Location = new System.Drawing.Point(15, 291);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(187, 33);
+            this.label2.Size = new System.Drawing.Size(190, 47);
             this.label2.TabIndex = 54;
-            this.label2.Text = "Father Name";
+            this.label2.Text = "Họ tên cha";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 13.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 13.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label1.Location = new System.Drawing.Point(14, 167);
+            this.label1.Location = new System.Drawing.Point(19, 209);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(97, 33);
+            this.label1.Size = new System.Drawing.Size(126, 47);
             this.label1.TabIndex = 53;
-            this.label1.Text = "Name";
+            this.label1.Text = "Họ tên";
             // 
             // btnClear
             // 
@@ -354,12 +352,12 @@
             this.btnClear.Font = new System.Drawing.Font("Segoe UI", 13.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClear.ForeColor = System.Drawing.Color.MistyRose;
             this.btnClear.Image = global::HostelManagement.Properties.Resources.clear;
-            this.btnClear.Location = new System.Drawing.Point(860, 786);
-            this.btnClear.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnClear.Location = new System.Drawing.Point(1106, 982);
+            this.btnClear.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(150, 47);
+            this.btnClear.Size = new System.Drawing.Size(240, 75);
             this.btnClear.TabIndex = 78;
-            this.btnClear.Text = "Clear";
+            this.btnClear.Text = "Xoá trắng";
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // btnDelete
@@ -373,12 +371,12 @@
             this.btnDelete.Font = new System.Drawing.Font("Segoe UI", 13.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.ForeColor = System.Drawing.Color.MistyRose;
             this.btnDelete.Image = global::HostelManagement.Properties.Resources.delete;
-            this.btnDelete.Location = new System.Drawing.Point(1024, 786);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnDelete.Location = new System.Drawing.Point(1365, 982);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(150, 47);
+            this.btnDelete.Size = new System.Drawing.Size(240, 75);
             this.btnDelete.TabIndex = 77;
-            this.btnDelete.Text = "Delete";
+            this.btnDelete.Text = "Xoá";
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnUpdate
@@ -392,12 +390,12 @@
             this.btnUpdate.Font = new System.Drawing.Font("Segoe UI", 13.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.ForeColor = System.Drawing.Color.MistyRose;
             this.btnUpdate.Image = global::HostelManagement.Properties.Resources.save;
-            this.btnUpdate.Location = new System.Drawing.Point(693, 786);
-            this.btnUpdate.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnUpdate.Location = new System.Drawing.Point(849, 982);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(150, 47);
+            this.btnUpdate.Size = new System.Drawing.Size(240, 75);
             this.btnUpdate.TabIndex = 76;
-            this.btnUpdate.Text = "Update";
+            this.btnUpdate.Text = "Chỉnh sửa";
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnSearch
@@ -411,12 +409,12 @@
             this.btnSearch.Font = new System.Drawing.Font("Segoe UI", 13.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSearch.ForeColor = System.Drawing.Color.MistyRose;
             this.btnSearch.Image = global::HostelManagement.Properties.Resources.search;
-            this.btnSearch.Location = new System.Drawing.Point(962, 82);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnSearch.Location = new System.Drawing.Point(1283, 102);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(150, 47);
+            this.btnSearch.Size = new System.Drawing.Size(240, 75);
             this.btnSearch.TabIndex = 74;
-            this.btnSearch.Text = "Search";
+            this.btnSearch.Text = "Tìm kiếm";
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // btnExit
@@ -433,23 +431,35 @@
             this.btnExit.FillColor = System.Drawing.Color.MistyRose;
             this.btnExit.Font = new System.Drawing.Font("Segoe UI", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.btnExit.Location = new System.Drawing.Point(1161, 1);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnExit.Location = new System.Drawing.Point(1548, 1);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.btnExit.Name = "btnExit";
             this.btnExit.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btnExit.Size = new System.Drawing.Size(75, 80);
+            this.btnExit.Size = new System.Drawing.Size(100, 100);
             this.btnExit.TabIndex = 81;
             this.btnExit.Text = "X";
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Verdana", 16.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.label8.Location = new System.Drawing.Point(13, 20);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(737, 52);
+            this.label8.TabIndex = 82;
+            this.label8.Text = "Chỉnh sửa thông tin sinh viên";
+            // 
             // UpdateDeleteStudent
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MistyRose;
-            this.ClientSize = new System.Drawing.Size(1238, 880);
+            this.ClientSize = new System.Drawing.Size(1651, 1100);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.btnExit);
-            this.Controls.Add(this.label11);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnUpdate);
@@ -473,7 +483,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "UpdateDeleteStudent";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "UpdateDeleteStudent";
@@ -484,8 +494,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label11;
         private Guna.UI2.WinForms.Guna2Button btnClear;
         private Guna.UI2.WinForms.Guna2Button btnDelete;
         private Guna.UI2.WinForms.Guna2Button btnUpdate;
@@ -510,5 +518,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label12; // Thêm mới cho txtStudentID
         private Guna.UI2.WinForms.Guna2CircleButton btnExit;
+        private System.Windows.Forms.Label label8;
     }
 }
