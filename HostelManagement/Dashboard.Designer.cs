@@ -45,12 +45,12 @@
             // hmsLabel
             // 
             this.hmsLabel.AutoSize = true;
-            this.hmsLabel.Font = new System.Drawing.Font("VNI-Zap", 40.12499F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hmsLabel.Font = new System.Drawing.Font("Monotype Corsiva", 40.125F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.hmsLabel.ForeColor = System.Drawing.Color.MidnightBlue;
             this.hmsLabel.Location = new System.Drawing.Point(770, 9);
             this.hmsLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.hmsLabel.Name = "hmsLabel";
-            this.hmsLabel.Size = new System.Drawing.Size(1134, 131);
+            this.hmsLabel.Size = new System.Drawing.Size(1128, 130);
             this.hmsLabel.TabIndex = 2;
             this.hmsLabel.Tag = "";
             this.hmsLabel.Text = "Hostel Management System";
