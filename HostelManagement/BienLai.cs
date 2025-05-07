@@ -55,7 +55,7 @@ namespace HostelManagement
                 foreach (DataRow row in ds.fees.Rows)
                 {
                     logMessage += $"StudentID: {row["studentID"]}, MonthYear: {row["monthYear"]}, Amount: {row["amount"]}, " +
-                                  $"Name: {row["name"]}, Mobile: {row["mobileNo"]}, IDProof: {row["idproof"]}\n";
+                                  $"Name: {row["name"]}, Mobile: {row["mobileNo"]}\n";
                 }
                 File.WriteAllText("debug_log.txt", logMessage);
 
@@ -97,6 +97,11 @@ namespace HostelManagement
         private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void crystalReportViewer_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

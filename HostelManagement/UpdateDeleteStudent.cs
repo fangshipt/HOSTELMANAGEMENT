@@ -64,7 +64,6 @@ namespace HostelManagement
                 txtMobileNumber.Text = row["mobileNo"].ToString();
                 txtPermanent.Text = row["paddress"].ToString();
                 txtCollege.Text = row["college"].ToString();
-                txtIdProof.Text = row["idproof"].ToString();
                 txtRoomNo.Text = row["roomNo"].ToString();
 
                 // Sửa logic kiểm tra living status
@@ -86,13 +85,12 @@ namespace HostelManagement
             string mobile = txtMobileNumber.Text.Trim();
             string paddress = txtPermanent.Text.Trim();
             string college = txtCollege.Text.Trim();
-            string idproof = txtIdProof.Text.Trim();
             int roomNo;
             int livingStatus = comboBoxLiving.SelectedItem.ToString() == "Yes" ? 1 : 0;
 
             if (string.IsNullOrEmpty(studentID) || string.IsNullOrEmpty(name) || string.IsNullOrEmpty(fname) ||
                 string.IsNullOrEmpty(mname) || string.IsNullOrEmpty(mobile) || string.IsNullOrEmpty(paddress) ||
-                string.IsNullOrEmpty(college) || string.IsNullOrEmpty(idproof) || string.IsNullOrEmpty(txtRoomNo.Text))
+                string.IsNullOrEmpty(college) || string.IsNullOrEmpty(txtRoomNo.Text))
             {
                 MessageBox.Show("Vui lòng nhập đầy đủ thông tin sinh viên.");
                 return;
@@ -120,7 +118,6 @@ namespace HostelManagement
                 new SqlParameter("@mobileNo", mobile),
                 new SqlParameter("@paddress", paddress),
                 new SqlParameter("@college", college),
-                new SqlParameter("@idproof", idproof),
                 new SqlParameter("@roomNo", roomNo),
                 new SqlParameter("@living", livingStatus),
                 new SqlParameter("@studentID", studentID)
@@ -160,7 +157,6 @@ namespace HostelManagement
             txtMobileNumber.Clear();
             txtPermanent.Clear();
             txtCollege.Clear();
-            txtIdProof.Clear();
             txtRoomNo.Clear();
             comboBoxLiving.SelectedIndex = -1;
         }

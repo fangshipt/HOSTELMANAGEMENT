@@ -337,8 +337,6 @@ namespace HostelManagement {
             
             private global::System.Data.DataColumn columnpaddress;
             
-            private global::System.Data.DataColumn columnidproof;
-            
             private global::System.Data.DataColumn columnroomNo;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -440,14 +438,6 @@ namespace HostelManagement {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn idproofColumn {
-                get {
-                    return this.columnidproof;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public global::System.Data.DataColumn roomNoColumn {
                 get {
                     return this.columnroomNo;
@@ -491,7 +481,7 @@ namespace HostelManagement {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public feesRow AddfeesRow(newStudentRow parentnewStudentRowBynewStudent_fees, System.DateTime transactionDate, string monthYear, long amount, string name, long mobileNo, string paddress, string idproof, int roomNo) {
+            public feesRow AddfeesRow(newStudentRow parentnewStudentRowBynewStudent_fees, System.DateTime transactionDate, string monthYear, long amount, string name, long mobileNo, string paddress, int roomNo) {
                 feesRow rowfeesRow = ((feesRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -502,7 +492,6 @@ namespace HostelManagement {
                         name,
                         mobileNo,
                         paddress,
-                        idproof,
                         roomNo};
                 if ((parentnewStudentRowBynewStudent_fees != null)) {
                     columnValuesArray[1] = parentnewStudentRowBynewStudent_fees[0];
@@ -544,7 +533,6 @@ namespace HostelManagement {
                 this.columnname = base.Columns["name"];
                 this.columnmobileNo = base.Columns["mobileNo"];
                 this.columnpaddress = base.Columns["paddress"];
-                this.columnidproof = base.Columns["idproof"];
                 this.columnroomNo = base.Columns["roomNo"];
             }
             
@@ -567,8 +555,6 @@ namespace HostelManagement {
                 base.Columns.Add(this.columnmobileNo);
                 this.columnpaddress = new global::System.Data.DataColumn("paddress", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnpaddress);
-                this.columnidproof = new global::System.Data.DataColumn("idproof", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnidproof);
                 this.columnroomNo = new global::System.Data.DataColumn("roomNo", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnroomNo);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
@@ -589,8 +575,6 @@ namespace HostelManagement {
                 this.columnname.MaxLength = 100;
                 this.columnpaddress.AllowDBNull = false;
                 this.columnpaddress.MaxLength = 200;
-                this.columnidproof.AllowDBNull = false;
-                this.columnidproof.MaxLength = 100;
                 this.columnroomNo.AllowDBNull = false;
             }
             
@@ -739,8 +723,6 @@ namespace HostelManagement {
             
             private global::System.Data.DataColumn columncollege;
             
-            private global::System.Data.DataColumn columnidproof;
-            
             private global::System.Data.DataColumn columnroomNo;
             
             private global::System.Data.DataColumn columnliving;
@@ -836,14 +818,6 @@ namespace HostelManagement {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn idproofColumn {
-                get {
-                    return this.columnidproof;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public global::System.Data.DataColumn roomNoColumn {
                 get {
                     return this.columnroomNo;
@@ -895,7 +869,7 @@ namespace HostelManagement {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public newStudentRow AddnewStudentRow(string studentID, string name, string fname, string mname, long mobileNo, string paddress, string college, string idproof, int roomNo, bool living) {
+            public newStudentRow AddnewStudentRow(string studentID, string name, string fname, string mname, long mobileNo, string paddress, string college, int roomNo, bool living) {
                 newStudentRow rownewStudentRow = ((newStudentRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         studentID,
@@ -905,7 +879,6 @@ namespace HostelManagement {
                         mobileNo,
                         paddress,
                         college,
-                        idproof,
                         roomNo,
                         living};
                 rownewStudentRow.ItemArray = columnValuesArray;
@@ -944,7 +917,6 @@ namespace HostelManagement {
                 this.columnmobileNo = base.Columns["mobileNo"];
                 this.columnpaddress = base.Columns["paddress"];
                 this.columncollege = base.Columns["college"];
-                this.columnidproof = base.Columns["idproof"];
                 this.columnroomNo = base.Columns["roomNo"];
                 this.columnliving = base.Columns["living"];
             }
@@ -966,8 +938,6 @@ namespace HostelManagement {
                 base.Columns.Add(this.columnpaddress);
                 this.columncollege = new global::System.Data.DataColumn("college", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columncollege);
-                this.columnidproof = new global::System.Data.DataColumn("idproof", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnidproof);
                 this.columnroomNo = new global::System.Data.DataColumn("roomNo", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnroomNo);
                 this.columnliving = new global::System.Data.DataColumn("living", typeof(bool), null, global::System.Data.MappingType.Element);
@@ -987,8 +957,6 @@ namespace HostelManagement {
                 this.columnpaddress.MaxLength = 200;
                 this.columncollege.AllowDBNull = false;
                 this.columncollege.MaxLength = 200;
-                this.columnidproof.AllowDBNull = false;
-                this.columnidproof.MaxLength = 100;
                 this.columnroomNo.AllowDBNull = false;
                 this.columnliving.AllowDBNull = false;
             }
@@ -1226,17 +1194,6 @@ namespace HostelManagement {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string idproof {
-                get {
-                    return ((string)(this[this.tablefees.idproofColumn]));
-                }
-                set {
-                    this[this.tablefees.idproofColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public int roomNo {
                 get {
                     return ((int)(this[this.tablefees.roomNoColumn]));
@@ -1363,17 +1320,6 @@ namespace HostelManagement {
                 }
                 set {
                     this[this.tablenewStudent.collegeColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string idproof {
-                get {
-                    return ((string)(this[this.tablenewStudent.idproofColumn]));
-                }
-                set {
-                    this[this.tablenewStudent.idproofColumn] = value;
                 }
             }
             
@@ -1624,7 +1570,6 @@ namespace HostelManagement.FeeReceiptDataSetTableAdapters {
             tableMapping.ColumnMappings.Add("name", "name");
             tableMapping.ColumnMappings.Add("mobileNo", "mobileNo");
             tableMapping.ColumnMappings.Add("paddress", "paddress");
-            tableMapping.ColumnMappings.Add("idproof", "idproof");
             tableMapping.ColumnMappings.Add("roomNo", "roomNo");
             this._adapter.TableMappings.Add(tableMapping);
         }
@@ -1643,9 +1588,9 @@ namespace HostelManagement.FeeReceiptDataSetTableAdapters {
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT f.feeID, f.studentID, f.transactionDate, f.monthYear, f.amount,\r\n       s." +
-                "name, s.mobileNo, s.paddress, s.idproof, s.roomNo\r\nFROM fees f\r\nJOIN newStudent " +
-                "s ON f.studentID = s.studentID\r\nWHERE f.studentID = @studentID AND f.monthYear =" +
-                " @monthYear";
+                "name, s.mobileNo, s.paddress, s.roomNo\r\nFROM fees f\r\nJOIN newStudent s ON f.stud" +
+                "entID = s.studentID\r\nWHERE f.studentID = @studentID AND f.monthYear = @monthYear" +
+                "";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@studentID", global::System.Data.SqlDbType.VarChar, 10, global::System.Data.ParameterDirection.Input, 0, 0, "studentID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@monthYear", global::System.Data.SqlDbType.VarChar, 15, global::System.Data.ParameterDirection.Input, 0, 0, "monthYear", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -1828,13 +1773,12 @@ namespace HostelManagement.FeeReceiptDataSetTableAdapters {
             tableMapping.ColumnMappings.Add("mobileNo", "mobileNo");
             tableMapping.ColumnMappings.Add("paddress", "paddress");
             tableMapping.ColumnMappings.Add("college", "college");
-            tableMapping.ColumnMappings.Add("idproof", "idproof");
             tableMapping.ColumnMappings.Add("roomNo", "roomNo");
             tableMapping.ColumnMappings.Add("living", "living");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[newStudent] WHERE (([studentID] = @Original_studentID) AND ([name] = @Original_name) AND ([fname] = @Original_fname) AND ([mname] = @Original_mname) AND ((@IsNull_mobileNo = 1 AND [mobileNo] IS NULL) OR ([mobileNo] = @Original_mobileNo)) AND ([paddress] = @Original_paddress) AND ([college] = @Original_college) AND ([idproof] = @Original_idproof) AND ([roomNo] = @Original_roomNo) AND ([living] = @Original_living))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[newStudent] WHERE (([studentID] = @Original_studentID) AND ([name] = @Original_name) AND ([fname] = @Original_fname) AND ([mname] = @Original_mname) AND ((@IsNull_mobileNo = 1 AND [mobileNo] IS NULL) OR ([mobileNo] = @Original_mobileNo)) AND ([paddress] = @Original_paddress) AND ([college] = @Original_college) AND ([roomNo] = @Original_roomNo) AND ([living] = @Original_living))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_studentID", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "studentID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "name", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
@@ -1844,28 +1788,12 @@ namespace HostelManagement.FeeReceiptDataSetTableAdapters {
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_mobileNo", global::System.Data.SqlDbType.BigInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "mobileNo", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_paddress", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "paddress", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_college", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "college", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_idproof", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "idproof", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_roomNo", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "roomNo", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_living", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "living", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
-            this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[newStudent] ([studentID], [name], [fname], [mname], [mobileNo], [paddress], [college], [idproof], [roomNo], [living]) VALUES (@studentID, @name, @fname, @mname, @mobileNo, @paddress, @college, @idproof, @roomNo, @living);
-SELECT studentID, name, fname, mname, mobileNo, paddress, college, idproof, roomNo, living FROM newStudent WHERE (studentID = @studentID)";
-            this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@studentID", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "studentID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@fname", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "fname", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@mname", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "mname", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@mobileNo", global::System.Data.SqlDbType.BigInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "mobileNo", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@paddress", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "paddress", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@college", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "college", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@idproof", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "idproof", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@roomNo", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "roomNo", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@living", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "living", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[newStudent] SET [studentID] = @studentID, [name] = @name, [fname] = @fname, [mname] = @mname, [mobileNo] = @mobileNo, [paddress] = @paddress, [college] = @college, [idproof] = @idproof, [roomNo] = @roomNo, [living] = @living WHERE (([studentID] = @Original_studentID) AND ([name] = @Original_name) AND ([fname] = @Original_fname) AND ([mname] = @Original_mname) AND ((@IsNull_mobileNo = 1 AND [mobileNo] IS NULL) OR ([mobileNo] = @Original_mobileNo)) AND ([paddress] = @Original_paddress) AND ([college] = @Original_college) AND ([idproof] = @Original_idproof) AND ([roomNo] = @Original_roomNo) AND ([living] = @Original_living));
-SELECT studentID, name, fname, mname, mobileNo, paddress, college, idproof, roomNo, living FROM newStudent WHERE (studentID = @studentID)";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[newStudent] SET [studentID] = @studentID, [name] = @name, [fname] = @fname, [mname] = @mname, [mobileNo] = @mobileNo, [paddress] = @paddress, [college] = @college, [roomNo] = @roomNo, [living] = @living WHERE (([studentID] = @Original_studentID) AND ([name] = @Original_name) AND ([fname] = @Original_fname) AND ([mname] = @Original_mname) AND ((@IsNull_mobileNo = 1 AND [mobileNo] IS NULL) OR ([mobileNo] = @Original_mobileNo)) AND ([paddress] = @Original_paddress) AND ([college] = @Original_college) AND ([roomNo] = @Original_roomNo) AND ([living] = @Original_living));
+SELECT studentID, name, fname, mname, mobileNo, paddress, college, roomNo, living FROM newStudent WHERE (studentID = @studentID)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@studentID", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "studentID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -1874,7 +1802,6 @@ SELECT studentID, name, fname, mname, mobileNo, paddress, college, idproof, room
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@mobileNo", global::System.Data.SqlDbType.BigInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "mobileNo", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@paddress", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "paddress", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@college", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "college", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@idproof", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "idproof", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@roomNo", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "roomNo", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@living", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "living", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_studentID", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "studentID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
@@ -1885,7 +1812,6 @@ SELECT studentID, name, fname, mname, mobileNo, paddress, college, idproof, room
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_mobileNo", global::System.Data.SqlDbType.BigInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "mobileNo", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_paddress", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "paddress", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_college", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "college", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_idproof", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "idproof", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_roomNo", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "roomNo", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_living", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "living", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
         }
@@ -1903,8 +1829,8 @@ SELECT studentID, name, fname, mname, mobileNo, paddress, college, idproof, room
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT studentID, name, fname, mname, mobileNo, paddress, college, idproof, roomN" +
-                "o, living FROM dbo.newStudent";
+            this._commandCollection[0].CommandText = "SELECT studentID, name, fname, mname, mobileNo, paddress, college, roomNo, living" +
+                " FROM dbo.newStudent";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -1965,7 +1891,7 @@ SELECT studentID, name, fname, mname, mobileNo, paddress, college, idproof, room
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(string Original_studentID, string Original_name, string Original_fname, string Original_mname, global::System.Nullable<long> Original_mobileNo, string Original_paddress, string Original_college, string Original_idproof, int Original_roomNo, bool Original_living) {
+        public virtual int Delete(string Original_studentID, string Original_name, string Original_fname, string Original_mname, global::System.Nullable<long> Original_mobileNo, string Original_paddress, string Original_college, int Original_roomNo, bool Original_living) {
             if ((Original_studentID == null)) {
                 throw new global::System.ArgumentNullException("Original_studentID");
             }
@@ -2010,14 +1936,8 @@ SELECT studentID, name, fname, mname, mobileNo, paddress, college, idproof, room
             else {
                 this.Adapter.DeleteCommand.Parameters[7].Value = ((string)(Original_college));
             }
-            if ((Original_idproof == null)) {
-                throw new global::System.ArgumentNullException("Original_idproof");
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[8].Value = ((string)(Original_idproof));
-            }
-            this.Adapter.DeleteCommand.Parameters[9].Value = ((int)(Original_roomNo));
-            this.Adapter.DeleteCommand.Parameters[10].Value = ((bool)(Original_living));
+            this.Adapter.DeleteCommand.Parameters[8].Value = ((int)(Original_roomNo));
+            this.Adapter.DeleteCommand.Parameters[9].Value = ((bool)(Original_living));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -2037,77 +1957,6 @@ SELECT studentID, name, fname, mname, mobileNo, paddress, college, idproof, room
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string studentID, string name, string fname, string mname, global::System.Nullable<long> mobileNo, string paddress, string college, string idproof, int roomNo, bool living) {
-            if ((studentID == null)) {
-                throw new global::System.ArgumentNullException("studentID");
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(studentID));
-            }
-            if ((name == null)) {
-                throw new global::System.ArgumentNullException("name");
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(name));
-            }
-            if ((fname == null)) {
-                throw new global::System.ArgumentNullException("fname");
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(fname));
-            }
-            if ((mname == null)) {
-                throw new global::System.ArgumentNullException("mname");
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(mname));
-            }
-            if ((mobileNo.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[4].Value = ((long)(mobileNo.Value));
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[4].Value = global::System.DBNull.Value;
-            }
-            if ((paddress == null)) {
-                throw new global::System.ArgumentNullException("paddress");
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[5].Value = ((string)(paddress));
-            }
-            if ((college == null)) {
-                throw new global::System.ArgumentNullException("college");
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[6].Value = ((string)(college));
-            }
-            if ((idproof == null)) {
-                throw new global::System.ArgumentNullException("idproof");
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[7].Value = ((string)(idproof));
-            }
-            this.Adapter.InsertCommand.Parameters[8].Value = ((int)(roomNo));
-            this.Adapter.InsertCommand.Parameters[9].Value = ((bool)(living));
-            global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
-            if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
-                        != global::System.Data.ConnectionState.Open)) {
-                this.Adapter.InsertCommand.Connection.Open();
-            }
-            try {
-                int returnValue = this.Adapter.InsertCommand.ExecuteNonQuery();
-                return returnValue;
-            }
-            finally {
-                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
-                    this.Adapter.InsertCommand.Connection.Close();
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
         public virtual int Update(
                     string studentID, 
@@ -2117,7 +1966,6 @@ SELECT studentID, name, fname, mname, mobileNo, paddress, college, idproof, room
                     global::System.Nullable<long> mobileNo, 
                     string paddress, 
                     string college, 
-                    string idproof, 
                     int roomNo, 
                     bool living, 
                     string Original_studentID, 
@@ -2127,7 +1975,6 @@ SELECT studentID, name, fname, mname, mobileNo, paddress, college, idproof, room
                     global::System.Nullable<long> Original_mobileNo, 
                     string Original_paddress, 
                     string Original_college, 
-                    string Original_idproof, 
                     int Original_roomNo, 
                     bool Original_living) {
             if ((studentID == null)) {
@@ -2172,66 +2019,54 @@ SELECT studentID, name, fname, mname, mobileNo, paddress, college, idproof, room
             else {
                 this.Adapter.UpdateCommand.Parameters[6].Value = ((string)(college));
             }
-            if ((idproof == null)) {
-                throw new global::System.ArgumentNullException("idproof");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[7].Value = ((string)(idproof));
-            }
-            this.Adapter.UpdateCommand.Parameters[8].Value = ((int)(roomNo));
-            this.Adapter.UpdateCommand.Parameters[9].Value = ((bool)(living));
+            this.Adapter.UpdateCommand.Parameters[7].Value = ((int)(roomNo));
+            this.Adapter.UpdateCommand.Parameters[8].Value = ((bool)(living));
             if ((Original_studentID == null)) {
                 throw new global::System.ArgumentNullException("Original_studentID");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[10].Value = ((string)(Original_studentID));
+                this.Adapter.UpdateCommand.Parameters[9].Value = ((string)(Original_studentID));
             }
             if ((Original_name == null)) {
                 throw new global::System.ArgumentNullException("Original_name");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[11].Value = ((string)(Original_name));
+                this.Adapter.UpdateCommand.Parameters[10].Value = ((string)(Original_name));
             }
             if ((Original_fname == null)) {
                 throw new global::System.ArgumentNullException("Original_fname");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[12].Value = ((string)(Original_fname));
+                this.Adapter.UpdateCommand.Parameters[11].Value = ((string)(Original_fname));
             }
             if ((Original_mname == null)) {
                 throw new global::System.ArgumentNullException("Original_mname");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[13].Value = ((string)(Original_mname));
+                this.Adapter.UpdateCommand.Parameters[12].Value = ((string)(Original_mname));
             }
             if ((Original_mobileNo.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[14].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[15].Value = ((long)(Original_mobileNo.Value));
+                this.Adapter.UpdateCommand.Parameters[13].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[14].Value = ((long)(Original_mobileNo.Value));
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[14].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[15].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[13].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[14].Value = global::System.DBNull.Value;
             }
             if ((Original_paddress == null)) {
                 throw new global::System.ArgumentNullException("Original_paddress");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[16].Value = ((string)(Original_paddress));
+                this.Adapter.UpdateCommand.Parameters[15].Value = ((string)(Original_paddress));
             }
             if ((Original_college == null)) {
                 throw new global::System.ArgumentNullException("Original_college");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[17].Value = ((string)(Original_college));
+                this.Adapter.UpdateCommand.Parameters[16].Value = ((string)(Original_college));
             }
-            if ((Original_idproof == null)) {
-                throw new global::System.ArgumentNullException("Original_idproof");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[18].Value = ((string)(Original_idproof));
-            }
-            this.Adapter.UpdateCommand.Parameters[19].Value = ((int)(Original_roomNo));
-            this.Adapter.UpdateCommand.Parameters[20].Value = ((bool)(Original_living));
+            this.Adapter.UpdateCommand.Parameters[17].Value = ((int)(Original_roomNo));
+            this.Adapter.UpdateCommand.Parameters[18].Value = ((bool)(Original_living));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -2259,7 +2094,6 @@ SELECT studentID, name, fname, mname, mobileNo, paddress, college, idproof, room
                     global::System.Nullable<long> mobileNo, 
                     string paddress, 
                     string college, 
-                    string idproof, 
                     int roomNo, 
                     bool living, 
                     string Original_studentID, 
@@ -2269,10 +2103,9 @@ SELECT studentID, name, fname, mname, mobileNo, paddress, college, idproof, room
                     global::System.Nullable<long> Original_mobileNo, 
                     string Original_paddress, 
                     string Original_college, 
-                    string Original_idproof, 
                     int Original_roomNo, 
                     bool Original_living) {
-            return this.Update(Original_studentID, name, fname, mname, mobileNo, paddress, college, idproof, roomNo, living, Original_studentID, Original_name, Original_fname, Original_mname, Original_mobileNo, Original_paddress, Original_college, Original_idproof, Original_roomNo, Original_living);
+            return this.Update(Original_studentID, name, fname, mname, mobileNo, paddress, college, roomNo, living, Original_studentID, Original_name, Original_fname, Original_mname, Original_mobileNo, Original_paddress, Original_college, Original_roomNo, Original_living);
         }
     }
     
