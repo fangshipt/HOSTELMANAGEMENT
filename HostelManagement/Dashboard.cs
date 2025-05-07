@@ -23,15 +23,14 @@ namespace HostelManagement
 
         private void btnLogOut_Click(object sender, EventArgs e)
         {
-            Login loginForm = new Login();
-            loginForm.Show();
-
-            // Đóng tất cả các form trừ Login
+            Login fm = new Login();
+            fm.Show();
             for (int i = Application.OpenForms.Count - 1; i >= 0; i--)
             {
-                if (Application.OpenForms[i] != loginForm)
+                if (Application.OpenForms[i] != fm)
+                    
                 {
-                    Application.OpenForms[i].Close(); 
+                    Application.OpenForms[i].Hide();
                 }
             }
 
