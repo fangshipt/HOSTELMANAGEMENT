@@ -27,6 +27,7 @@ namespace HostelManagement
         private void NewStudent_Load(object sender, EventArgs e)
         {
             dtpStartDate.Value = DateTime.Now;
+<<<<<<< HEAD
             LoadRoomTypes();
             LoadAvailableRooms();
         }
@@ -37,6 +38,9 @@ namespace HostelManagement
             var ds = fn.getData("SELECT roomType FROM RoomTypes");
             foreach (DataRow r in ds.Tables[0].Rows)
                 comboRoomType.Items.Add(r["roomType"].ToString());
+=======
+            comboRoomNo.Items.Clear();
+>>>>>>> c3239728d02157c66875ee3521f28c02ae200a3f
         }
 
         private void LoadAvailableRooms()
@@ -44,10 +48,41 @@ namespace HostelManagement
             comboRoomNo.Items.Clear();
             if (comboRoomType.SelectedIndex < 0) return;
 
+<<<<<<< HEAD
             var p = new SqlParameter("@type", comboRoomType.SelectedItem.ToString());
             var ds = fn.getData("SELECT roomNo FROM rooms WHERE Booked=0 AND roomType=@type", new[] { p });
             foreach (DataRow r in ds.Tables[0].Rows)
                 comboRoomNo.Items.Add(r[0].ToString());
+=======
+            if (comboRoomType.SelectedIndex < 0)
+            {
+                return;
+            }
+
+            string type = comboRoomType.SelectedItem.ToString();
+            query = @"
+                SELECT r.roomNo 
+                FROM rooms r
+                INNER JOIN RoomTypes rt ON r.roomType = rt.roomType
+                WHERE r.Booked = 0 
+                AND r.currentOccupancy < rt.maxOccupancy
+                AND r.roomType = @roomType";
+            SqlParameter[] parameters = new SqlParameter[]
+            {
+                new SqlParameter("@roomType", type)
+            };
+            try
+            {
+                DataSet ds = fn.getData(query, parameters);
+                foreach (DataRow row in ds.Tables[0].Rows)
+                    comboRoomNo.Items.Add(row[0].ToString());
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi load phòng: " + ex.Message, "Error",
+                                MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+>>>>>>> c3239728d02157c66875ee3521f28c02ae200a3f
         }
 
         private void btnClear_Click(object sender, EventArgs e)
