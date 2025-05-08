@@ -131,10 +131,10 @@ namespace HostelManagement
                     MessageBox.Show($"Sinh viên đã ở phòng {newRoomNo} rồi!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     return;
                 }
-                if (oldLiving == 0)
+                if (oldLiving == 0 && newLiving == 0)
                 {
-                    MessageBox.Show("Sinh viên này đã rời đi, không thể chỉnh sửa thông tin.",
-                                    "Không thể cập nhật", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Sinh viên này đã rời đi. Nếu muốn chỉnh sửa, vui lòng thay đổi tình trạng cư trú sang 'Đang ở'.",
+                                    "Không thể chỉnh sửa", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
 
