@@ -63,7 +63,7 @@ namespace HostelManagement
             DataTable dt = ds.Tables[0];
             chartRegistrations.Series.Clear();
 
-            Series series = new Series("Số SV đang ở")
+            Series series = new Series("Số SV đã ở")
             {
                 ChartType = SeriesChartType.Column,
                 XValueMember = "academicYear",
