@@ -227,50 +227,6 @@ namespace HostelManagement
                                 "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
-
-        private void btnDelete_Click(object sender, EventArgs e)
-        {
-            if (MessageBox.Show("Bạn có chắc chắn muốn xóa sinh viên này?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
-            {
-                string studentID = txtStudentID.Text.Trim();
-                if (string.IsNullOrEmpty(studentID))
-                {
-                    MessageBox.Show("Vui lòng chọn sinh viên để xóa.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
-                }
-
-                // Lấy roomNo trước khi xóa
-                var roomDs = fn.getData(
-                    $"SELECT roomNo FROM newStudent WHERE studentID=@studentID",
-                    new[] { new SqlParameter("@studentID", studentID) });
-                int roomNo = 0;
-                if (roomDs.Tables[0].Rows.Count > 0)
-                {
-                    roomNo = Convert.ToInt32(roomDs.Tables[0].Rows[0]["roomNo"]);
-                }
-
-                // Xóa sinh viên
-                string deleteSql = $"DELETE FROM newStudent WHERE studentID=@studentID";
-                fn.setData(deleteSql, "Đã xóa thông tin sinh viên.", new[] { new SqlParameter("@studentID", studentID) });
-
-                // Cập nhật số người trong phòng
-                if (roomNo > 0)
-                {
-                    string updOcc = "UPDATE rooms SET currentOccupancy = currentOccupancy - 1 WHERE roomNo = @roomNo";
-                    fn.setData(updOcc, null, new[] { new SqlParameter("@roomNo", roomNo) });
-
-                    // Bỏ đánh dấu Booked nếu chưa đạt maxOccupancy
-                    string unbookSql =
-                        "UPDATE rooms SET Booked = 0 " +
-                        "WHERE roomNo = @roomNo " +
-                        " AND currentOccupancy < (SELECT maxOccupancy FROM RoomTypes WHERE roomType = rooms.roomType)";
-                    fn.setData(unbookSql, null, new[] { new SqlParameter("@roomNo", roomNo) });
-                }
-
-                clearAll();
-                }
-            }
         private void clearAll()
         {
             txtStudentID.Clear();
@@ -283,6 +239,7 @@ namespace HostelManagement
             txtRoomNo.Clear();
             comboBoxLiving.SelectedIndex = -1;
         }
+               
 
         private void btnClear_Click(object sender, EventArgs e)
         {
