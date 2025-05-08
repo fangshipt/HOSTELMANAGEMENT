@@ -207,7 +207,7 @@
             this.btnUpdateDeleteStudent.Name = "btnUpdateDeleteStudent";
             this.btnUpdateDeleteStudent.Size = new System.Drawing.Size(450, 120);
             this.btnUpdateDeleteStudent.TabIndex = 5;
-            this.btnUpdateDeleteStudent.Text = "Sửa && Xoá";
+            this.btnUpdateDeleteStudent.Text = "Cập Nhật";
             this.btnUpdateDeleteStudent.Click += new System.EventHandler(this.btnUpdateDeleteStudent_Click);
             // 
             // btnNewStudent

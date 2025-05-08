@@ -118,7 +118,9 @@ namespace HostelManagement
             }
 
             long mobile;
-            if (!long.TryParse(txtMobileNumber.Text, out mobile))
+            string mobileStr = txtMobileNumber.Text.Trim();
+
+            if (!long.TryParse(txtMobileNumber.Text, out mobile) || mobileStr.Length != 10)
             {
                 MessageBox.Show("Số điện thoại không hợp lệ.", "Warning",
                                 MessageBoxButtons.OK, MessageBoxIcon.Warning);
