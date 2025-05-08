@@ -13,7 +13,7 @@ namespace HostelManagement
     public partial class LeavedStudent : Form
     {
         function fn = new function();
-        String query;
+        //String query;
         public LeavedStudent()
         {
             InitializeComponent();

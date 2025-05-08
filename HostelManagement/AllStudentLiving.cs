@@ -13,7 +13,6 @@ namespace HostelManagement
     public partial class AllStudentLiving : Form
     {
         function fn = new function();
-        String query;
         public AllStudentLiving()
         {
             InitializeComponent();

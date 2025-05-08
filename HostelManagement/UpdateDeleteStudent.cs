@@ -14,7 +14,6 @@ namespace HostelManagement
     public partial class UpdateDeleteStudent : Form
     {
         function fn = new function();
-        String query;
         public UpdateDeleteStudent()
         {
             InitializeComponent();
