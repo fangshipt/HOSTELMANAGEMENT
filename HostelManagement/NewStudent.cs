@@ -59,7 +59,7 @@ namespace HostelManagement
             query = "SELECT roomNo FROM rooms WHERE Booked = 0 AND roomType = @roomType";
             SqlParameter[] parameters = new SqlParameter[]
             {
-        new SqlParameter("@roomType", type)
+                new SqlParameter("@roomType", type)
             };
             try
             {
@@ -185,6 +185,26 @@ namespace HostelManagement
                 new SqlParameter("@roomNo", roomNo)
                 };
                 fn.setData(query, "Cập nhật phòng thành công.", updateBookedParams);
+                // d) Thêm vào bảng StudentRegistrations từ năm vào đến hiện tại
+                int startYear;
+                if (startdate.Month >= 7)
+                    startYear = startdate.Year;
+                else
+                    startYear = startdate.Year - 1;
+
+                DateTime now = DateTime.Now;
+                int currentYear = (now.Month >= 7) ? now.Year : now.Year - 1;
+
+                for (int year = startYear; year <= currentYear; year++)
+                {
+                    string academicYear = $"{year}-{year + 1}";
+                    query = "INSERT INTO StudentRegistrations (studentID, academicYear, status) " +
+                            "VALUES (@studentID, @academicYear, 1)";
+                    SqlParameter[] regParams = new SqlParameter[]{
+                        new SqlParameter("@studentID", studentID),
+                        new SqlParameter("@academicYear", academicYear)};
+                    fn.setData(query, "", regParams);
+                }
 
                 clearAll();
                 LoadAvailableRooms();
