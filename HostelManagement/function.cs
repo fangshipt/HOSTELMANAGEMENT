@@ -48,7 +48,10 @@ namespace HostelManagement
             cmd.ExecuteNonQuery();
             con.Close();
 
-            MessageBox.Show(msg, "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            if (!string.IsNullOrEmpty(msg))
+            {
+                MessageBox.Show(msg, "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
 
     }

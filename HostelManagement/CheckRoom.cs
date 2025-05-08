@@ -79,7 +79,7 @@ namespace HostelManagement
 
         private void LoadRoomsByType(string roomType)
         {
-            string query = $"SELECT roomNo FROM rooms WHERE roomType = '{roomType}' AND Booked = 0";
+            string query = $"SELECT roomNo FROM rooms WHERE roomType = '{roomType}'";
             DataSet ds = fn.getData(query);
 
             List<string> roomNumbers = new List<string>();
