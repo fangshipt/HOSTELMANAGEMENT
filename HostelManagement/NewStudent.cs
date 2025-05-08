@@ -122,7 +122,7 @@ namespace HostelManagement
 
             if (!long.TryParse(txtMobileNumber.Text, out mobile) || mobileStr.Length != 10)
             {
-                MessageBox.Show("Số điện thoại không hợp lệ.", "Warning",
+                MessageBox.Show("Số điện thoại không hợp lệ. Phải gồm đúng 10 chữ số.", "Warning",
                                 MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }

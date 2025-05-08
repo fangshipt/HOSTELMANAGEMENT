@@ -79,6 +79,13 @@ namespace HostelManagement
             string mobile = txtMobileNumber.Text.Trim();
             string paddress = txtPermanent.Text.Trim();
             string college = txtCollege.Text.Trim();
+            if (!long.TryParse(mobile, out long mobileNum) || mobile.Length != 10)
+            {
+                MessageBox.Show("Số điện thoại không hợp lệ. Phải gồm đúng 10 chữ số.", "Cảnh báo",
+                                MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
             if (!int.TryParse(txtRoomNo.Text.Trim(), out int newRoomNo))
             {
                 MessageBox.Show("Số phòng phải là số nguyên.", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
