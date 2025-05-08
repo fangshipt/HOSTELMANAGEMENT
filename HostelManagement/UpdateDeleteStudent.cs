@@ -86,10 +86,14 @@ namespace HostelManagement
             string mobile = txtMobileNumber.Text.Trim();
             string paddress = txtPermanent.Text.Trim();
             string college = txtCollege.Text.Trim();
-            int newRoomNo;
-            int newLiving = comboBoxLiving.SelectedItem != null && comboBoxLiving.SelectedItem.ToString() == "Yes" ? 1 : 0;
+            if (!int.TryParse(txtRoomNo.Text, out int newRoomNo))
+            {
+                MessageBox.Show("Số phòng không hợp lệ.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            int newLiving = comboBoxLiving.SelectedItem?.ToString() == "Yes" ? 1 : 0;
 
-            // 2. Validate
+            // 2. Validate chung
             if (string.IsNullOrEmpty(studentID) ||
                 string.IsNullOrEmpty(name) ||
                 string.IsNullOrEmpty(fname) ||
@@ -106,24 +110,43 @@ namespace HostelManagement
 
             try
             {
-                // 3. Lấy trạng thái cũ của sinh viên
-                string selectOld = @"
+                // 3. Lấy trạng thái cũ và phòng cũ
+                var dsOld = fn.getData(@"
             SELECT living, roomNo 
             FROM newStudent 
-            WHERE studentID = @studentID";
-                SqlParameter[] pOld = {
-            new SqlParameter("@studentID", SqlDbType.VarChar,50) { Value = studentID }
-        };
-                DataSet dsOld = fn.getData(selectOld, pOld);
+            WHERE studentID = @studentID",
+                    new[] { new SqlParameter("@studentID", studentID) });
                 if (dsOld.Tables[0].Rows.Count == 0)
                     throw new Exception("Không tìm thấy sinh viên để cập nhật.");
 
-                DataRow oldRow = dsOld.Tables[0].Rows[0];
+                var oldRow = dsOld.Tables[0].Rows[0];
                 int oldLiving = Convert.ToInt32(oldRow["living"]);
                 int oldRoomNo = Convert.ToInt32(oldRow["roomNo"]);
 
-                // 4. Cập nhật bảng newStudent
-                string updateSql = @"
+                // 4. Kiểm tra sức chứa nếu sinh viên vào phòng mới
+                bool enteringNewRoom = (oldLiving == 0 && newLiving == 1) ||
+                       (oldLiving == 1 && newLiving == 1 && oldRoomNo != newRoomNo);
+                if (enteringNewRoom)
+                {
+                    var dsCheck = fn.getData(
+                        "SELECT currentOccupancy, maxOccupancy FROM rooms r JOIN RoomTypes rt ON r.roomType=rt.roomType WHERE r.roomNo=@rno",
+                        new[] { new SqlParameter("@rno", newRoomNo) });
+                    if (dsCheck.Tables[0].Rows.Count == 0)
+                    {
+                        MessageBox.Show($"Phòng {newRoomNo} không tồn tại.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+                    int curr = Convert.ToInt32(dsCheck.Tables[0].Rows[0][0]);
+                    int max = Convert.ToInt32(dsCheck.Tables[0].Rows[0][1]);
+                    if (curr >= max)
+                    {
+                        MessageBox.Show($"Phòng {newRoomNo} đã đầy.", "Phòng đầy", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        return;
+                    }
+                }
+
+                // 5. Cập nhật thông tin sinh viên
+                fn.setData(@"
             UPDATE newStudent
                SET name     = @name,
                    fname    = @fname,
@@ -133,55 +156,43 @@ namespace HostelManagement
                    college  = @college,
                    roomNo   = @newRoomNo,
                    living   = @newLiving
-             WHERE studentID = @studentID";
-                SqlParameter[] pUpd = {
-            new SqlParameter("@name",      SqlDbType.NVarChar,100) { Value = name },
-            new SqlParameter("@fname",     SqlDbType.NVarChar,100) { Value = fname },
-            new SqlParameter("@mname",     SqlDbType.NVarChar,100) { Value = mname },
-            new SqlParameter("@mobileNo",  SqlDbType.VarChar,   20) { Value = mobile },
-            new SqlParameter("@paddress",  SqlDbType.NVarChar,200) { Value = paddress },
-            new SqlParameter("@college",   SqlDbType.NVarChar,100) { Value = college },
-            new SqlParameter("@newRoomNo", SqlDbType.Int)        { Value = newRoomNo },
-            new SqlParameter("@newLiving", SqlDbType.Int)        { Value = newLiving },
-            new SqlParameter("@studentID", SqlDbType.VarChar,   50) { Value = studentID }
-        };
-                fn.setData(updateSql, "Thông tin sinh viên đã được cập nhật.", pUpd);
+             WHERE studentID = @studentID",
+                    "Thông tin sinh viên đã được cập nhật.",
+                    new[]
+                    {
+                new SqlParameter("@name",      name),
+                new SqlParameter("@fname",     fname),
+                new SqlParameter("@mname",     mname),
+                new SqlParameter("@mobileNo",  mobile),
+                new SqlParameter("@paddress",  paddress),
+                new SqlParameter("@college",   college),
+                new SqlParameter("@newRoomNo", newRoomNo),
+                new SqlParameter("@newLiving", newLiving),
+                new SqlParameter("@studentID", studentID)
+                    });
 
-                // 5. Nếu trạng thái ở (living) thay đổi hoặc đổi phòng, điều chỉnh occupancy
-                //    δ = +1 nếu vào phòng mới, δ = –1 nếu rời phòng cũ
-                if (oldLiving == 1 && newLiving == 0)
+                // 6. Điều chỉnh currentOccupancy
+                if (oldLiving == 1 && newLiving == 0)                 // out→in ngược
                 {
-                    // sinh viên rời phòng cũ
-                    string q1 = "UPDATE rooms SET currentOccupancy = currentOccupancy - 1 WHERE roomNo = @r";
-                    fn.setData(q1, "", new[] {
-                new SqlParameter("@r", SqlDbType.Int) { Value = oldRoomNo }
-            });
+                    fn.setData("UPDATE rooms SET currentOccupancy = currentOccupancy - 1 WHERE roomNo = @r", null,
+                               new[] { new SqlParameter("@r", oldRoomNo) });
                 }
-                else if (oldLiving == 0 && newLiving == 1)
+                else if (oldLiving == 0 && newLiving == 1)            // out→in
                 {
-                    // sinh viên vào phòng mới
-                    string q2 = "UPDATE rooms SET currentOccupancy = currentOccupancy + 1 WHERE roomNo = @r";
-                    fn.setData(q2, "", new[] {
-                new SqlParameter("@r", SqlDbType.Int) { Value = newRoomNo }
-            });
+                    fn.setData("UPDATE rooms SET currentOccupancy = currentOccupancy + 1 WHERE roomNo = @r", null,
+                               new[] { new SqlParameter("@r", newRoomNo) });
                 }
-                else if (oldRoomNo != newRoomNo && newLiving == 1)
+                else if (oldRoomNo != newRoomNo && newLiving == 1)    // đổi phòng
                 {
-                    // đổi phòng: trừ cũ, cộng mới
-                    string q3 = "UPDATE rooms SET currentOccupancy = currentOccupancy - 1 WHERE roomNo = @r";
-                    fn.setData(q3, "", new[] {
-                new SqlParameter("@r", SqlDbType.Int) { Value = oldRoomNo }
-            });
-                    string q4 = "UPDATE rooms SET currentOccupancy = currentOccupancy + 1 WHERE roomNo = @r";
-                    fn.setData(q4, "", new[] {
-                new SqlParameter("@r", SqlDbType.Int) { Value = newRoomNo }
-            });
+                    fn.setData("UPDATE rooms SET currentOccupancy = currentOccupancy - 1 WHERE roomNo = @r", null,
+                               new[] { new SqlParameter("@r", oldRoomNo) });
+                    fn.setData("UPDATE rooms SET currentOccupancy = currentOccupancy + 1 WHERE roomNo = @r", null,
+                               new[] { new SqlParameter("@r", newRoomNo) });
                 }
 
-                // 6. Cập nhật cờ Booked cho cả hai phòng (cũ và mới)
-                Action<int> updateBooked = (rNo) =>
-                {
-                    string qb = @"
+                // 7. Cập nhật cờ Booked cho cả 2 phòng
+                Action<int> updateBooked = r =>
+                    fn.setData(@"
                 UPDATE rooms
                    SET Booked = CASE 
                                   WHEN currentOccupancy >= rt.maxOccupancy THEN 1
@@ -189,17 +200,13 @@ namespace HostelManagement
                                 END
                   FROM rooms r
                   JOIN RoomTypes rt ON r.roomType = rt.roomType
-                 WHERE r.roomNo = @r";
-                    fn.setData(qb, "", new[] {
-                new SqlParameter("@r", SqlDbType.Int) { Value = rNo }
-            });
-                };
+                 WHERE r.roomNo = @r", null,
+                        new[] { new SqlParameter("@r", r) });
 
-                // nếu phòng cũ khác phòng mới, hoặc trạng thái 1→0, ta vẫn nên cập nhật cờ
                 updateBooked(oldRoomNo);
                 updateBooked(newRoomNo);
 
-                // 7. Xóa form
+                // 8. Xóa form
                 clearAll();
             }
             catch (Exception ex)
@@ -208,6 +215,7 @@ namespace HostelManagement
                                 "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
 
         private void btnDelete_Click(object sender, EventArgs e)
         {

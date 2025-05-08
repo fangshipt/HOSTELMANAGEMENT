@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -80,45 +79,22 @@ namespace HostelManagement
 
         private void LoadRoomsByType(string roomType)
         {
-<<<<<<< HEAD
             string query = $"SELECT roomNo FROM rooms WHERE roomType = '{roomType}'";
             DataSet ds = fn.getData(query);
-=======
-            string query = @"
-                SELECT r.roomNo 
-                FROM rooms r
-                INNER JOIN RoomTypes rt ON r.roomType = rt.roomType
-                WHERE r.Booked = 0 
-                AND r.currentOccupancy < rt.maxOccupancy
-                AND r.roomType = @roomType";
-            SqlParameter[] parameters = new SqlParameter[]
-            {
-                new SqlParameter("@roomType", roomType)
-            };
->>>>>>> c3239728d02157c66875ee3521f28c02ae200a3f
 
-            try
+            List<string> roomNumbers = new List<string>();
+            foreach (DataRow row in ds.Tables[0].Rows)
             {
-                DataSet ds = fn.getData(query, parameters);
-                List<string> roomNumbers = new List<string>();
-                foreach (DataRow row in ds.Tables[0].Rows)
-                {
-                    roomNumbers.Add(row["roomNo"].ToString());
-                }
-
-                if (roomType == "4")
-                {
-                    comboBox4PersonRooms.DataSource = roomNumbers.Any() ? roomNumbers : null;
-                }
-                else if (roomType == "6")
-                {
-                    comboBox6PersonRooms.DataSource = roomNumbers.Any() ? roomNumbers : null;
-                }
+                roomNumbers.Add(row["roomNo"].ToString());
             }
-            catch (Exception ex)
+
+            if (roomType == "4")
             {
-                MessageBox.Show("Lỗi khi tải danh sách phòng: " + ex.Message, "Lỗi",
-                                MessageBoxButtons.OK, MessageBoxIcon.Error);
+                comboBox4PersonRooms.DataSource = roomNumbers;
+            }
+            else if (roomType == "6")
+            {
+                comboBox6PersonRooms.DataSource = roomNumbers;
             }
         }
 
