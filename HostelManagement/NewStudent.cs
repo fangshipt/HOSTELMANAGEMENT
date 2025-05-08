@@ -37,13 +37,7 @@ namespace HostelManagement
         private void NewStudent_Load(object sender, EventArgs e)
         {
             dtpStartDate.Value = DateTime.Now;
-            query = "SELECT roomNo FROM rooms WHERE Booked = 0";
-            DataSet ds = fn.getData(query);
-            for (int i = 0; i < ds.Tables[0].Rows.Count; ++i)
-            {
-                Int64 room = Int64.Parse(ds.Tables[0].Rows[i][0].ToString());
-                comboRoomNo.Items.Add(room);
-            }
+            comboRoomNo.Items.Clear();
         }
 
         private void LoadAvailableRooms()
@@ -56,10 +50,16 @@ namespace HostelManagement
             }
 
             string type = comboRoomType.SelectedItem.ToString();
-            query = "SELECT roomNo FROM rooms WHERE Booked = 0 AND roomType = @roomType";
+            query = @"
+                SELECT r.roomNo 
+                FROM rooms r
+                INNER JOIN RoomTypes rt ON r.roomType = rt.roomType
+                WHERE r.Booked = 0 
+                AND r.currentOccupancy < rt.maxOccupancy
+                AND r.roomType = @roomType";
             SqlParameter[] parameters = new SqlParameter[]
             {
-        new SqlParameter("@roomType", type)
+                new SqlParameter("@roomType", type)
             };
             try
             {
