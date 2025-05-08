@@ -62,7 +62,7 @@ namespace HostelManagement
             string stuID = txtStudentID.Text.Trim();
             if (string.IsNullOrEmpty(stuID))
             {
-                MessageBox.Show("Vui lòng nhập Student ID.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Vui lòng nhập Mã SV.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
@@ -79,7 +79,7 @@ namespace HostelManagement
 
             if (ds.Tables[0].Rows.Count == 0)
             {
-                MessageBox.Show("Không tìm thấy Student ID này.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Không tìm thấy Mã SV này.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 clearAll();
                 return;
             }
